@@ -1,0 +1,77 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "Final_Project.h"
+#include "GameFramework/Character.h"
+#include "FPCharacter.generated.h"
+
+/*
+1. 애니메이션의 사용은 아래와 같이 코드로 애니메이션을 지정하는 방법이 있지만, 게임의 규모가 커지면 이런 방식은 관리적인 한계에 부딫힌다. 따라서 언리얼엔진은 체계적으로 애니메이션 시스템을 설계하기 위해 블루프린트를 사용한다.
+	Mesh->SetAnimationMode(EAnimationMode::AnimationSingleNode);
+	UAnimationAsset* AnimAsset = LoadObject<UAnimationAsset>(nullptr, TEXT("/Game/Animation/WarriorRun.WarriorRun"));
+	if (AnimAsset != nullptr)
+	{
+		Mesh->PlayAnimation(AnimAsset, true);
+	}
+2. 애니메이션 블루프린트를 불러올 때는 경로에 "_C"를 붙여줘야한다. (클래스임을 알려주기 위해)
+3. ACharater 모델과 APawn 모델의 차이점은 캐릭터 무브먼트 컴포넌트를 사용한다는 것이다.
+	캐릭터 무브먼트 컴포넌트의 장점
+	1) 점프같은 중력 반영 움직임 제공
+	2) 다양한 움직임 설정 가능(걷기 외 기어가기, 날아가기, 수영 등등), 현재 움직임에 대한 더 많은 정보 전달
+	3) 멀티 플레이 시 네트워크 환경에서 캐릭터들의 움직임을 자동으로 동기화
+4. 플레이 중 '~'키를 누르면 콘솔 명령창이 나온다. 거기서 예를들어 DisplayAll <classname> 이런식으로 검색하면 플레이 화면에 해당 정보가 나온다. ※ 이때, 클래스 접두사는 제외하고 입력한다.
+5. 마우스 움직임 중, Z축(Yaw)는 ACharactor에서 useControllerRotationYaw가 기본 사용으로 설정되어 있지만, 나머지 Pitch, Roll은 기본 사용 안함으로 설정되어 있다.
+6. ACharacter 클래스에서는 미리 Jump라는 멤버 함수가 바인딩할수 있게 선언 되어있어 특별한 정의 없이 바로 바인딩만 하여 Jump함수를 사용이 가능하다. GetCharacterMovement()->JumpZVelocity의 값은 기본적으로 420으로 설정되어 있다.
+*/
+
+UCLASS()
+class FINAL_PROJECT_API AFPCharacter : public ACharacter
+{
+	GENERATED_BODY()
+
+public:
+	// Sets default values for this character's properties
+	AFPCharacter();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+	enum class EControlMode
+	{
+		GTA,
+		DIABLO
+	};
+
+	void SetControlMode(EControlMode NewControlMode);
+	EControlMode CurrentControlMode = EControlMode::GTA;
+	FVector DirectionToMove = FVector::ZeroVector;
+
+	float ArmLengthTo = 0.0f;
+	FRotator ArmRotationTo = FRotator::ZeroRotator;
+	float ArmLengthSpeed = 0.0f;
+	float ArmRotationSpeed = 0.0f;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	UPROPERTY(VisibleAnywhere, Category = Camera)
+	USpringArmComponent* SpringArm;
+
+	UPROPERTY(VisibleAnywhere, Category = Camera)
+	UCameraComponent* Camera;
+
+private:
+	// Axis 매핑 활용해서 이동키 만들기
+	void UpDown(float NewAxisValue);
+	void LeftRight(float NewAxisValue);
+	void LookUp(float NewAxisValue);
+	void Turn(float NewAxisValue);
+
+	void ViewChange();
+};

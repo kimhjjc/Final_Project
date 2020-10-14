@@ -1,0 +1,9 @@
+*/Saved
+*/Intermediate
+*/Build
+*/Plugins
+*.sln
+*.ipch
+*.db
+*.pch
+*.umap
