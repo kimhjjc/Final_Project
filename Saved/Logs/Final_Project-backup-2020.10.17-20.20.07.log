@@ -1,0 +1,1872 @@
+﻿Log file open, 10/17/20 18:41:22
+LogInit: Display: Running engine for game: Final_Project
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.382554
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-13942748
+LogInit: Engine Version: 4.25.3-13942748+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 1909) (), CPU: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz, GPU: NVIDIA GeForce GTX 1050 Ti
+LogInit: Compiled (64-bit): Jul 25 2020 02:07:48
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.17-09.41.22:941][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.10.17-09.41.22:941][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.17-09.41.22:941][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.17-09.41.22:955][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.10.17-09.41.22:955][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.10.17-09.41.22:956][  0]LogInit: Selected Device Profile: [Windows]
+[2020.10.17-09.41.22:956][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.10.17-09.41.22:956][  0]LogHAL: Display: Platform has ~ 16 GB [17109180416 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.10.17-09.41.22:956][  0]LogInit: Going up to parent DeviceProfile []
+[2020.10.17-09.41.22:956][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.10.17-09.41.22:956][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.10.17-09.41.22:957][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.10.17-09.41.22:958][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.10.17-09.41.22:958][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.10.17-09.41.22:958][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.10.17-09.41.22:958][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.10.17-09.41.22:958][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2020.10.17-09.41.22:958][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.17-09.41.22:958][  0]LogInit: Computer: DESKTOP-BI3QQ0T
+[2020.10.17-09.41.22:958][  0]LogInit: User: ANY180817
+[2020.10.17-09.41.22:958][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.10.17-09.41.22:958][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.10.17-09.41.22:958][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2020.10.17-09.41.22:958][  0]LogMemory: Platform Memory Stats for Windows
+[2020.10.17-09.41.22:959][  0]LogMemory: Process Physical Memory: 115.61 MB used, 115.62 MB peak
+[2020.10.17-09.41.22:959][  0]LogMemory: Process Virtual Memory: 104.53 MB used, 104.53 MB peak
+[2020.10.17-09.41.22:959][  0]LogMemory: Physical Memory: 5484.21 MB used,  10832.38 MB free, 16316.59 MB total
+[2020.10.17-09.41.22:959][  0]LogMemory: Virtual Memory: 5151.54 MB used,  134212576.00 MB free, 134217728.00 MB total
+[2020.10.17-09.41.22:973][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.10.17-09.41.23:043][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2020.10.17-09.41.23:044][  0]LogInit: Using OS detected language (ko-KR).
+[2020.10.17-09.41.23:044][  0]LogInit: Using OS detected locale (ko-KR).
+[2020.10.17-09.41.23:045][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2020.10.17-09.41.23:142][  0]LogInit: Setting process to per monitor DPI aware
+[2020.10.17-09.41.23:231][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.10.17-09.41.23:231][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.10.17-09.41.23:511][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.10.17-09.41.23:511][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.10.17-09.41.23:511][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.10.17-09.41.23:511][  0]LogD3D11RHI: D3D11 adapters:
+[2020.10.17-09.41.23:632][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
+[2020.10.17-09.41.23:632][  0]LogD3D11RHI:       4018/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2020.10.17-09.41.23:636][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.10.17-09.41.23:636][  0]LogD3D11RHI:       0/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.10.17-09.41.23:636][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.10.17-09.41.23:642][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.10.17-09.41.23:643][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
+[2020.10.17-09.41.23:643][  0]LogWindows: EnumDisplayDevices:
+[2020.10.17-09.41.23:643][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
+[2020.10.17-09.41.23:645][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:1)
+[2020.10.17-09.41.23:648][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2020.10.17-09.41.23:650][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2020.10.17-09.41.23:652][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.10.17-09.41.23:652][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
+[2020.10.17-09.41.23:652][  0]LogD3D11RHI:   Driver Version: 432.00 (internal:26.21.14.3200, unified:432.00)
+[2020.10.17-09.41.23:652][  0]LogD3D11RHI:      Driver Date: 7-24-2019
+[2020.10.17-09.41.23:652][  0]LogRHI: Texture pool is 2812 MB (70% of 4018 MB)
+[2020.10.17-09.41.23:707][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.10.17-09.41.23:712][  0]LogD3D11RHI: [Aftermath] Enabled and primed
+[2020.10.17-09.41.23:712][  0]LogD3D11RHI: Async texture creation enabled
+[2020.10.17-09.41.23:712][  0]LogD3D11RHI: Array index from any shader is supported
+[2020.10.17-09.41.23:791][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.10.17-09.41.24:481][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.10.17-09.41.24:505][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.10.17-09.41.24:505][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.10.17-09.41.24:505][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.10.17-09.41.24:505][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.10.17-09.41.24:506][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.10.17-09.41.24:506][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.10.17-09.41.24:506][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.10.17-09.41.24:506][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.10.17-09.41.24:506][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.10.17-09.41.24:506][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.10.17-09.41.24:536][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.10.17-09.41.24:536][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.10.17-09.41.24:549][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2020.10.17-09.41.24:561][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.10.17-09.41.24:573][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.10.17-09.41.24:585][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.10.17-09.41.24:597][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.10.17-09.41.24:609][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.10.17-09.41.24:621][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.10.17-09.41.24:650][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.10.17-09.41.24:650][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.10.17-09.41.24:668][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.10.17-09.41.24:668][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.10.17-09.41.24:680][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.10.17-09.41.24:694][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.10.17-09.41.24:705][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.10.17-09.41.24:717][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.10.17-09.41.24:717][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.10.17-09.41.24:734][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.10.17-09.41.24:842][  0]LogShaderCompilers: Guid format shader working directory is 6 characters bigger than the processId version (../../../../../UnrealProjects/Final_Project/Intermediate/Shaders/WorkingDirectory/11876/).
+[2020.10.17-09.41.24:843][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/ANY180817/AppData/Local/Temp/UnrealShaderWorkingDir/1D705FF245A4CAC2FD1B7E98AC8C25E0/'.
+[2020.10.17-09.41.24:843][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.10.17-09.41.24:844][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.10.17-09.41.24:844][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.10.17-09.41.25:659][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.10.17-09.41.25:744][  0]LogDerivedDataCache: Loaded boot cache 0.08s 76MB C:/Users/ANY180817/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.10.17-09.41.25:744][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/ANY180817/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2020.10.17-09.41.25:770][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../UnrealProjects/Final_Project/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.10.17-09.41.25:770][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.10.17-09.41.25:770][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../UnrealProjects/Final_Project/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.10.17-09.41.25:770][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.10.17-09.41.25:781][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.10.17-09.41.25:781][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.10.17-09.41.25:781][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.10.17-09.41.25:784][  0]LogDerivedDataCache: Using Local data cache path C:/Users/ANY180817/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.10.17-09.41.25:784][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.10.17-09.41.25:784][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.10.17-09.41.25:852][  0]LogSlate: Using FreeType 2.10.0
+[2020.10.17-09.41.25:852][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.10.17-09.41.25:884][  0]LogAssetRegistry: FAssetRegistry took 0.0024 seconds to start up
+[2020.10.17-09.41.26:127][  0]LogInit: Selected Device Profile: [Windows]
+[2020.10.17-09.41.26:295][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.10.17-09.41.26:295][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.10.17-09.41.26:295][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.10.17-09.41.26:295][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.10.17-09.41.26:295][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.10.17-09.41.26:325][  0]LogNetVersion: Final_Project 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 4264652595)
+[2020.10.17-09.41.26:870][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001E8877AC340), frame # 0
+[2020.10.17-09.41.26:870][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E8876D6AC0), frame # 0
+[2020.10.17-09.41.26:871][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E887739E00), frame # 0
+[2020.10.17-09.41.27:104][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.226711 seconds
+[2020.10.17-09.41.27:109][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2020.10.17-09.41.27:109][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2020.10.17-09.41.27:109][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.10.17-09.41.27:632][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.10.17-09.41.27:639][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.10.17-09.41.28:544][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.17-09.41.28:544][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.17-09.41.28:550][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.17-09.41.28:555][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.17-09.41.28:581][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.17-09.41.28:990][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.10.17-09.41.29:031][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.10.17-09.41.29:031][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.10.17-09.41.29:102][  0]LogOcInput: OculusInput pre-init called
+[2020.10.17-09.41.29:119][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.10.17-09.41.29:119][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.10.17-09.41.29:206][  0]LogEngine: Initializing Engine...
+[2020.10.17-09.41.29:208][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.10.17-09.41.29:208][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2020.10.17-09.41.29:209][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.10.17-09.41.29:338][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.10.17-09.41.29:349][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.10.17-09.41.29:349][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E890D87C00), frame # 0
+[2020.10.17-09.41.29:349][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E890DF0900), frame # 0
+[2020.10.17-09.41.29:413][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-09.41.29:413][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-09.41.29:413][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-09.41.29:413][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-09.41.29:413][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-09.41.29:413][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-09.41.29:413][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-09.41.29:413][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-09.41.29:414][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-09.41.29:414][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-09.41.29:481][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-09.41.29:481][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-09.41.29:798][  0]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-09.41.29:806][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-09.41.29:807][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-09.41.29:809][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-09.41.29:810][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-09.41.29:810][  0]LogInit: FAudioDevice initialized.
+[2020.10.17-09.41.29:810][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.10.17-09.41.29:895][  0]LogDerivedDataCache: Saved boot cache 0.08s 76MB C:/Users/ANY180817/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.10.17-09.41.29:895][  0]LogInit: Texture streaming: Enabled
+[2020.10.17-09.41.29:926][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.10.17-09.41.29:926][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.10.17-09.41.29:934][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.10.17-09.41.29:995][  0]LogInit: Transaction tracking system initialized
+[2020.10.17-09.41.30:034][  0]BlueprintLog: New page: 에디터 로드
+[2020.10.17-09.41.30:149][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2020.10.17-09.41.30:372][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.10.17-09.41.30:372][  0]LogCook: Display: Mobile HDR setting 1
+[2020.10.17-09.41.30:600][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealEngine/UnrealProjects/Final_Project/Content/' took 0.02s
+[2020.10.17-09.41.30:894][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.17-09.41.30:894][  0]LogUnrealEdMisc: Loading editor; pre map load, took 10.454
+[2020.10.17-09.41.30:894][  0]Cmd: MAP LOAD FILE="../../../../../UnrealProjects/Final_Project/Content/Stage/TestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.10.17-09.41.30:901][  0]LightingResults: New page: 라이팅 빌드
+[2020.10.17-09.41.30:902][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-09.41.30:902][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-09.41.30:902][  0]MapCheck: New page: 맵 체크
+[2020.10.17-09.41.30:902][  0]LightingResults: New page: 라이팅 빌드
+[2020.10.17-09.41.30:911][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E890D87C00), frame # 0
+[2020.10.17-09.41.30:911][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E890DF0900), frame # 0
+[2020.10.17-09.41.30:912][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2020.10.17-09.41.32:013][  0]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-09.41.32:013][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E893E08C00), frame # 0
+[2020.10.17-09.41.32:013][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E893E26200), frame # 0
+[2020.10.17-09.41.32:140][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.10.17-09.41.32:180][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
+[2020.10.17-09.41.32:180][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.10.17-09.41.32:181][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.126ms.
+[2020.10.17-09.41.32:181][  0]LogFileHelpers: Loading map 'TestMap' took 1.287
+[2020.10.17-09.41.32:184][  0]LogUnrealEdMisc: Total Editor Startup Time, took 11.745
+[2020.10.17-09.41.32:621][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-09.41.32:653][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-09.41.32:671][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-09.41.32:687][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-09.41.32:739][  0]LogCollectionManager: Loaded 0 collections in 0.007103 seconds
+[2020.10.17-09.41.32:803][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Collections/' took 0.00s
+[2020.10.17-09.41.32:803][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealEngine/UnrealProjects/Final_Project/Content/Developers/ANY180817/Collections/' took 0.00s
+[2020.10.17-09.41.32:803][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealEngine/UnrealProjects/Final_Project/Content/Collections/' took 0.00s
+[2020.10.17-09.41.32:803][  0]LogContentBrowser: Native class hierarchy populated in 0.0391 seconds. Added 3433 classes and 823 folders.
+[2020.10.17-09.41.32:838][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2020.10.17-09.41.34:610][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0015 seconds. Added 0 classes and 0 folders.
+[2020.10.17-09.41.34:649][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0017 seconds. Added 2 classes and 0 folders.
+[2020.10.17-09.41.35:448][  0]LogSlate: Took 0.001177 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.10.17-09.41.35:463][  0]LogSlate: Took 0.009565 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2020.10.17-09.41.35:472][  0]LogSlate: Took 0.005956 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2020.10.17-09.41.35:472][  0]LogSlate: Took 0.000457 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.10.17-09.41.35:502][  0]LogSlate: Took 0.012277 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.10.17-09.41.35:945][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
+[2020.10.17-09.41.36:200][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2020.10.17-09.41.36:200][  0]LogLoad: (Engine Initialization) Total time: 15.76 seconds
+[2020.10.17-09.41.36:200][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.10.17-09.41.36:260][  0]LogAssetRegistry: Asset discovery search completed in 10.3771 seconds
+[2020.10.17-09.41.36:264][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2020.10.17-09.41.36:265][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.10.17-09.41.36:391][  0]LogSlate: Took 0.097872 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.10.17-09.43.34:090][743]LogSlate: Took 0.000300 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.10.17-09.43.34:150][743]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage
+[2020.10.17-09.43.34:292][743]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2020.10.17-09.43.35:151][743]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.10.17-09.43.35:155][743]LogContentBrowser: Native class hierarchy updated for 'PinnedCommandList' in 0.0014 seconds. Added 1 classes and 0 folders.
+[2020.10.17-09.50.21:399][232]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2020.10.17-10.00.32:893][732]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2020.10.17-10.00.32:896][732]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.028
+[2020.10.17-10.00.32:923][732]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Animations/SK_Mannequin_Skeleton_Montage] ([1] browsable assets)...
+[2020.10.17-10.00.32:954][732]OBJ SavePackage:     Rendered thumbnail for [AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage]
+[2020.10.17-10.00.32:954][732]OBJ SavePackage: Finished generating thumbnails for package [/Game/Animations/SK_Mannequin_Skeleton_Montage]
+[2020.10.17-10.00.33:080][732]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/SK_Mannequin_Skeleton_Montage_Au6A50F34A4593FE6346AD92B6B9BDBFFF.tmp' to '../../../../../UnrealProjects/Final_Project/Saved/Autosaves/Game/Animations/SK_Mannequin_Skeleton_Montage_Auto1.uasset'
+[2020.10.17-10.00.33:097][732]LogFileHelpers: Auto-saving content packages took 0.201
+[2020.10.17-11.08.25:153][998]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-11.08.25:153][998]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-11.09.13:024][886]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2020.10.17-11.09.13:026][886]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.014
+[2020.10.17-11.09.13:026][886]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Animations/SK_Mannequin_Skeleton_Montage] ([1] browsable assets)...
+[2020.10.17-11.09.13:039][886]OBJ SavePackage:     Rendered thumbnail for [AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage]
+[2020.10.17-11.09.13:039][886]OBJ SavePackage: Finished generating thumbnails for package [/Game/Animations/SK_Mannequin_Skeleton_Montage]
+[2020.10.17-11.09.13:050][886]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/SK_Mannequin_Skeleton_Montage_AuBD5E3B204D9758548B60E4AF0BCEB400.tmp' to '../../../../../UnrealProjects/Final_Project/Saved/Autosaves/Game/Animations/SK_Mannequin_Skeleton_Montage_Auto2.uasset'
+[2020.10.17-11.09.13:051][886]LogFileHelpers: Auto-saving content packages took 0.025
+[2020.10.17-11.10.39:129][100]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-11.10.39:129][100]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-11.11.19:345][496]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-11.11.19:345][496]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-11.11.21:848][682]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-11.11.21:848][682]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-11.17.36:123][262]LogRenderer: Reallocating scene render targets to support 1212x572 Format 10 NumSamples 1 (Frame:48846).
+[2020.10.17-11.17.36:188][263]LogRenderer: Reallocating scene render targets to support 1236x572 Format 10 NumSamples 1 (Frame:48848).
+[2020.10.17-11.17.57:977][791]LogRenderer: Reallocating scene render targets to support 1240x572 Format 10 NumSamples 1 (Frame:50421).
+[2020.10.17-11.19.13:205][293]LogUObjectHash: Compacting FUObjectHashTables data took   0.79ms
+[2020.10.17-11.19.13:210][293]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.018
+[2020.10.17-11.19.13:210][293]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Animations/SK_Mannequin_Skeleton_Montage] ([1] browsable assets)...
+[2020.10.17-11.19.13:245][293]OBJ SavePackage:     Rendered thumbnail for [AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage]
+[2020.10.17-11.19.13:245][293]OBJ SavePackage: Finished generating thumbnails for package [/Game/Animations/SK_Mannequin_Skeleton_Montage]
+[2020.10.17-11.19.13:260][293]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/SK_Mannequin_Skeleton_Montage_Au25A582D644052F72C9CE9589A2C3E92A.tmp' to '../../../../../UnrealProjects/Final_Project/Saved/Autosaves/Game/Animations/SK_Mannequin_Skeleton_Montage_Auto3.uasset'
+[2020.10.17-11.19.13:261][293]LogFileHelpers: Auto-saving content packages took 0.051
+[2020.10.17-11.20.25:715][509]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-11.20.25:715][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-11.20.36:415][367]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Animations/SK_Mannequin_Skeleton_Montage" FILE="../../../../../UnrealProjects/Final_Project/Content/Animations/SK_Mannequin_Skeleton_Montage.uasset" SILENT=true
+[2020.10.17-11.20.36:425][367]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/SK_Mannequin_Skeleton_Montage1477A3844C341760DE835FAC6E3087B7.tmp' to '../../../../../UnrealProjects/Final_Project/Content/Animations/SK_Mannequin_Skeleton_Montage.uasset'
+[2020.10.17-11.20.36:440][367]AssetCheck: New page: 애셋 저장: SK_Mannequin_Skeleton_Montage
+[2020.10.17-11.20.36:441][367]LogContentValidation: Display: AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage 유효성 검사
+[2020.10.17-11.22.26:378][959]LogSlate: Window '프로젝트 세팅' being destroyed
+[2020.10.17-11.22.26:387][959]LogSlate: Window '프로젝트 세팅' being destroyed
+[2020.10.17-11.22.29:080][108]LogAssetEditorSubsystem: Opening Asset editor for Class /Script/Final_Project.Fountain
+[2020.10.17-13.32.07:303][815]LogSlate: Window 'SK_Mannequin_Skeleton_Montage' being destroyed
+[2020.10.17-13.32.07:311][815]LogSlate: Window 'SK_Mannequin_Skeleton_Montage' being destroyed
+[2020.10.17-13.32.07:383][815]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.32.07:383][815]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.32.08:338][815]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.32.08:338][815]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.50.10:787][112]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-13.50.11:015][112]Candidate modules for hot reload:
+[2020.10.17-13.50.11:015][112]  Final_Project
+[2020.10.17-13.50.11:015][112]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,2822 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-13.50.11:066][112]Warning: Starting HotReload took  0.4s.
+[2020.10.17-13.50.12:135][150]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.10.17-13.51.44:802][691]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오전 7:51:44
+[2020.10.17-13.51.44:891][691]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-13.51.44:891][691]CompilerResultsLog: Creating makefile for Final_ProjectEditor (game project files are newer)
+[2020.10.17-13.51.44:891][691]CompilerResultsLog: Parsing headers for Final_ProjectEditor
+[2020.10.17-13.51.44:891][691]CompilerResultsLog:   Running UnrealHeaderTool "D:\UnrealEngine\UnrealProjects\Final_Project\Final_Project.uproject" "D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\Final_ProjectEditor\Development\Final_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\ANY180817\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.10.17-13.51.44:891][691]CompilerResultsLog: Reflection code generated for Final_ProjectEditor in 18.4396504 seconds
+[2020.10.17-13.51.44:891][691]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-13.51.44:891][691]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-13.51.44:891][691]CompilerResultsLog: Building 18 actions with 8 processes...
+[2020.10.17-13.51.44:891][691]CompilerResultsLog:   [1/18] SharedPCH.Engine.ShadowErrors.cpp
+[2020.10.17-13.51.44:891][691]CompilerResultsLog:   [2/18] Final_Project.init.gen.cpp
+[2020.10.17-13.51.44:891][691]CompilerResultsLog:   [3/18] Final_Project.cpp
+[2020.10.17-13.51.44:891][691]CompilerResultsLog:   [4/18] FPGameMode.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [5/18] FPAnimInstance.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [6/18] FPCharacter.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [7/18] FPAnimInstance.gen.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [8/18] Fountain.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [9/18] FPPawn.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [10/18] FPCharacter.gen.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [11/18] FPPlayerController.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [12/18] FPPawn.gen.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [13/18] Fountain.gen.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [14/18] FPPlayerController.gen.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [15/18] FPGameMode.gen.cpp
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [16/18] UE4Editor-Final_Project-2822.lib
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2822.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2822.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [17/18] UE4Editor-Final_Project-2822.dll
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2822.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2822.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-13.51.44:892][691]CompilerResultsLog:   [18/18] Final_ProjectEditor.target
+[2020.10.17-13.51.44:892][691]CompilerResultsLog: Total time in Parallel executor: 63.57 seconds
+[2020.10.17-13.51.44:892][691]CompilerResultsLog: Total execution time: 92.68 seconds
+[2020.10.17-13.51.44:903][691]LogMainFrame: MainFrame: Module compiling took 94.059 seconds
+[2020.10.17-13.51.45:098][691]LogClass: Could not find existing class FPAnimInstance in package /Script/Final_Project for HotReload, assuming new class
+[2020.10.17-13.51.45:247][691]LogHotReload: Re-instancing FPAnimInstance after hot-reload.
+[2020.10.17-13.51.45:775][691]LogContentBrowser: Native class hierarchy updated for 'Final_Project' in 0.0014 seconds. Added 6 classes and 2 folders.
+[2020.10.17-13.51.45:785][691]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.10.17-13.51.46:825][691]LogContentBrowser: Native class hierarchy populated in 0.0233 seconds. Added 3434 classes and 825 folders.
+[2020.10.17-13.51.46:865][691]Display: HotReload took 96.2s.
+[2020.10.17-13.51.53:715][199]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage
+[2020.10.17-13.51.53:813][199]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_14:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.10.17-13.53.11:914][530]LogSlate: Window 'SK_Mannequin_Skeleton_Montage' being destroyed
+[2020.10.17-13.53.11:927][530]LogSlate: Window 'SK_Mannequin_Skeleton_Montage' being destroyed
+[2020.10.17-13.53.11:927][530]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.53.11:927][530]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.53.12:040][530]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.53.12:040][530]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.53.13:781][675]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint
+[2020.10.17-13.53.13:989][675]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_17:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.10.17-13.53.15:340][675]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0015 seconds. Added 125 classes and 0 folders.
+[2020.10.17-13.53.19:193][675]LogSlate: Took 0.013956 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.10.17-13.53.48:604][817]LogSlate: Took 0.067296 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2020.10.17-13.53.48:619][817]LogSlate: Last resort fallback font was requested. Font: '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf', Character: 'ϸ (U+03f8)'
+[2020.10.17-13.53.48:697][817]LogSlate: Took 0.070629 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2020.10.17-13.53.49:282][851]LogSlate: Window 'WarriorAnimBlueprint' being destroyed
+[2020.10.17-13.53.49:293][851]LogSlate: Window 'WarriorAnimBlueprint' being destroyed
+[2020.10.17-13.53.49:320][851]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.53.49:320][851]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.53.49:325][851]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.53.49:325][851]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.53.49:554][851]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.53.49:554][851]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.53.50:482][950]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-13.53.50:695][950]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-13.53.50:710][950]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오전 7:53:50)
+[2020.10.17-13.53.50:867][950]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.10.17-13.53.50:875][950]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.10.17-13.53.50:903][950]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-13.53.50:990][950]LogPlayLevel: PIE: StaticDuplicateObject took: (0.086180s)
+[2020.10.17-13.53.51:014][950]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-13.53.51:023][950]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E95E981400), frame # 123950
+[2020.10.17-13.53.51:023][950]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E8B60B7100), frame # 123950
+[2020.10.17-13.53.51:024][950]LogPlayLevel: PIE: World Init took: (0.034160s)
+[2020.10.17-13.53.51:048][950]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.121110s)
+[2020.10.17-13.53.51:231][950]LogUObjectHash: Compacting FUObjectHashTables data took   4.14ms
+[2020.10.17-13.53.51:278][950]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-13.53.51:278][950]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-13.53.51:278][950]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-13.53.51:278][950]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-13.53.51:278][950]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-13.53.51:278][950]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-13.53.51:278][950]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-13.53.51:278][950]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-13.53.51:306][950]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-13.53.51:306][950]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-13.53.51:464][950]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-13.53.51:464][950]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-13.53.51:712][950]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-13.53.51:714][950]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-13.53.51:714][950]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-13.53.51:714][950]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-13.53.51:718][950]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-13.53.51:756][950]LogInit: FAudioDevice initialized.
+[2020.10.17-13.53.51:985][950]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-13.53.52:005][950]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.17-22.53.52
+[2020.10.17-13.53.52:254][950]LogWorld: Bringing up level for play took: 0.268031
+[2020.10.17-13.53.52:278][950]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2020.10.17-13.53.52:571][950]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2020.10.17-13.53.52:685][950]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-13.53.52:685][950]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-13.53.52:713][950]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-13.53.52:713][950]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-13.53.52:713][950]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-13.53.52:713][950]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-13.53.52:808][950]PIE: 서버가 로그인했습니다.
+[2020.10.17-13.53.52:821][950]PIE: 에디터에서 플레이 총 시작 시간 2.293초입니다.
+[2020.10.17-13.55.24:096][549]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-13.55.24:096][549]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-13.55.24:112][549]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.55.24:150][549]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.55.24:221][549]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-13.55.24:250][549]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.55.24:442][549]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-13.55.24:571][549]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E95E981400), frame # 134549
+[2020.10.17-13.55.24:571][549]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E8B60B7100), frame # 134549
+[2020.10.17-13.55.24:581][549]LogUObjectHash: Compacting FUObjectHashTables data took   9.10ms
+[2020.10.17-13.55.24:764][550]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2020.10.17-13.55.24:924][564]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-13.55.24:930][564]Candidate modules for hot reload:
+[2020.10.17-13.55.24:930][564]  Final_Project
+[2020.10.17-13.55.24:930][564]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,8957 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-13.55.24:933][564]Warning: Starting HotReload took  0.0s.
+[2020.10.17-13.55.28:877][838]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오전 7:55:28
+[2020.10.17-13.55.28:877][838]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-13.55.28:877][838]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-13.55.28:877][838]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-13.55.28:877][838]CompilerResultsLog: Building 3 actions with 8 processes...
+[2020.10.17-13.55.28:877][838]CompilerResultsLog:   [1/3] UE4Editor-Final_Project-8957.lib
+[2020.10.17-13.55.28:877][838]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-8957.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-8957.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-13.55.28:877][838]CompilerResultsLog:   [2/3] UE4Editor-Final_Project-8957.dll
+[2020.10.17-13.55.28:877][838]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-8957.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-8957.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-13.55.28:877][838]CompilerResultsLog:   [3/3] Final_ProjectEditor.target
+[2020.10.17-13.55.28:877][838]CompilerResultsLog: Total time in Parallel executor: 2.25 seconds
+[2020.10.17-13.55.28:877][838]CompilerResultsLog: Total execution time: 3.80 seconds
+[2020.10.17-13.55.28:877][838]LogMainFrame: MainFrame: Module compiling took 3.952 seconds
+[2020.10.17-13.55.28:959][838]LogHotReload: Re-instancing FPCharacter after hot-reload.
+[2020.10.17-13.55.29:001][838]LogContentBrowser: Native class hierarchy updated for 'Final_Project' in 0.0004 seconds. Added 6 classes and 2 folders.
+[2020.10.17-13.55.29:004][838]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.10.17-13.55.29:095][838]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 3434 classes and 825 folders.
+[2020.10.17-13.55.29:095][838]Display: HotReload took  4.2s.
+[2020.10.17-13.55.30:623][914]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint
+[2020.10.17-13.55.30:633][914]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_20:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.10.17-13.56.37:944][159]LogSlate: Took 0.010274 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.10.17-13.57.50:054][831]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Animations/WarriorAnimBlueprint" FILE="../../../../../UnrealProjects/Final_Project/Content/Animations/WarriorAnimBlueprint.uasset" SILENT=true
+[2020.10.17-13.57.50:285][831]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/WarriorAnimBlueprint2C9CB27F4F00DFA8344D3F9C3DA90D5B.tmp' to '../../../../../UnrealProjects/Final_Project/Content/Animations/WarriorAnimBlueprint.uasset'
+[2020.10.17-13.57.50:334][831]AssetCheck: New page: 애셋 저장: WarriorAnimBlueprint
+[2020.10.17-13.57.50:334][831]LogContentValidation: Display: AnimBlueprint /Game/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint 유효성 검사
+[2020.10.17-13.57.50:675][855]BlueprintLog: New page: WarriorAnimBlueprint 컴파일
+[2020.10.17-13.57.50:811][855]LogUObjectHash: Compacting FUObjectHashTables data took   4.19ms
+[2020.10.17-13.57.50:907][855]LogSlate: Took 0.022552 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.10.17-13.57.50:963][855]LogSlate: Took 0.056274 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2020.10.17-13.57.51:992][924]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Animations/WarriorAnimBlueprint" FILE="../../../../../UnrealProjects/Final_Project/Content/Animations/WarriorAnimBlueprint.uasset" SILENT=true
+[2020.10.17-13.57.52:038][924]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/WarriorAnimBlueprint6D2343AD4AF76BCE131AA793235D5FFB.tmp' to '../../../../../UnrealProjects/Final_Project/Content/Animations/WarriorAnimBlueprint.uasset'
+[2020.10.17-13.57.52:055][924]AssetCheck: New page: 애셋 저장: WarriorAnimBlueprint
+[2020.10.17-13.57.52:055][924]LogContentValidation: Display: AnimBlueprint /Game/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint 유효성 검사
+[2020.10.17-13.57.56:081][251]LogSlate: Window 'WarriorAnimBlueprint' being destroyed
+[2020.10.17-13.57.56:088][251]LogSlate: Window 'WarriorAnimBlueprint' being destroyed
+[2020.10.17-13.57.56:137][251]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.57.56:137][251]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.57.56:141][251]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.57.56:141][251]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.57.56:263][251]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-13.57.56:263][251]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B60A7EA07-413B-845E-252F-64A78CFB9701%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=16219249434a33f69532c58320441ace%7Caf55c53c39074f4cbb7c1c5799b95059%7C5811dd75-371c-4619-892b-bc6c1c75bfb7&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: request failed, libcurl error: 0 (No error)
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x1e8e460bf70 [can pipeline])
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: libcurl info message cache 1 (Re-using existing connection! (#81) with host datarouter.ol.epicgames.com)
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (34.227.187.147) port 443 (#81))
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: libcurl info message cache 3 (We are completely uploaded and fine)
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: libcurl info message cache 7 (Closing connection 81)
+[2020.10.17-13.58.51:121][523]LogHttp: Warning: 000001E9076FCF00: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2020.10.17-13.58.51:455][524]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B60A7EA07-413B-845E-252F-64A78CFB9701%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=16219249434a33f69532c58320441ace%7Caf55c53c39074f4cbb7c1c5799b95059%7C5811dd75-371c-4619-892b-bc6c1c75bfb7&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2020.10.17-13.59.37:136][659]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-13.59.37:142][659]Candidate modules for hot reload:
+[2020.10.17-13.59.37:142][659]  Final_Project
+[2020.10.17-13.59.37:142][659]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,4709 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-13.59.37:145][659]Warning: Starting HotReload took  0.0s.
+[2020.10.17-13.59.42:263][189]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오전 7:59:42
+[2020.10.17-13.59.42:263][189]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-13.59.42:263][189]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-13.59.42:263][189]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-13.59.42:263][189]CompilerResultsLog: Building 4 actions with 8 processes...
+[2020.10.17-13.59.42:263][189]CompilerResultsLog:   [1/4] FPCharacter.cpp
+[2020.10.17-13.59.42:263][189]CompilerResultsLog:    D:\UnrealEngine\UnrealProjects\Final_Project\Source\Final_Project\FPCharacter.cpp(222) : error C2065: 'UFPAnimInstace': ???????? ???? ?ĺ????Դϴ?.
+[2020.10.17-13.59.42:263][189]CompilerResultsLog:    D:\UnrealEngine\UnrealProjects\Final_Project\Source\Final_Project\FPCharacter.cpp(222) : error C2672: 'Cast': ??ġ?ϴ? ?????ε??? ?Լ??? ?????ϴ?.
+[2020.10.17-13.59.42:263][189]CompilerResultsLog:    D:\UnrealEngine\UnrealProjects\Final_Project\Source\Final_Project\FPCharacter.cpp(222) : error C2974: 'Cast': 'T'?? ???ø? ?μ??? ?߸??Ǿ????ϴ?. ?????? ?ʿ??մϴ?.
+[2020.10.17-13.59.42:263][189]CompilerResultsLog:   D:\UnrealEngine\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/World.h(104): note: 'Cast' ?????? ?????Ͻʽÿ?.
+[2020.10.17-13.59.42:264][189]CompilerResultsLog:    D:\UnrealEngine\UnrealProjects\Final_Project\Source\Final_Project\FPCharacter.cpp(222) : error C2974: 'Cast': 'To'?? ???ø? ?μ??? ?߸??Ǿ????ϴ?. ?????? ?ʿ??մϴ?.
+[2020.10.17-13.59.42:264][189]CompilerResultsLog:   D:\UnrealEngine\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\Templates/Casts.h(111): note: 'Cast' ?????? ?????Ͻʽÿ?.
+[2020.10.17-13.59.42:264][189]CompilerResultsLog:    D:\UnrealEngine\UnrealProjects\Final_Project\Source\Final_Project\FPCharacter.cpp(223) : error C2065: 'AnimInstance': ???????? ???? ?ĺ????Դϴ?.
+[2020.10.17-13.59.42:264][189]CompilerResultsLog:    D:\UnrealEngine\UnrealProjects\Final_Project\Source\Final_Project\FPCharacter.cpp(225) : error C2065: 'AnimInstance': ???????? ???? ?ĺ????Դϴ?.
+[2020.10.17-13.59.42:264][189]LogMainFrame: MainFrame: Module compiling took 5.125 seconds
+[2020.10.17-13.59.42:264][189]Warning: HotReload failed, recompile failed
+[2020.10.17-14.00.20:340][810]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-14.00.20:346][810]Candidate modules for hot reload:
+[2020.10.17-14.00.20:347][810]  Final_Project
+[2020.10.17-14.00.20:347][810]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,1164 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-14.00.20:350][810]Warning: Starting HotReload took  0.0s.
+[2020.10.17-14.00.25:362][337]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오전 8:00:25
+[2020.10.17-14.00.25:363][337]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-14.00.25:363][337]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-14.00.25:363][337]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-14.00.25:363][337]CompilerResultsLog: Building 4 actions with 8 processes...
+[2020.10.17-14.00.25:363][337]CompilerResultsLog:   [1/4] FPCharacter.cpp
+[2020.10.17-14.00.25:363][337]CompilerResultsLog:    D:\UnrealEngine\UnrealProjects\Final_Project\Source\Final_Project\FPCharacter.cpp(223) : error C2065: 'AnimInstance': ???????? ???? ?ĺ????Դϴ?.
+[2020.10.17-14.00.25:363][337]CompilerResultsLog:    D:\UnrealEngine\UnrealProjects\Final_Project\Source\Final_Project\FPCharacter.cpp(225) : error C2065: 'AnimInstance': ???????? ???? ?ĺ????Դϴ?.
+[2020.10.17-14.00.25:363][337]LogMainFrame: MainFrame: Module compiling took 5.021 seconds
+[2020.10.17-14.00.25:363][337]Warning: HotReload failed, recompile failed
+[2020.10.17-14.00.39:738][103]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-14.00.39:744][103]Candidate modules for hot reload:
+[2020.10.17-14.00.39:744][103]  Final_Project
+[2020.10.17-14.00.39:744][103]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,408 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-14.00.39:747][103]Warning: Starting HotReload took  0.0s.
+[2020.10.17-14.00.48:256][785]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오전 8:00:48
+[2020.10.17-14.00.48:256][785]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-14.00.48:256][785]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-14.00.48:256][785]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-14.00.48:257][785]CompilerResultsLog: Building 4 actions with 8 processes...
+[2020.10.17-14.00.48:257][785]CompilerResultsLog:   [1/4] FPCharacter.cpp
+[2020.10.17-14.00.48:257][785]CompilerResultsLog:   [2/4] UE4Editor-Final_Project-0408.lib
+[2020.10.17-14.00.48:257][785]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-0408.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-0408.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-14.00.48:257][785]CompilerResultsLog:   [3/4] UE4Editor-Final_Project-0408.dll
+[2020.10.17-14.00.48:257][785]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-0408.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-0408.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-14.00.48:257][785]CompilerResultsLog:   [4/4] Final_ProjectEditor.target
+[2020.10.17-14.00.48:257][785]CompilerResultsLog: Total time in Parallel executor: 6.99 seconds
+[2020.10.17-14.00.48:257][785]CompilerResultsLog: Total execution time: 8.36 seconds
+[2020.10.17-14.00.48:257][785]LogMainFrame: MainFrame: Module compiling took 8.517 seconds
+[2020.10.17-14.00.48:282][785]LogContentBrowser: Native class hierarchy populated in 0.0108 seconds. Added 3434 classes and 825 folders.
+[2020.10.17-14.00.48:282][785]Display: HotReload took  8.6s.
+[2020.10.17-14.00.50:017][904]LogSlate: Window '메시지 로그' being destroyed
+[2020.10.17-14.00.50:033][904]LogSlate: Window '메시지 로그' being destroyed
+[2020.10.17-14.00.50:587][959]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-14.00.50:607][959]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-14.00.50:607][959]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오전 8:00:50)
+[2020.10.17-14.00.50:646][959]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.00.50:649][959]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003160s)
+[2020.10.17-14.00.50:651][959]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-14.00.50:651][959]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E8B234DE00), frame # 152959
+[2020.10.17-14.00.50:651][959]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E94CDDDE40), frame # 152959
+[2020.10.17-14.00.50:651][959]LogPlayLevel: PIE: World Init took: (0.002264s)
+[2020.10.17-14.00.50:651][959]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.005621s)
+[2020.10.17-14.00.50:782][959]LogUObjectHash: Compacting FUObjectHashTables data took   4.35ms
+[2020.10.17-14.00.50:789][959]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-14.00.50:789][959]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-14.00.50:789][959]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-14.00.50:789][959]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-14.00.50:789][959]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-14.00.50:789][959]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-14.00.50:789][959]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-14.00.50:789][959]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-14.00.50:789][959]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-14.00.50:789][959]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-14.00.50:845][959]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-14.00.50:845][959]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-14.00.51:015][959]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-14.00.51:016][959]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-14.00.51:016][959]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-14.00.51:016][959]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-14.00.51:016][959]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-14.00.51:029][959]LogInit: FAudioDevice initialized.
+[2020.10.17-14.00.51:040][959]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-14.00.51:042][959]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.17-23.00.51
+[2020.10.17-14.00.51:043][959]LogWorld: Bringing up level for play took: 0.001626
+[2020.10.17-14.00.51:043][959]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2020.10.17-14.00.51:045][959]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.00.51:045][959]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-14.00.51:046][959]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.00.51:046][959]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-14.00.51:046][959]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.00.51:046][959]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-14.00.51:046][959]PIE: 서버가 로그인했습니다.
+[2020.10.17-14.00.51:047][959]PIE: 에디터에서 플레이 총 시작 시간 0.446초입니다.
+[2020.10.17-14.00.55:690][501]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.00.55:690][501]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.00.55:690][501]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-14.00.55:690][501]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.00.55:702][501]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-14.00.55:706][501]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.00.55:768][501]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.00.55:794][501]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E8B234DE00), frame # 153501
+[2020.10.17-14.00.55:794][501]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E94CDDDE40), frame # 153501
+[2020.10.17-14.00.55:802][501]LogUObjectHash: Compacting FUObjectHashTables data took   3.48ms
+[2020.10.17-14.00.55:848][502]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2020.10.17-14.01.02:481][225]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-14.01.02:487][225]Candidate modules for hot reload:
+[2020.10.17-14.01.02:487][225]  Final_Project
+[2020.10.17-14.01.02:487][225]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,2475 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-14.01.02:490][225]Warning: Starting HotReload took  0.0s.
+[2020.10.17-14.01.06:164][600]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오전 8:01:06
+[2020.10.17-14.01.06:164][600]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-14.01.06:165][600]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-14.01.06:165][600]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-14.01.06:165][600]CompilerResultsLog: Building 3 actions with 8 processes...
+[2020.10.17-14.01.06:165][600]CompilerResultsLog:   [1/3] UE4Editor-Final_Project-2475.lib
+[2020.10.17-14.01.06:165][600]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2475.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2475.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-14.01.06:165][600]CompilerResultsLog:   [2/3] UE4Editor-Final_Project-2475.dll
+[2020.10.17-14.01.06:165][600]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2475.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2475.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-14.01.06:165][600]CompilerResultsLog:   [3/3] Final_ProjectEditor.target
+[2020.10.17-14.01.06:165][600]CompilerResultsLog: Total time in Parallel executor: 2.28 seconds
+[2020.10.17-14.01.06:165][600]CompilerResultsLog: Total execution time: 3.52 seconds
+[2020.10.17-14.01.06:165][600]LogMainFrame: MainFrame: Module compiling took 3.682 seconds
+[2020.10.17-14.01.06:217][600]LogHotReload: Re-instancing FPCharacter after hot-reload.
+[2020.10.17-14.01.06:233][600]LogContentBrowser: Native class hierarchy updated for 'Final_Project' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2020.10.17-14.01.06:236][600]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.10.17-14.01.06:317][600]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 3434 classes and 825 folders.
+[2020.10.17-14.01.06:317][600]Display: HotReload took  3.9s.
+[2020.10.17-14.01.09:438][913]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-14.01.09:457][913]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-14.01.09:457][913]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오전 8:01:09)
+[2020.10.17-14.01.09:505][913]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.01.09:509][913]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003285s)
+[2020.10.17-14.01.09:510][913]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-14.01.09:510][913]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E92282D800), frame # 154913
+[2020.10.17-14.01.09:510][913]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E9198D8400), frame # 154913
+[2020.10.17-14.01.09:510][913]LogPlayLevel: PIE: World Init took: (0.001588s)
+[2020.10.17-14.01.09:510][913]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.005027s)
+[2020.10.17-14.01.09:587][913]LogUObjectHash: Compacting FUObjectHashTables data took   3.31ms
+[2020.10.17-14.01.09:590][913]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-14.01.09:590][913]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-14.01.09:590][913]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-14.01.09:590][913]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-14.01.09:590][913]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-14.01.09:590][913]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-14.01.09:590][913]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-14.01.09:590][913]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-14.01.09:590][913]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-14.01.09:590][913]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-14.01.09:639][913]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-14.01.09:639][913]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-14.01.09:795][913]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-14.01.09:795][913]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-14.01.09:795][913]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-14.01.09:795][913]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-14.01.09:796][913]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-14.01.09:808][913]LogInit: FAudioDevice initialized.
+[2020.10.17-14.01.09:819][913]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-14.01.09:820][913]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.17-23.01.09
+[2020.10.17-14.01.09:821][913]LogWorld: Bringing up level for play took: 0.001642
+[2020.10.17-14.01.09:821][913]LogOnline: OSS: Creating online subsystem instance for: :Context_25
+[2020.10.17-14.01.09:823][913]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.01.09:824][913]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-14.01.09:824][913]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.01.09:824][913]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-14.01.09:824][913]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.01.09:824][913]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-14.01.09:824][913]PIE: 서버가 로그인했습니다.
+[2020.10.17-14.01.09:825][913]PIE: 에디터에서 플레이 총 시작 시간 0.374초입니다.
+[2020.10.17-14.01.18:669][958]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.01.18:669][958]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.01.18:669][958]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-14.01.18:669][958]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.01.18:682][958]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-14.01.18:687][958]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.01.18:717][958]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.01.18:766][958]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E9198D8400), frame # 155958
+[2020.10.17-14.01.18:766][958]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E92282D800), frame # 155958
+[2020.10.17-14.01.18:773][958]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2020.10.17-14.01.18:808][959]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2020.10.17-14.01.25:620][139]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-14.01.25:625][139]Candidate modules for hot reload:
+[2020.10.17-14.01.25:625][139]  Final_Project
+[2020.10.17-14.01.25:625][139]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,264 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-14.01.25:628][139]Warning: Starting HotReload took  0.0s.
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오전 8:01:34
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog: Building 4 actions with 8 processes...
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog:   [1/4] FPCharacter.cpp
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog:   [2/4] UE4Editor-Final_Project-0264.lib
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-0264.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-0264.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog:   [3/4] UE4Editor-Final_Project-0264.dll
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-0264.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-0264.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-14.01.34:095][ 81]CompilerResultsLog:   [4/4] Final_ProjectEditor.target
+[2020.10.17-14.01.34:096][ 81]CompilerResultsLog: Total time in Parallel executor: 6.97 seconds
+[2020.10.17-14.01.34:096][ 81]CompilerResultsLog: Total execution time: 8.31 seconds
+[2020.10.17-14.01.34:096][ 81]LogMainFrame: MainFrame: Module compiling took 8.474 seconds
+[2020.10.17-14.01.34:132][ 81]LogContentBrowser: Native class hierarchy populated in 0.0137 seconds. Added 3434 classes and 825 folders.
+[2020.10.17-14.01.34:132][ 81]Display: HotReload took  8.5s.
+[2020.10.17-14.01.34:996][147]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-14.01.35:014][147]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-14.01.35:014][147]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오전 8:01:35)
+[2020.10.17-14.01.35:036][147]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.01.35:039][147]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002984s)
+[2020.10.17-14.01.35:040][147]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-14.01.35:040][147]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E94F70B800), frame # 157147
+[2020.10.17-14.01.35:040][147]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E906E191C0), frame # 157147
+[2020.10.17-14.01.35:041][147]LogPlayLevel: PIE: World Init took: (0.001315s)
+[2020.10.17-14.01.35:041][147]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.004445s)
+[2020.10.17-14.01.35:107][147]LogUObjectHash: Compacting FUObjectHashTables data took   3.01ms
+[2020.10.17-14.01.35:110][147]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-14.01.35:110][147]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-14.01.35:110][147]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-14.01.35:110][147]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-14.01.35:110][147]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-14.01.35:110][147]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-14.01.35:110][147]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-14.01.35:110][147]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-14.01.35:110][147]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-14.01.35:110][147]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-14.01.35:158][147]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-14.01.35:158][147]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-14.01.35:387][147]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-14.01.35:387][147]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-14.01.35:387][147]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-14.01.35:387][147]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-14.01.35:388][147]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-14.01.35:403][147]LogInit: FAudioDevice initialized.
+[2020.10.17-14.01.35:414][147]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-14.01.35:417][147]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.17-23.01.35
+[2020.10.17-14.01.35:417][147]LogWorld: Bringing up level for play took: 0.002792
+[2020.10.17-14.01.35:417][147]LogOnline: OSS: Creating online subsystem instance for: :Context_26
+[2020.10.17-14.01.35:421][147]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.01.35:421][147]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-14.01.35:421][147]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.01.35:421][147]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-14.01.35:421][147]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.01.35:421][147]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-14.01.35:421][147]PIE: 서버가 로그인했습니다.
+[2020.10.17-14.01.35:422][147]PIE: 에디터에서 플레이 총 시작 시간 0.414초입니다.
+[2020.10.17-14.01.43:600][115]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.01.43:600][115]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.01.43:600][115]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-14.01.43:600][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.01.43:609][115]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-14.01.43:612][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.01.43:649][115]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.01.43:658][115]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E906E191C0), frame # 158115
+[2020.10.17-14.01.43:658][115]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E94F70B800), frame # 158115
+[2020.10.17-14.01.43:693][115]LogUObjectHash: Compacting FUObjectHashTables data took   3.30ms
+[2020.10.17-14.01.43:733][116]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2020.10.17-14.02.14:722][531]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-14.02.14:728][531]Candidate modules for hot reload:
+[2020.10.17-14.02.14:728][531]  Final_Project
+[2020.10.17-14.02.14:728][531]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,9152 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-14.02.14:731][531]Warning: Starting HotReload took  0.0s.
+[2020.10.17-14.02.23:612][528]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오전 8:02:23
+[2020.10.17-14.02.23:612][528]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-14.02.23:612][528]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-14.02.23:612][528]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-14.02.23:612][528]CompilerResultsLog: Building 4 actions with 8 processes...
+[2020.10.17-14.02.23:612][528]CompilerResultsLog:   [1/4] FPCharacter.cpp
+[2020.10.17-14.02.23:612][528]CompilerResultsLog:   [2/4] UE4Editor-Final_Project-9152.lib
+[2020.10.17-14.02.23:612][528]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-9152.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-9152.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-14.02.23:612][528]CompilerResultsLog:   [3/4] UE4Editor-Final_Project-9152.dll
+[2020.10.17-14.02.23:612][528]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-9152.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-9152.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-14.02.23:612][528]CompilerResultsLog:   [4/4] Final_ProjectEditor.target
+[2020.10.17-14.02.23:612][528]CompilerResultsLog: Total time in Parallel executor: 7.31 seconds
+[2020.10.17-14.02.23:612][528]CompilerResultsLog: Total execution time: 8.72 seconds
+[2020.10.17-14.02.23:612][528]LogMainFrame: MainFrame: Module compiling took 8.889 seconds
+[2020.10.17-14.02.23:667][528]LogHotReload: Re-instancing FPCharacter after hot-reload.
+[2020.10.17-14.02.23:683][528]LogContentBrowser: Native class hierarchy updated for 'Final_Project' in 0.0004 seconds. Added 6 classes and 2 folders.
+[2020.10.17-14.02.23:686][528]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.10.17-14.02.23:782][528]LogContentBrowser: Native class hierarchy populated in 0.0106 seconds. Added 3434 classes and 825 folders.
+[2020.10.17-14.02.23:782][528]Display: HotReload took  9.1s.
+[2020.10.17-14.02.25:492][680]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-14.02.25:511][680]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-14.02.25:511][680]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오전 8:02:25)
+[2020.10.17-14.02.25:535][680]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.02.25:539][680]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003962s)
+[2020.10.17-14.02.25:540][680]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-14.02.25:540][680]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E921742000), frame # 161680
+[2020.10.17-14.02.25:541][680]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E91CADAFC0), frame # 161680
+[2020.10.17-14.02.25:541][680]LogPlayLevel: PIE: World Init took: (0.001386s)
+[2020.10.17-14.02.25:541][680]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.005514s)
+[2020.10.17-14.02.25:622][680]LogUObjectHash: Compacting FUObjectHashTables data took   2.82ms
+[2020.10.17-14.02.25:624][680]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-14.02.25:624][680]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-14.02.25:624][680]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-14.02.25:624][680]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-14.02.25:624][680]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-14.02.25:624][680]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-14.02.25:624][680]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-14.02.25:624][680]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-14.02.25:625][680]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-14.02.25:625][680]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-14.02.25:675][680]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-14.02.25:675][680]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-14.02.25:835][680]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-14.02.25:835][680]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-14.02.25:835][680]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-14.02.25:836][680]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-14.02.25:836][680]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-14.02.25:849][680]LogInit: FAudioDevice initialized.
+[2020.10.17-14.02.25:856][680]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-14.02.25:859][680]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.17-23.02.25
+[2020.10.17-14.02.25:859][680]LogWorld: Bringing up level for play took: 0.001811
+[2020.10.17-14.02.25:859][680]LogOnline: OSS: Creating online subsystem instance for: :Context_27
+[2020.10.17-14.02.25:862][680]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.02.25:862][680]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-14.02.25:862][680]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.02.25:862][680]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-14.02.25:862][680]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.02.25:862][680]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-14.02.25:862][680]PIE: 서버가 로그인했습니다.
+[2020.10.17-14.02.25:863][680]PIE: 에디터에서 플레이 총 시작 시간 0.358초입니다.
+[2020.10.17-14.02.26:206][718]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.02.26:871][798]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.02.27:048][819]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.02.30:186][195]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.02.34:153][656]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.02.38:392][164]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.02.43:284][750]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.02.44:811][933]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.02.47:830][295]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.02.56:549][335]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.02.56:549][335]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.02.56:549][335]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-14.02.56:550][335]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.02.56:556][335]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-14.02.56:559][335]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.02.56:595][335]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.02.56:595][335]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E91CADAFC0), frame # 165335
+[2020.10.17-14.02.56:595][335]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E921742000), frame # 165335
+[2020.10.17-14.02.56:598][335]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2020.10.17-14.02.56:631][336]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2020.10.17-14.02.58:377][528]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-14.02.58:392][528]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-14.02.58:392][528]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오전 8:02:58)
+[2020.10.17-14.02.58:392][528]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.02.58:396][528]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003190s)
+[2020.10.17-14.02.58:397][528]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-14.02.58:397][528]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E907F3BC00), frame # 165528
+[2020.10.17-14.02.58:397][528]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E91CADAE80), frame # 165528
+[2020.10.17-14.02.58:397][528]LogPlayLevel: PIE: World Init took: (0.001399s)
+[2020.10.17-14.02.58:397][528]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.004693s)
+[2020.10.17-14.02.58:415][528]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2020.10.17-14.02.58:416][528]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-14.02.58:416][528]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-14.02.58:416][528]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-14.02.58:416][528]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-14.02.58:416][528]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-14.02.58:416][528]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-14.02.58:416][528]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-14.02.58:416][528]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-14.02.58:417][528]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-14.02.58:417][528]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-14.02.58:463][528]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-14.02.58:463][528]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-14.02.58:629][528]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-14.02.58:630][528]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-14.02.58:630][528]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-14.02.58:630][528]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-14.02.58:630][528]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-14.02.58:643][528]LogInit: FAudioDevice initialized.
+[2020.10.17-14.02.58:649][528]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-14.02.58:651][528]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.17-23.02.58
+[2020.10.17-14.02.58:652][528]LogWorld: Bringing up level for play took: 0.001635
+[2020.10.17-14.02.58:652][528]LogOnline: OSS: Creating online subsystem instance for: :Context_28
+[2020.10.17-14.02.58:654][528]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.02.58:654][528]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-14.02.58:654][528]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.02.58:654][528]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-14.02.58:654][528]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-14.02.58:654][528]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-14.02.58:654][528]PIE: 서버가 로그인했습니다.
+[2020.10.17-14.02.58:655][528]PIE: 에디터에서 플레이 총 시작 시간 0.266초입니다.
+[2020.10.17-14.02.59:276][599]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.03:252][ 75]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.03:975][161]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.04:358][207]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.04:537][228]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.04:840][264]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.05:024][286]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.05:275][316]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.08:680][724]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.11:601][ 74]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.13:192][265]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.16:419][651]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.18:060][848]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.21:464][256]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.22:333][360]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.23:583][510]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.23:725][527]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.23:867][544]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.24:092][571]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.24:311][597]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.24:527][623]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.24:752][650]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.24:944][673]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.25:119][694]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.25:302][716]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.25:485][738]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.25:651][758]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.25:827][779]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.26:010][801]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.29:137][176]Final_Project: Warning: AFPCharacter::Attack(223)
+[2020.10.17-14.03.31:238][424]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.03.31:238][424]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-14.03.31:239][424]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-14.03.31:239][424]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.03.31:246][424]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-14.03.31:249][424]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-14.03.31:264][424]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-14.03.31:286][424]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E91CADAE80), frame # 169424
+[2020.10.17-14.03.31:286][424]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E907F3BC00), frame # 169424
+[2020.10.17-14.03.31:288][424]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2020.10.17-14.03.31:322][425]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2020.10.17-14.05.05:883][902]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage
+[2020.10.17-14.05.05:889][902]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_22:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.10.17-14.05.11:916][350]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2020.10.17-15.09.58:551][771]LogSlate: Window 'SK_Mannequin_Skeleton_Montage' being destroyed
+[2020.10.17-15.09.58:560][771]LogSlate: Window 'SK_Mannequin_Skeleton_Montage' being destroyed
+[2020.10.17-15.09.58:562][771]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-15.09.58:563][771]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-15.09.58:948][771]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-15.09.58:948][771]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-15.09.59:484][800]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint
+[2020.10.17-15.09.59:500][800]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_25:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.10.17-15.10.07:794][307]LogSlate: Window 'WarriorAnimBlueprint' being destroyed
+[2020.10.17-15.10.07:805][307]LogSlate: Window 'WarriorAnimBlueprint' being destroyed
+[2020.10.17-15.10.07:819][307]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-15.10.07:819][307]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-15.10.07:823][307]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-15.10.07:823][307]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-15.10.07:964][307]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-15.10.07:964][307]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-15.10.09:882][445]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/Animations/WarriorAnimBlueprint.WarriorAnimBlueprint
+[2020.10.17-15.10.09:892][445]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_28:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.10.17-17.43.08:158][112]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.10.17-18.21.17:908][ 36]LogSlate: Window 'WarriorAnimBlueprint' being destroyed
+[2020.10.17-18.21.17:921][ 36]LogSlate: Window 'WarriorAnimBlueprint' being destroyed
+[2020.10.17-18.21.17:964][ 36]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-18.21.17:964][ 36]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.21.18:054][ 36]LogWorld: UWorld::CleanupWorld for World_27, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-18.21.18:055][ 36]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.21.18:469][ 36]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-18.21.18:469][ 36]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.21.19:561][127]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-18.21.19:570][127]Candidate modules for hot reload:
+[2020.10.17-18.21.19:570][127]  Final_Project
+[2020.10.17-18.21.19:571][127]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,8069 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-18.21.19:626][127]Warning: Starting HotReload took  0.2s.
+[2020.10.17-18.21.43:607][704]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.10.17-18.22.50:367][903]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.10.17-18.29.57:384][178]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.10.17-18.34.09:738][931]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오후 12:34:09
+[2020.10.17-18.34.09:752][931]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-18.34.09:752][931]CompilerResultsLog: Parsing headers for Final_ProjectEditor
+[2020.10.17-18.34.09:752][931]CompilerResultsLog:   Running UnrealHeaderTool "D:\UnrealEngine\UnrealProjects\Final_Project\Final_Project.uproject" "D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\Final_ProjectEditor\Development\Final_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\ANY180817\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.10.17-18.34.09:753][931]CompilerResultsLog: Reflection code generated for Final_ProjectEditor in 20.8509362 seconds
+[2020.10.17-18.34.09:753][931]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-18.34.09:753][931]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-18.34.09:753][931]CompilerResultsLog: Building 17 actions with 8 processes...
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [1/17] FPPlayerController.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [2/17] Final_Project.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [3/17] FPGameMode.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [4/17] FPAnimInstance.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [5/17] FPPawn.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [6/17] Fountain.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [7/17] FPPlayerController.gen.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [8/17] FPCharacter.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [9/17] Final_Project.init.gen.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [10/17] FPGameMode.gen.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [11/17] FPPawn.gen.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [12/17] FPAnimInstance.gen.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [13/17] Fountain.gen.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [14/17] FPCharacter.gen.cpp
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [15/17] UE4Editor-Final_Project-8069.lib
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-8069.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-8069.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [16/17] UE4Editor-Final_Project-8069.dll
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-8069.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-8069.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-18.34.09:753][931]CompilerResultsLog:   [17/17] Final_ProjectEditor.target
+[2020.10.17-18.34.09:753][931]CompilerResultsLog: Total time in Parallel executor: 744.73 seconds
+[2020.10.17-18.34.09:753][931]CompilerResultsLog: Total execution time: 769.18 seconds
+[2020.10.17-18.34.09:766][931]LogMainFrame: MainFrame: Module compiling took 770.204 seconds
+[2020.10.17-18.34.10:085][931]LogClass: Could not find existing class FPCharacter in package /Script/Final_Project for HotReload, assuming new class
+[2020.10.17-18.34.10:085][931]LogClass: Function OnAttackMontageEnded is new.
+[2020.10.17-18.34.10:275][931]LogHotReload: Re-instancing FPCharacter after hot-reload.
+[2020.10.17-18.34.10:774][931]LogContentBrowser: Native class hierarchy updated for 'Final_Project' in 0.0156 seconds. Added 6 classes and 2 folders.
+[2020.10.17-18.34.10:777][931]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.10.17-18.34.11:763][931]LogContentBrowser: Native class hierarchy populated in 0.0294 seconds. Added 3434 classes and 825 folders.
+[2020.10.17-18.34.11:770][931]Display: HotReload took 772.3s.
+[2020.10.17-18.35.34:078][255]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-18.35.34:187][255]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-18.35.34:188][255]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오후 12:35:34)
+[2020.10.17-18.35.34:201][255]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-18.35.34:309][255]LogPlayLevel: PIE: StaticDuplicateObject took: (0.107987s)
+[2020.10.17-18.35.34:416][255]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-18.35.34:429][255]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E9067C3000), frame # 267255
+[2020.10.17-18.35.34:429][255]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E91A9D3D80), frame # 267255
+[2020.10.17-18.35.34:477][255]LogPlayLevel: PIE: World Init took: (0.167547s)
+[2020.10.17-18.35.34:477][255]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.276232s)
+[2020.10.17-18.35.34:885][255]LogUObjectHash: Compacting FUObjectHashTables data took   5.18ms
+[2020.10.17-18.35.34:938][255]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-18.35.34:938][255]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-18.35.34:939][255]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-18.35.34:939][255]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-18.35.34:939][255]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-18.35.34:939][255]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-18.35.34:939][255]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-18.35.34:939][255]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-18.35.34:949][255]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-18.35.34:949][255]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-18.35.35:093][255]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-18.35.35:093][255]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-18.35.35:267][255]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-18.35.35:293][255]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-18.35.35:293][255]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-18.35.35:293][255]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-18.35.35:304][255]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-18.35.35:306][255]LogInit: FAudioDevice initialized.
+[2020.10.17-18.35.35:450][255]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-18.35.35:492][255]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.18-03.35.35
+[2020.10.17-18.35.35:616][255]LogWorld: Bringing up level for play took: 0.165041
+[2020.10.17-18.35.35:672][255]LogOnline: OSS: Creating online subsystem instance for: :Context_37
+[2020.10.17-18.35.35:751][255]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.35.35:751][255]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-18.35.35:765][255]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.35.35:765][255]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-18.35.35:765][255]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.35.35:765][255]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-18.35.35:803][255]PIE: 서버가 로그인했습니다.
+[2020.10.17-18.35.35:804][255]PIE: 에디터에서 플레이 총 시작 시간 1.648초입니다.
+[2020.10.17-18.35.51:472][994]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-18.35.51:472][994]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-18.35.51:520][994]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-18.35.51:546][994]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.35.51:599][994]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-18.35.51:602][994]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.35.51:665][994]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-18.35.51:666][994]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E91A9D3D80), frame # 268994
+[2020.10.17-18.35.51:666][994]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E9067C3000), frame # 268994
+[2020.10.17-18.35.51:706][994]LogUObjectHash: Compacting FUObjectHashTables data took   4.61ms
+[2020.10.17-18.35.51:809][995]LogPlayLevel: Display: Destroying online subsystem :Context_37
+[2020.10.17-18.35.53:058][126]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Floors_Flat01)
+[2020.10.17-18.35.55:075][221]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-18.35.55:092][221]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-18.35.55:092][221]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오후 12:35:55)
+[2020.10.17-18.35.55:092][221]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-18.35.55:095][221]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003054s)
+[2020.10.17-18.35.55:096][221]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-18.35.55:096][221]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E95EF81E00), frame # 269221
+[2020.10.17-18.35.55:096][221]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E949DDD580), frame # 269221
+[2020.10.17-18.35.55:096][221]LogPlayLevel: PIE: World Init took: (0.001178s)
+[2020.10.17-18.35.55:096][221]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.004341s)
+[2020.10.17-18.35.55:117][221]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
+[2020.10.17-18.35.55:119][221]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-18.35.55:119][221]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-18.35.55:119][221]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-18.35.55:119][221]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-18.35.55:120][221]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-18.35.55:120][221]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-18.35.55:120][221]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-18.35.55:120][221]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-18.35.55:120][221]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-18.35.55:120][221]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-18.35.55:167][221]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-18.35.55:167][221]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-18.35.55:331][221]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-18.35.55:332][221]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-18.35.55:332][221]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-18.35.55:332][221]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-18.35.55:332][221]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-18.35.55:346][221]LogInit: FAudioDevice initialized.
+[2020.10.17-18.35.55:352][221]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-18.35.55:354][221]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.18-03.35.55
+[2020.10.17-18.35.55:355][221]LogWorld: Bringing up level for play took: 0.001733
+[2020.10.17-18.35.55:355][221]LogOnline: OSS: Creating online subsystem instance for: :Context_39
+[2020.10.17-18.35.55:358][221]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.35.55:358][221]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-18.35.55:358][221]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.35.55:358][221]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-18.35.55:358][221]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.35.55:358][221]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-18.35.55:358][221]PIE: 서버가 로그인했습니다.
+[2020.10.17-18.35.55:359][221]PIE: 에디터에서 플레이 총 시작 시간 0.271초입니다.
+[2020.10.17-18.36.59:865][426]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-18.36.59:865][426]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-18.36.59:865][426]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-18.36.59:865][426]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.36.59:876][426]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-18.36.59:879][426]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.36.59:897][426]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-18.36.59:919][426]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E949DDD580), frame # 276426
+[2020.10.17-18.36.59:919][426]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E95EF81E00), frame # 276426
+[2020.10.17-18.36.59:921][426]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2020.10.17-18.36.59:954][427]LogPlayLevel: Display: Destroying online subsystem :Context_39
+[2020.10.17-18.37.01:774][635]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-18.37.01:797][635]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-18.37.01:797][635]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오후 12:37:01)
+[2020.10.17-18.37.01:797][635]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-18.37.01:812][635]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015338s)
+[2020.10.17-18.37.01:814][635]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-18.37.01:814][635]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E89BF5D800), frame # 276635
+[2020.10.17-18.37.01:814][635]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E907979D00), frame # 276635
+[2020.10.17-18.37.01:814][635]LogPlayLevel: PIE: World Init took: (0.001528s)
+[2020.10.17-18.37.01:814][635]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.016983s)
+[2020.10.17-18.37.01:834][635]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2020.10.17-18.37.01:835][635]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-18.37.01:835][635]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-18.37.01:835][635]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-18.37.01:835][635]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-18.37.01:835][635]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-18.37.01:835][635]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-18.37.01:835][635]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-18.37.01:835][635]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-18.37.01:836][635]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-18.37.01:836][635]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-18.37.01:888][635]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-18.37.01:888][635]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-18.37.02:053][635]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-18.37.02:053][635]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-18.37.02:053][635]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-18.37.02:053][635]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-18.37.02:053][635]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-18.37.02:067][635]LogInit: FAudioDevice initialized.
+[2020.10.17-18.37.02:072][635]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-18.37.02:074][635]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.18-03.37.02
+[2020.10.17-18.37.02:075][635]LogWorld: Bringing up level for play took: 0.001588
+[2020.10.17-18.37.02:075][635]LogOnline: OSS: Creating online subsystem instance for: :Context_40
+[2020.10.17-18.37.02:077][635]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.37.02:078][635]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-18.37.02:078][635]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.37.02:078][635]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-18.37.02:078][635]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.37.02:078][635]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-18.37.02:078][635]PIE: 서버가 로그인했습니다.
+[2020.10.17-18.37.02:079][635]PIE: 에디터에서 플레이 총 시작 시간 0.285초입니다.
+[2020.10.17-18.37.25:794][468]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-18.37.25:794][468]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-18.37.25:795][468]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-18.37.25:795][468]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.37.25:804][468]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-18.37.25:807][468]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.37.25:845][468]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-18.37.25:846][468]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E907979D00), frame # 279468
+[2020.10.17-18.37.25:846][468]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E89BF5D800), frame # 279468
+[2020.10.17-18.37.25:848][468]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2020.10.17-18.37.25:883][469]LogPlayLevel: Display: Destroying online subsystem :Context_40
+[2020.10.17-18.37.27:743][676]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-18.37.27:758][676]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-18.37.27:758][676]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오후 12:37:27)
+[2020.10.17-18.37.27:758][676]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-18.37.27:761][676]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002946s)
+[2020.10.17-18.37.27:762][676]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-18.37.27:762][676]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E91E937400), frame # 279676
+[2020.10.17-18.37.27:762][676]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E94F323EC0), frame # 279676
+[2020.10.17-18.37.27:763][676]LogPlayLevel: PIE: World Init took: (0.001218s)
+[2020.10.17-18.37.27:763][676]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.004275s)
+[2020.10.17-18.37.27:781][676]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2020.10.17-18.37.27:782][676]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-18.37.27:782][676]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-18.37.27:782][676]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-18.37.27:782][676]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-18.37.27:782][676]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-18.37.27:782][676]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-18.37.27:783][676]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-18.37.27:783][676]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-18.37.27:783][676]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-18.37.27:783][676]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-18.37.27:830][676]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-18.37.27:830][676]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-18.37.27:984][676]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-18.37.27:984][676]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-18.37.27:984][676]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-18.37.27:984][676]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-18.37.27:988][676]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-18.37.27:999][676]LogInit: FAudioDevice initialized.
+[2020.10.17-18.37.28:007][676]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-18.37.28:009][676]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.18-03.37.28
+[2020.10.17-18.37.28:010][676]LogWorld: Bringing up level for play took: 0.001837
+[2020.10.17-18.37.28:010][676]LogOnline: OSS: Creating online subsystem instance for: :Context_41
+[2020.10.17-18.37.28:013][676]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.37.28:013][676]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-18.37.28:013][676]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.37.28:013][676]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-18.37.28:013][676]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-18.37.28:013][676]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-18.37.28:013][676]PIE: 서버가 로그인했습니다.
+[2020.10.17-18.37.28:014][676]PIE: 에디터에서 플레이 총 시작 시간 0.259초입니다.
+[2020.10.17-18.37.44:714][830]LogCharacterMovement: FPCharacter_0 is stuck and failed to move! Velocity: X=-29.07 Y=-174.03 Z=0.00 Location: X=0.28 Y=-249.70 Z=90.80 Normal: X=0.49 Y=0.87 Z=0.00 PenetrationDepth:0.092 Actor:Fountain_2 Component:BODY BoneName:None (0 other events since notify)
+[2020.10.17-18.38.06:436][ 41]LogCharacterMovement: FPCharacter_0 is stuck and failed to move! Velocity: X=-27.25 Y=-77.96 Z=0.00 Location: X=110.41 Y=-482.57 Z=90.80 Normal: X=1.00 Y=0.01 Z=0.00 PenetrationDepth:0.235 Actor:Fountain_2 Component:BODY BoneName:None (0 other events since notify)
+[2020.10.17-18.38.07:473][ 96]LogCharacterMovement: FPCharacter_0 is stuck and failed to move! Velocity: X=-31.20 Y=-159.73 Z=0.00 Location: X=111.31 Y=-481.25 Z=90.80 Normal: X=1.00 Y=0.04 Z=0.00 PenetrationDepth:0.013 Actor:Fountain_2 Component:BODY BoneName:None (15 other events since notify)
+[2020.10.17-18.38.08:476][151]LogCharacterMovement: FPCharacter_0 is stuck and failed to move! Velocity: X=-32.08 Y=-153.06 Z=0.00 Location: X=111.24 Y=-481.19 Z=90.80 Normal: X=1.00 Y=0.04 Z=0.00 PenetrationDepth:0.018 Actor:Fountain_2 Component:BODY BoneName:None (16 other events since notify)
+[2020.10.17-18.38.09:478][206]LogCharacterMovement: FPCharacter_0 is stuck and failed to move! Velocity: X=-38.46 Y=-100.27 Z=0.00 Location: X=111.28 Y=-481.04 Z=90.80 Normal: X=1.00 Y=0.05 Z=-0.00 PenetrationDepth:0.002 Actor:Fountain_2 Component:BODY BoneName:None (11 other events since notify)
+[2020.10.17-18.38.10:490][261]LogCharacterMovement: FPCharacter_0 is stuck and failed to move! Velocity: X=-82.14 Y=-213.65 Z=0.00 Location: X=111.52 Y=-480.68 Z=90.80 Normal: X=1.00 Y=0.06 Z=-0.00 PenetrationDepth:0.021 Actor:Fountain_2 Component:BODY BoneName:None (17 other events since notify)
+[2020.10.17-18.38.13:208][415]LogCharacterMovement: FPCharacter_0 is stuck and failed to move! Velocity: X=-13.90 Y=-36.24 Z=0.00 Location: X=110.53 Y=-482.32 Z=90.80 Normal: X=1.00 Y=0.03 Z=0.00 PenetrationDepth:0.481 Actor:Fountain_2 Component:BODY BoneName:None (10 other events since notify)
+[2020.10.17-18.38.14:235][472]LogCharacterMovement: FPCharacter_0 is stuck and failed to move! Velocity: X=-70.81 Y=-184.47 Z=0.00 Location: X=111.52 Y=-480.76 Z=90.80 Normal: X=1.00 Y=0.06 Z=0.00 PenetrationDepth:0.031 Actor:Fountain_2 Component:BODY BoneName:None (15 other events since notify)
+[2020.10.17-18.38.26:111][113]LogCharacterMovement: FPCharacter_0 is stuck and failed to move! Velocity: X=285.57 Y=-60.59 Z=0.00 Location: X=-245.64 Y=-211.37 Z=90.80 Normal: X=-0.43 Y=0.90 Z=0.00 PenetrationDepth:0.223 Actor:Fountain_2 Component:BODY BoneName:None (2 other events since notify)
+[2020.10.17-18.38.27:799][201]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-18.38.27:799][201]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-18.38.27:799][201]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-18.38.27:800][201]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.38.27:815][201]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-18.38.27:820][201]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-18.38.27:865][201]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-18.38.27:898][201]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E94F323EC0), frame # 283201
+[2020.10.17-18.38.27:898][201]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E91E937400), frame # 283201
+[2020.10.17-18.38.27:901][201]LogUObjectHash: Compacting FUObjectHashTables data took   2.35ms
+[2020.10.17-18.38.28:012][202]LogPlayLevel: Display: Destroying online subsystem :Context_41
+[2020.10.17-18.45.16:316][643]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.10.17-18.46.14:461][816]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.10.17-19.20.30:033][973]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.10.17-19.29.48:336][767]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage
+[2020.10.17-19.29.49:135][767]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_31:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2020.10.17-19.31.08:306][506]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.10.17-19.34.11:577][725]LogUObjectHash: Compacting FUObjectHashTables data took   4.21ms
+[2020.10.17-19.34.11:606][725]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.136
+[2020.10.17-19.34.11:616][725]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_Mannequin_Skeleton] ([1] browsable assets)...
+[2020.10.17-19.34.11:618][725]OBJ SavePackage: Finished generating thumbnails for package [/Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_Mannequin_Skeleton]
+[2020.10.17-19.34.11:814][725]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/SK_Mannequin_Skeleton_Auto421EFF02D437828A138F5B5A98821027F.tmp' to '../../../../../UnrealProjects/Final_Project/Saved/Autosaves/Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_Mannequin_Skeleton_Auto4.uasset'
+[2020.10.17-19.34.11:835][725]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Animations/SK_Mannequin_Skeleton_Montage] ([1] browsable assets)...
+[2020.10.17-19.34.11:865][725]OBJ SavePackage:     Rendered thumbnail for [AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage]
+[2020.10.17-19.34.11:865][725]OBJ SavePackage: Finished generating thumbnails for package [/Game/Animations/SK_Mannequin_Skeleton_Montage]
+[2020.10.17-19.34.11:984][725]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/SK_Mannequin_Skeleton_Montage_AuE8FC5D0B48F91934AC2940BC85C87684.tmp' to '../../../../../UnrealProjects/Final_Project/Saved/Autosaves/Game/Animations/SK_Mannequin_Skeleton_Montage_Auto4.uasset'
+[2020.10.17-19.34.11:986][725]LogFileHelpers: Auto-saving content packages took 0.379
+[2020.10.17-19.34.47:206][525]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Animations/SK_Mannequin_Skeleton_Montage" FILE="../../../../../UnrealProjects/Final_Project/Content/Animations/SK_Mannequin_Skeleton_Montage.uasset" SILENT=true
+[2020.10.17-19.34.47:231][525]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/SK_Mannequin_Skeleton_MontageD54D9870435833C0D114D69E9D8E968E.tmp' to '../../../../../UnrealProjects/Final_Project/Content/Animations/SK_Mannequin_Skeleton_Montage.uasset'
+[2020.10.17-19.34.47:255][525]AssetCheck: New page: 애셋 저장: SK_Mannequin_Skeleton_Montage
+[2020.10.17-19.34.47:283][525]LogContentValidation: Display: AnimMontage /Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage 유효성 검사
+[2020.10.17-19.34.48:505][614]LogSlate: Window 'SK_Mannequin_Skeleton_Montage' being destroyed
+[2020.10.17-19.34.48:521][614]LogSlate: Window 'SK_Mannequin_Skeleton_Montage' being destroyed
+[2020.10.17-19.34.48:561][614]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-19.34.48:561][614]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-19.34.48:986][614]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-19.34.48:986][614]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-19.34.51:656][888]LogUObjectHash: Compacting FUObjectHashTables data took   4.69ms
+[2020.10.17-19.34.53:758][888]LogSlate: Window '콘텐츠 저장' being destroyed
+[2020.10.17-19.34.56:433][111]LogVSAccessor: Warning: Couldn't save all documents
+[2020.10.17-19.34.56:471][111]Candidate modules for hot reload:
+[2020.10.17-19.34.56:471][111]  Final_Project
+[2020.10.17-19.34.56:471][111]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,4980 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.17-19.34.56:474][111]Warning: Starting HotReload took  0.1s.
+[2020.10.17-19.34.56:522][111]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.10.17-19.45.40:990][130]CompilerResultsLog: New page: 컴파일 - 2020. 10. 18. 오후 1:45:40
+[2020.10.17-19.45.41:002][130]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.17-19.45.41:002][130]CompilerResultsLog: Parsing headers for Final_ProjectEditor
+[2020.10.17-19.45.41:002][130]CompilerResultsLog:   Running UnrealHeaderTool "D:\UnrealEngine\UnrealProjects\Final_Project\Final_Project.uproject" "D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\Final_ProjectEditor\Development\Final_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\ANY180817\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.10.17-19.45.41:002][130]CompilerResultsLog: Reflection code generated for Final_ProjectEditor in 22.9286767 seconds
+[2020.10.17-19.45.41:003][130]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.17-19.45.41:003][130]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.17-19.45.41:003][130]CompilerResultsLog: Building 8 actions with 8 processes...
+[2020.10.17-19.45.41:003][130]CompilerResultsLog:   [1/8] Final_Project.init.gen.cpp
+[2020.10.17-19.45.41:003][130]CompilerResultsLog:   [2/8] FPGameMode.cpp
+[2020.10.17-19.45.41:003][130]CompilerResultsLog:   [3/8] FPAnimInstance.cpp
+[2020.10.17-19.45.41:003][130]CompilerResultsLog:   [4/8] FPCharacter.gen.cpp
+[2020.10.17-19.45.41:003][130]CompilerResultsLog:   [5/8] FPCharacter.cpp
+[2020.10.17-19.45.41:003][130]CompilerResultsLog:   [6/8] UE4Editor-Final_Project-4980.lib
+[2020.10.17-19.45.41:003][130]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-4980.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-4980.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-19.45.41:003][130]CompilerResultsLog:   [7/8] UE4Editor-Final_Project-4980.dll
+[2020.10.17-19.45.41:003][130]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-4980.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-4980.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.17-19.45.41:004][130]CompilerResultsLog:   [8/8] Final_ProjectEditor.target
+[2020.10.17-19.45.41:004][130]CompilerResultsLog: Total time in Parallel executor: 616.95 seconds
+[2020.10.17-19.45.41:004][130]CompilerResultsLog: Total execution time: 643.57 seconds
+[2020.10.17-19.45.41:012][130]LogMainFrame: MainFrame: Module compiling took 644.577 seconds
+[2020.10.17-19.45.41:203][130]LogClass: Could not find existing class FPCharacter in package /Script/Final_Project for HotReload, assuming new class
+[2020.10.17-19.45.41:203][130]LogClass: Function OnAttackMontageEnded is new.
+[2020.10.17-19.45.41:262][130]LogHotReload: Re-instancing FPCharacter after hot-reload.
+[2020.10.17-19.45.41:641][130]LogContentBrowser: Native class hierarchy updated for 'Final_Project' in 0.0220 seconds. Added 6 classes and 2 folders.
+[2020.10.17-19.45.41:648][130]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.10.17-19.45.42:037][130]LogContentBrowser: Native class hierarchy populated in 0.0135 seconds. Added 3434 classes and 825 folders.
+[2020.10.17-19.45.42:037][130]Display: HotReload took 645.7s.
+[2020.10.17-20.19.26:047][453]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-20.19.26:524][453]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-20.19.26:524][453]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오후 2:19:26)
+[2020.10.17-20.19.26:562][453]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-20.19.26:612][453]LogPlayLevel: PIE: StaticDuplicateObject took: (0.050347s)
+[2020.10.17-20.19.26:626][453]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-20.19.26:627][453]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E94F07BE00), frame # 323453
+[2020.10.17-20.19.26:627][453]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E94D09B600), frame # 323453
+[2020.10.17-20.19.26:627][453]LogPlayLevel: PIE: World Init took: (0.014888s)
+[2020.10.17-20.19.26:628][453]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.065860s)
+[2020.10.17-20.19.26:799][453]LogUObjectHash: Compacting FUObjectHashTables data took   3.63ms
+[2020.10.17-20.19.26:814][453]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-20.19.26:814][453]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-20.19.26:814][453]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-20.19.26:814][453]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-20.19.26:814][453]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-20.19.26:814][453]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-20.19.26:814][453]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-20.19.26:814][453]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-20.19.26:814][453]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-20.19.26:814][453]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-20.19.26:889][453]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-20.19.26:889][453]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-20.19.27:072][453]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-20.19.27:073][453]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-20.19.27:073][453]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-20.19.27:073][453]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-20.19.27:114][453]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-20.19.27:115][453]LogInit: FAudioDevice initialized.
+[2020.10.17-20.19.27:227][453]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-20.19.27:269][453]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.18-05.19.27
+[2020.10.17-20.19.27:318][453]LogWorld: Bringing up level for play took: 0.089201
+[2020.10.17-20.19.27:326][453]LogOnline: OSS: Creating online subsystem instance for: :Context_44
+[2020.10.17-20.19.27:391][453]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-20.19.27:391][453]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-20.19.27:391][453]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-20.19.27:391][453]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-20.19.27:391][453]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-20.19.27:391][453]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-20.19.27:401][453]PIE: 서버가 로그인했습니다.
+[2020.10.17-20.19.27:403][453]PIE: 에디터에서 플레이 총 시작 시간 0.911초입니다.
+[2020.10.17-20.19.30:745][821]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-20.19.30:746][821]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-20.19.30:750][821]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.19.30:752][821]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-20.19.30:830][821]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-20.19.30:835][821]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-20.19.30:896][821]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-20.19.30:899][821]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E94D09B600), frame # 323821
+[2020.10.17-20.19.30:899][821]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E94F07BE00), frame # 323821
+[2020.10.17-20.19.30:952][821]LogUObjectHash: Compacting FUObjectHashTables data took   2.44ms
+[2020.10.17-20.19.30:996][822]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2020.10.17-20.19.33:497][ 62]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.17-20.19.33:514][ 62]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.17-20.19.33:514][ 62]PIE: New page: PIE 세션: TestMap (2020. 10. 18. 오후 2:19:33)
+[2020.10.17-20.19.33:552][ 62]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-20.19.33:556][ 62]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003793s)
+[2020.10.17-20.19.33:557][ 62]LogAIModule: Creating AISystem for world TestMap
+[2020.10.17-20.19.33:557][ 62]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E949378A00), frame # 324062
+[2020.10.17-20.19.33:557][ 62]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E9503ECA40), frame # 324062
+[2020.10.17-20.19.33:557][ 62]LogPlayLevel: PIE: World Init took: (0.001309s)
+[2020.10.17-20.19.33:557][ 62]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.005405s)
+[2020.10.17-20.19.33:581][ 62]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2020.10.17-20.19.33:583][ 62]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.17-20.19.33:584][ 62]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.17-20.19.33:584][ 62]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.17-20.19.33:584][ 62]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.17-20.19.33:584][ 62]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.17-20.19.33:584][ 62]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.17-20.19.33:584][ 62]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.17-20.19.33:584][ 62]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.17-20.19.33:585][ 62]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.17-20.19.33:585][ 62]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.17-20.19.33:636][ 62]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.17-20.19.33:636][ 62]LogAudioMixer: Display: 1: FrontRight
+[2020.10.17-20.19.33:797][ 62]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.17-20.19.33:797][ 62]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.17-20.19.33:797][ 62]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.17-20.19.33:797][ 62]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.17-20.19.33:799][ 62]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.17-20.19.33:811][ 62]LogInit: FAudioDevice initialized.
+[2020.10.17-20.19.33:823][ 62]LogLoad: Game class is 'FPGameMode'
+[2020.10.17-20.19.33:825][ 62]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.18-05.19.33
+[2020.10.17-20.19.33:825][ 62]LogWorld: Bringing up level for play took: 0.001771
+[2020.10.17-20.19.33:825][ 62]LogOnline: OSS: Creating online subsystem instance for: :Context_45
+[2020.10.17-20.19.33:828][ 62]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-20.19.33:828][ 62]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : -680.000
+[2020.10.17-20.19.33:828][ 62]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-20.19.33:828][ 62]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.17-20.19.33:828][ 62]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.17-20.19.33:828][ 62]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.17-20.19.33:828][ 62]PIE: 서버가 로그인했습니다.
+[2020.10.17-20.19.33:829][ 62]PIE: 에디터에서 플레이 총 시작 시간 0.318초입니다.
+[2020.10.17-20.19.52:159][241]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-20.19.52:159][241]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.17-20.19.52:159][241]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.19.52:160][241]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-20.19.52:176][241]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.17-20.19.52:181][241]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.17-20.19.52:225][241]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.17-20.19.52:251][241]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E9503ECA40), frame # 326241
+[2020.10.17-20.19.52:251][241]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E949378A00), frame # 326241
+[2020.10.17-20.19.52:253][241]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2020.10.17-20.19.52:290][242]LogPlayLevel: Display: Destroying online subsystem :Context_45
+[2020.10.17-20.19.52:950][310]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
+[2020.10.17-20.19.55:944][310]LogSlate: Window '콘텐츠 저장' being destroyed
+[2020.10.17-20.19.56:040][310]LogSavePackage: Moving '../../../../../UnrealProjects/Final_Project/Saved/SK_Mannequin_Skeleton554C51C24E4CD0D0E75A52985429DC17.tmp' to '../../../../../UnrealProjects/Final_Project/Content/InfinityBladeWarriors/Character/CompleteCharacters/SK_Mannequin_Skeleton.uasset'
+[2020.10.17-20.19.56:203][310]LogSlate: Window 'Final_Project - 언리얼 에디터' being destroyed
+[2020.10.17-20.19.56:227][310]LogWindowsTextInputMethodSystem: Display: IME system now activated using TSF (Microsoft 입력기).
+[2020.10.17-20.19.56:749][310]AssetCheck: New page: 애셋 저장: SK_Mannequin_Skeleton
+[2020.10.17-20.19.56:749][310]LogContentValidation: Display: Skeleton /Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_Mannequin_Skeleton.SK_Mannequin_Skeleton 유효성 검사
+[2020.10.17-20.19.56:753][311]Cmd: QUIT_EDITOR
+[2020.10.17-20.19.56:754][311]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2020.10.17-20.19.56:890][311]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2020.10.17-20.19.58:102][311]LogExit: Preparing to exit.
+[2020.10.17-20.19.59:943][311]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.19.59:945][311]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.19.59:948][311]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.19.59:950][311]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.19.59:952][311]LogWorld: UWorld::CleanupWorld for World_30, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.19.59:954][311]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.19.59:955][311]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.19.59:957][311]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.20.00:322][311]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2020.10.17-20.20.00:676][311]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2020.10.17-20.20.00:697][311]LogExit: Editor shut down
+[2020.10.17-20.20.00:700][311]LogExit: Transaction tracking system shut down
+[2020.10.17-20.20.02:366][311]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (000001E8877AC340), frame # 326311
+[2020.10.17-20.20.02:366][311]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E8876D6AC0), frame # 326311
+[2020.10.17-20.20.02:387][311]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E887739E00), frame # 326311
+[2020.10.17-20.20.04:008][311]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E893E08C00), frame # 326311
+[2020.10.17-20.20.04:009][311]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E893E26200), frame # 326311
+[2020.10.17-20.20.04:151][311]LogExit: Object subsystem successfully closed.
+[2020.10.17-20.20.04:399][311]LogShaderCompilers: Display: Shaders left to compile 0
+[2020.10.17-20.20.06:772][311]LogModuleManager: Shutting down and abandoning module Final_Project (814)
+[2020.10.17-20.20.06:772][311]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (809)
+[2020.10.17-20.20.06:773][311]LogModuleManager: Shutting down and abandoning module Voice (807)
+[2020.10.17-20.20.06:783][311]LogModuleManager: Shutting down and abandoning module BlueprintGraph (805)
+[2020.10.17-20.20.06:783][311]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (802)
+[2020.10.17-20.20.06:783][311]LogModuleManager: Shutting down and abandoning module SequencerWidgets (800)
+[2020.10.17-20.20.06:783][311]LogModuleManager: Shutting down and abandoning module PinnedCommandList (798)
+[2020.10.17-20.20.06:783][311]LogModuleManager: Shutting down and abandoning module SkeletonEditor (796)
+[2020.10.17-20.20.06:783][311]LogModuleManager: Shutting down and abandoning module AnimationEditor (794)
+[2020.10.17-20.20.06:783][311]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (792)
+[2020.10.17-20.20.06:783][311]LogModuleManager: Shutting down and abandoning module SceneOutliner (790)
+[2020.10.17-20.20.06:783][311]LogModuleManager: Shutting down and abandoning module AddContentDialog (788)
+[2020.10.17-20.20.06:815][311]LogModuleManager: Shutting down and abandoning module WidgetCarousel (787)
+[2020.10.17-20.20.06:815][311]LogModuleManager: Shutting down and abandoning module EditorWidgets (784)
+[2020.10.17-20.20.06:815][311]LogModuleManager: Shutting down and abandoning module CollectionManager (782)
+[2020.10.17-20.20.06:821][311]LogModuleManager: Shutting down and abandoning module StatsViewer (780)
+[2020.10.17-20.20.06:843][311]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (778)
+[2020.10.17-20.20.06:843][311]LogModuleManager: Shutting down and abandoning module FoliageEdit (776)
+[2020.10.17-20.20.06:857][311]LogModuleManager: Shutting down and abandoning module LandscapeEditor (774)
+[2020.10.17-20.20.06:979][311]LogModuleManager: Shutting down and abandoning module MeshPaintMode (772)
+[2020.10.17-20.20.06:991][311]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (770)
+[2020.10.17-20.20.06:991][311]LogModuleManager: Shutting down and abandoning module ActorPickerMode (768)
+[2020.10.17-20.20.06:991][311]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (766)
+[2020.10.17-20.20.07:005][311]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (764)
+[2020.10.17-20.20.07:017][311]LogModuleManager: Shutting down and abandoning module AutomationWorker (762)
+[2020.10.17-20.20.07:033][311]LogModuleManager: Shutting down and abandoning module SteamVREditor (760)
+[2020.10.17-20.20.07:033][311]LogModuleManager: Shutting down and abandoning module OculusMR (758)
+[2020.10.17-20.20.07:045][311]LogModuleManager: Shutting down and abandoning module GooglePADEditor (756)
+[2020.10.17-20.20.07:045][311]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (754)
+[2020.10.17-20.20.07:057][311]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (752)
+[2020.10.17-20.20.07:097][311]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (750)
+[2020.10.17-20.20.07:107][311]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (748)
+[2020.10.17-20.20.07:123][311]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (746)
+[2020.10.17-20.20.07:144][311]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (744)
+[2020.10.17-20.20.07:144][311]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (742)
+[2020.10.17-20.20.07:144][311]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (740)
+[2020.10.17-20.20.07:151][311]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (738)
+[2020.10.17-20.20.07:151][311]LogModuleManager: Shutting down and abandoning module WebMMedia (736)
+[2020.10.17-20.20.07:165][311]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (734)
+[2020.10.17-20.20.07:186][311]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (732)
+[2020.10.17-20.20.07:241][311]LogModuleManager: Shutting down and abandoning module SequenceRecorder (731)
+[2020.10.17-20.20.07:245][311]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (728)
+[2020.10.17-20.20.07:245][311]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (726)
+[2020.10.17-20.20.07:245][311]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (724)
+[2020.10.17-20.20.07:245][311]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (722)
+[2020.10.17-20.20.07:245][311]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (720)
+[2020.10.17-20.20.07:245][311]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (718)
+[2020.10.17-20.20.07:245][311]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (716)
+[2020.10.17-20.20.07:245][311]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (714)
+[2020.10.17-20.20.07:246][311]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (712)
+[2020.10.17-20.20.07:246][311]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (710)
+[2020.10.17-20.20.07:246][311]LogModuleManager: Shutting down and abandoning module PlanarCut (708)
+[2020.10.17-20.20.07:283][311]LogModuleManager: Shutting down and abandoning module CharacterAI (706)
+[2020.10.17-20.20.07:283][311]LogModuleManager: Shutting down and abandoning module TextureAlignMode (704)
+[2020.10.17-20.20.07:284][311]LogModuleManager: Shutting down and abandoning module BspMode (702)
+[2020.10.17-20.20.07:292][311]LogModuleManager: Shutting down and abandoning module PlacementMode (701)
+[2020.10.17-20.20.07:305][311]LogModuleManager: Shutting down and abandoning module GeometryMode (698)
+[2020.10.17-20.20.07:305][311]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (696)
+[2020.10.17-20.20.07:325][311]LogModuleManager: Shutting down and abandoning module SmartSnapping (694)
+[2020.10.17-20.20.07:325][311]LogModuleManager: Shutting down and abandoning module SessionServices (692)
+[2020.10.17-20.20.07:325][311]LogModuleManager: Shutting down and abandoning module MeshPaint (690)
+[2020.10.17-20.20.07:347][311]LogModuleManager: Shutting down and abandoning module ViewportSnapping (688)
+[2020.10.17-20.20.07:347][311]LogModuleManager: Shutting down and abandoning module ViewportInteraction (686)
+[2020.10.17-20.20.07:347][311]LogModuleManager: Shutting down and abandoning module ClothPainter (684)
+[2020.10.17-20.20.07:384][311]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (683)
+[2020.10.17-20.20.07:418][311]LogModuleManager: Shutting down and abandoning module LogVisualizer (680)
+[2020.10.17-20.20.07:478][311]LogModuleManager: Shutting down and abandoning module IntroTutorials (678)
+[2020.10.17-20.20.07:490][311]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (677)
+[2020.10.17-20.20.07:516][311]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (674)
+[2020.10.17-20.20.07:517][311]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (672)
+[2020.10.17-20.20.07:523][311]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (670)
+[2020.10.17-20.20.07:523][311]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (669)

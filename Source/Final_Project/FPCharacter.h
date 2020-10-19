@@ -23,6 +23,7 @@
 4. 플레이 중 '~'키를 누르면 콘솔 명령창이 나온다. 거기서 예를들어 DisplayAll <classname> 이런식으로 검색하면 플레이 화면에 해당 정보가 나온다. ※ 이때, 클래스 접두사는 제외하고 입력한다.
 5. 마우스 움직임 중, Z축(Yaw)는 ACharactor에서 useControllerRotationYaw가 기본 사용으로 설정되어 있지만, 나머지 Pitch, Roll은 기본 사용 안함으로 설정되어 있다.
 6. ACharacter 클래스에서는 미리 Jump라는 멤버 함수가 바인딩할수 있게 선언 되어있어 특별한 정의 없이 바로 바인딩만 하여 Jump함수를 사용이 가능하다. GetCharacterMovement()->JumpZVelocity의 값은 기본적으로 420으로 설정되어 있다.
+7. UFPAnimInstance 클래스같이 자주 사용하는 클래스는 멤버변수로 선언하여 전방 선언으로 설계하는 것이 바람직하다.
 */
 
 UCLASS()
@@ -56,6 +57,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	virtual void PostInitializeComponents() override;
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -74,4 +77,41 @@ private:
 	void Turn(float NewAxisValue);
 
 	void ViewChange();
+	void Attack();
+
+	// 애니메이션 몽타주에 델리게이트를 사용해보기
+	UFUNCTION()
+	void OnAttackMontageEnded(UAnimMontage* Montage, bool bInterrupted);
+
+	void AttackStartComboState();
+	void AttackEndComboState();
+	void AttackCheck();
+
+private:
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool IsAttacking;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool CanNextCombo;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool IsComboInputOn;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	int32 CurrentCombo;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	int32 MaxCombo;
+
+	// AttackRange와 AttackRadius는 공격범위를 체크하기 위해 사용한다.
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	float AttackRange;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	float AttackRadius;
+
+	// 자주 사용하는 클래스를 전방선언 시켜준다.
+	UPROPERTY()
+	class UFPAnimInstance* FPAnim;
+
 };
