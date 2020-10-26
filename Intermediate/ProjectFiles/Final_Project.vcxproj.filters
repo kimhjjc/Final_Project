@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Final_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E95DC216-3BD0-4AD1-83FA-5AC80048C7C5}</UniqueIdentifier>
+      <UniqueIdentifier>{C55F5ADA-1F3A-46D1-8C49-B2614D50E253}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,9 @@
     <None Include="..\..\Source\Final_ProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{8BF3155B-0760-4796-A9E1-F84E1B1B5B68}</UniqueIdentifier>
+      <UniqueIdentifier>{8E84176B-DAE7-4D2F-8654-E93B32E8D169}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +31,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Final_Project">
-      <UniqueIdentifier>{53F9C9A9-931E-4B98-81A4-F83FCF8B911C}</UniqueIdentifier>
+      <UniqueIdentifier>{2A275F5A-B457-4BC3-B524-DB1D36A5902C}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\BTService_Detect.cpp">
+      <Filter>Source\Final_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Final_Project\BTService_Detect.h">
+      <Filter>Source\Final_Project</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Final_Project\BTTask_FindPatrolPos.cpp">
+      <Filter>Source\Final_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Final_Project\BTTask_FindPatrolPos.h">
+      <Filter>Source\Final_Project</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Final_Project\Final_Project.Build.cs">
       <Filter>Source\Final_Project</Filter>
     </None>
@@ -47,6 +60,12 @@
     <ClInclude Include="..\..\Source\Final_Project\Fountain.h">
       <Filter>Source\Final_Project</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Final_Project\FPAIController.cpp">
+      <Filter>Source\Final_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Final_Project\FPAIController.h">
+      <Filter>Source\Final_Project</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Final_Project\FPAnimInstance.cpp">
       <Filter>Source\Final_Project</Filter>
     </ClCompile>
@@ -59,10 +78,34 @@
     <ClInclude Include="..\..\Source\Final_Project\FPCharacter.h">
       <Filter>Source\Final_Project</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Final_Project\FPCharacterStatComponent.cpp">
+      <Filter>Source\Final_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Final_Project\FPCharacterStatComponent.h">
+      <Filter>Source\Final_Project</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Final_Project\FPCharacterWidget.cpp">
+      <Filter>Source\Final_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Final_Project\FPCharacterWidget.h">
+      <Filter>Source\Final_Project</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Final_Project\FPGameInstance.cpp">
+      <Filter>Source\Final_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Final_Project\FPGameInstance.h">
+      <Filter>Source\Final_Project</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Final_Project\FPGameMode.cpp">
       <Filter>Source\Final_Project</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Final_Project\FPGameMode.h">
+      <Filter>Source\Final_Project</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Final_Project\FPItemBox.cpp">
+      <Filter>Source\Final_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Final_Project\FPItemBox.h">
       <Filter>Source\Final_Project</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Final_Project\FPPawn.cpp">
@@ -75,6 +118,12 @@
       <Filter>Source\Final_Project</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Final_Project\FPPlayerController.h">
+      <Filter>Source\Final_Project</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Final_Project\FPWeapon.cpp">
+      <Filter>Source\Final_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Final_Project\FPWeapon.h">
       <Filter>Source\Final_Project</Filter>
     </ClInclude>
   </ItemGroup>

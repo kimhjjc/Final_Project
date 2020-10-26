@@ -3,7 +3,14 @@
 
 #include "FPCharacter.h"
 #include "FPAnimInstance.h"
+#include "FPWeapon.h"
+#include "FPCharacterStatComponent.h"
 #include "DrawDebugHelpers.h"
+// 이 헤더파일(Components/WidgetComponent.h)은 UI를 다루기 위해 추가한 파일이다.
+// 현재 프로젝트가 아닌 UE4 프로젝트의 헤더파일이지만, Final_Project.Build.cs에서 "Core", "CoreUObject", "Engine", "InputCore" 모듈 옆에 "UMG"를 추가해 주었기 때문에 자유로운 사용이 가능해진다.
+#include "Components/WidgetComponent.h"	
+#include "FPCharacterWidget.h"
+#include "FPAIController.h"
 
 // Sets default values
 AFPCharacter::AFPCharacter()
@@ -15,9 +22,12 @@ AFPCharacter::AFPCharacter()
 	// ACharacter Class는 APawn를 상속받은 클래스로 폰보다 캐릭터의 기본적인 컴포넌트들이 이미 추가되어 있음.
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SPRINTARM"));
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("CAMERA"));
+	CharacterStat = CreateDefaultSubobject<UFPCharacterStatComponent>(TEXT("CHARACTERSTAT"));
+	HPBarWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HPBARWIDGET"));
 
 	SpringArm->SetupAttachment(GetCapsuleComponent());
 	Camera->SetupAttachment(SpringArm);
+	HPBarWidget->SetupAttachment(GetMesh());
 
 	// 캡슐 콜라이더 만드는 부분 (이지만, APawn과 달리 ACharacter에는 자동 설정이 된다.)
 	//GetCapsuleComponent()->SetCapsuleHalfHeight(88.0f);
@@ -62,12 +72,57 @@ AFPCharacter::AFPCharacter()
 	// 프로젝트 세팅 -> 콜리전에서 프리셋에 FPCharacter이라는 이름을 찾아 그 프리셋으로 콜리전을 변경한다.
 	GetCapsuleComponent()->SetCollisionProfileName(TEXT("FPCharacter"));
 
+	HPBarWidget->SetRelativeLocation(FVector(0.0f, 0.0f, 180.0f));
+	HPBarWidget->SetWidgetSpace(EWidgetSpace::Screen);
+	static ConstructorHelpers::FClassFinder<UUserWidget> UI_HUD(TEXT("/Game/UI/UI_HPBar.UI_HPBar_C"));	// 블루 프린터로 제작하였으므로 경로 뒤에 _C를 붙여주어야 한다.
+	if (UI_HUD.Succeeded())
+	{
+		// UI_HUD.Class가 결국 UI_HPBar가 블루프린터에서 그래프->클레스 세팅 -> 클래스옵션의 부모클래스로 설정한 것을 의미한다.
+		HPBarWidget->SetWidgetClass(UI_HUD.Class);
+		HPBarWidget->SetDrawSize(FVector2D(150.0f, 50.0f));
+	}
+
+	// 이 두 변수는 기본 변수로, Pawn카테고리에서 볼 수 있다.
+	AIControllerClass = AFPAIController::StaticClass();
+	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;	// AI가 생성되는 옵션
 }
 
 // Called when the game starts or when spawned
 void AFPCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	
+	// 위젯의 초기화 시점이 PostInitializeComponents이었지만, 언리얼 4.21 버전부터 BeginPlay로 변경되어 위젯의 경우 이 곳에서 초기화를 진행해준다.
+	// 또한 BeginPlay 이전에 호출되는 PostInitializeComponents에서 발생한 UI관련 명령은 모두 반영되지 않는다.
+	auto CharacterWidget = Cast<UFPCharacterWidget>(HPBarWidget->GetUserWidgetObject());
+	if (nullptr != CharacterWidget)
+	{
+		CharacterWidget->BindCharacterStat(CharacterStat);
+	}
+
+	// 무기를 액터로 제작하여 오른손에 FPCharacter를 부모로 지정하는 방법.
+	/*
+	FName WeaponSocket(TEXT("hand_rSocket"));
+	auto CurWeapon = GetWorld()->SpawnActor<AFPWeapon>(FVector::ZeroVector, FRotator::ZeroRotator);
+	if (nullptr != CurWeapon)
+	{
+		CurWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, WeaponSocket);
+	}
+	*/
+	
+	// 이건 무기 액터를 생성하는게 아니라 메쉬의 오른손에 직접 컴포넌트로 생성해주는 방법.
+	//FName WeaponSocket(TEXT("hand_rSocket"));
+	//if (GetMesh()->DoesSocketExist(WeaponSocket))
+	//{
+	//	Weapon = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WEAPON"));
+	//	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SK_WEAPON(TEXT("/Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_HeroSword11/SK_Blade_HeroSword11.SK_Blade_HeroSword11"));
+	//	if (SK_WEAPON.Succeeded())
+	//	{
+	//		Weapon->SetSkeletalMesh(SK_WEAPON.Object);
+	//	}
+
+	//	Weapon->SetupAttachment(GetMesh(), WeaponSocket);
+	//}
 
 }
 
@@ -108,6 +163,13 @@ void AFPCharacter::SetControlMode(EControlMode NewControlMode)
 		SpringArm->bDoCollisionTest = false;
 
 		// 키보드 입력시 캐릭터의 부드러운 회전 연출
+		bUseControllerRotationYaw = false;
+		GetCharacterMovement()->bOrientRotationToMovement = false;
+		GetCharacterMovement()->bUseControllerDesiredRotation = true;
+		GetCharacterMovement()->RotationRate = FRotator(0.0f, 720.0f, 0.0f);
+		break;
+	case EControlMode::NPC:
+		// NPC로 설정된 AI가 가질 설정 조작.
 		bUseControllerRotationYaw = false;
 		GetCharacterMovement()->bOrientRotationToMovement = false;
 		GetCharacterMovement()->bUseControllerDesiredRotation = true;
@@ -167,6 +229,12 @@ void AFPCharacter::PostInitializeComponents()
 	});
 
 	FPAnim->OnAttackHitCheck.AddUObject(this, &AFPCharacter::AttackCheck);
+
+	CharacterStat->OnHPIsZero.AddLambda([this]() -> void {
+		FPLOG(Warning, TEXT("OnHPIsZero"));
+		FPAnim->SetDeadAnim();
+		SetActorEnableCollision(false);
+		});
 }
 
 float AFPCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
@@ -174,13 +242,25 @@ float AFPCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEv
 	float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	FPLOG(Warning, TEXT("Actor : %s took Damage : %f"), *GetName(), FinalDamage);
 
-	if (FinalDamage > 0.0f)
-	{
-		FPAnim->SetDeadAnim();
-		SetActorEnableCollision(false);
-	}
+	CharacterStat->SetDamage(FinalDamage);
 
 	return FinalDamage;
+}
+
+void AFPCharacter::PossessedBy(AController * NewController)
+{
+	Super::PossessedBy(NewController);
+
+	if (IsPlayerControlled())
+	{
+		SetControlMode(EControlMode::GTA);
+		GetCharacterMovement()->MaxWalkSpeed = 600.0f;
+	}
+	else
+	{
+		SetControlMode(EControlMode::NPC);
+		GetCharacterMovement()->MaxWalkSpeed = 300.0f;
+	}
 }
 
 // Called to bind functionality to input
@@ -198,6 +278,24 @@ void AFPCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &AFPCharacter::LookUp);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &AFPCharacter::Turn);
 
+
+}
+
+bool AFPCharacter::CanSetWeapon()
+{
+	return (nullptr == CurrentWeapon);
+}
+
+void AFPCharacter::Setweapon(AFPWeapon * NewWeapon)
+{
+	FPCHECK(nullptr != NewWeapon && nullptr == CurrentWeapon);
+	FName WeaponSocket(TEXT("hand_rSocket"));
+	if (nullptr != NewWeapon)
+	{
+		NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, WeaponSocket);
+		NewWeapon->SetOwner(this);
+		CurrentWeapon = NewWeapon;
+	}
 
 }
 
@@ -360,7 +458,7 @@ void AFPCharacter::AttackCheck()
 			FPLOG(Warning, TEXT("Hit Actor Name : %s"), *HitResult.Actor->GetName());
 
 			FDamageEvent DamageEvent;
-			HitResult.Actor->TakeDamage(50.0f, DamageEvent, GetController(), this);
+			HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
 		}
 	}
 

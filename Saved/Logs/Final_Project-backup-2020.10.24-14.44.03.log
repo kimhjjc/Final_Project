@@ -1,0 +1,1499 @@
+﻿Log file open, 10/24/20 19:56:10
+LogInit: Display: Running engine for game: Final_Project
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.352266
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-13942748
+LogInit: Engine Version: 4.25.3-13942748+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 1909) (), CPU: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz, GPU: NVIDIA GeForce GTX 1050 Ti
+LogInit: Compiled (64-bit): Jul 25 2020 02:07:48
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.24-10.56.11:235][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.10.24-10.56.11:235][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.24-10.56.11:235][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.24-10.56.11:246][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.10.24-10.56.11:246][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.10.24-10.56.11:247][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.10.24-10.56.11:248][  0]LogInit: Selected Device Profile: [Windows]
+[2020.10.24-10.56.11:248][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.10.24-10.56.11:248][  0]LogHAL: Display: Platform has ~ 16 GB [17109180416 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.10.24-10.56.11:248][  0]LogInit: Going up to parent DeviceProfile []
+[2020.10.24-10.56.11:248][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.10.24-10.56.11:248][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Scalability.ini]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2020.10.24-10.56.11:249][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Config/Windows/Engine.ini]
+[2020.10.24-10.56.11:249][  0]LogInit: Computer: DESKTOP-BI3QQ0T
+[2020.10.24-10.56.11:249][  0]LogInit: User: ANY180817
+[2020.10.24-10.56.11:249][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.10.24-10.56.11:250][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.10.24-10.56.11:250][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2020.10.24-10.56.11:250][  0]LogMemory: Platform Memory Stats for Windows
+[2020.10.24-10.56.11:250][  0]LogMemory: Process Physical Memory: 115.35 MB used, 115.35 MB peak
+[2020.10.24-10.56.11:250][  0]LogMemory: Process Virtual Memory: 98.18 MB used, 98.18 MB peak
+[2020.10.24-10.56.11:250][  0]LogMemory: Physical Memory: 8527.39 MB used,  7789.20 MB free, 16316.59 MB total
+[2020.10.24-10.56.11:250][  0]LogMemory: Virtual Memory: 5145.35 MB used,  134212584.00 MB free, 134217728.00 MB total
+[2020.10.24-10.56.11:264][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.10.24-10.56.11:337][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2020.10.24-10.56.11:338][  0]LogInit: Using OS detected language (ko-KR).
+[2020.10.24-10.56.11:338][  0]LogInit: Using OS detected locale (ko-KR).
+[2020.10.24-10.56.11:341][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2020.10.24-10.56.11:438][  0]LogInit: Setting process to per monitor DPI aware
+[2020.10.24-10.56.11:537][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.10.24-10.56.11:537][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.10.24-10.56.11:810][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.10.24-10.56.11:810][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.10.24-10.56.11:810][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.10.24-10.56.11:810][  0]LogD3D11RHI: D3D11 adapters:
+[2020.10.24-10.56.11:920][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
+[2020.10.24-10.56.11:920][  0]LogD3D11RHI:       4018/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2020.10.24-10.56.11:924][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.10.24-10.56.11:924][  0]LogD3D11RHI:       0/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.10.24-10.56.11:924][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.10.24-10.56.11:932][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.10.24-10.56.11:932][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
+[2020.10.24-10.56.11:932][  0]LogWindows: EnumDisplayDevices:
+[2020.10.24-10.56.11:933][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
+[2020.10.24-10.56.11:936][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:1)
+[2020.10.24-10.56.11:938][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2020.10.24-10.56.11:941][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2020.10.24-10.56.11:943][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.10.24-10.56.11:943][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
+[2020.10.24-10.56.11:943][  0]LogD3D11RHI:   Driver Version: 432.00 (internal:26.21.14.3200, unified:432.00)
+[2020.10.24-10.56.11:943][  0]LogD3D11RHI:      Driver Date: 7-24-2019
+[2020.10.24-10.56.11:943][  0]LogRHI: Texture pool is 2812 MB (70% of 4018 MB)
+[2020.10.24-10.56.11:997][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.10.24-10.56.12:003][  0]LogD3D11RHI: [Aftermath] Enabled and primed
+[2020.10.24-10.56.12:003][  0]LogD3D11RHI: Async texture creation enabled
+[2020.10.24-10.56.12:003][  0]LogD3D11RHI: Array index from any shader is supported
+[2020.10.24-10.56.12:087][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.10.24-10.56.12:889][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.10.24-10.56.12:913][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.10.24-10.56.12:945][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.10.24-10.56.12:945][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.10.24-10.56.12:958][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2020.10.24-10.56.12:971][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.10.24-10.56.12:983][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.10.24-10.56.12:995][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.10.24-10.56.13:007][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.10.24-10.56.13:019][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.10.24-10.56.13:031][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.10.24-10.56.13:061][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.10.24-10.56.13:061][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.10.24-10.56.13:080][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.10.24-10.56.13:080][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.10.24-10.56.13:094][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.10.24-10.56.13:107][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.10.24-10.56.13:121][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.10.24-10.56.13:134][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.10.24-10.56.13:134][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.10.24-10.56.13:151][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.10.24-10.56.13:261][  0]LogShaderCompilers: Guid format shader working directory is 7 characters bigger than the processId version (../../../../../UnrealProjects/Final_Project/Intermediate/Shaders/WorkingDirectory/3224/).
+[2020.10.24-10.56.13:262][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/ANY180817/AppData/Local/Temp/UnrealShaderWorkingDir/C6060C4C44A61F3F6F7A7D95FF35D443/'.
+[2020.10.24-10.56.13:262][  0]LogXGEController: Cleaning working directory: C:/Users/ANY180817/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.10.24-10.56.13:263][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.10.24-10.56.13:263][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.10.24-10.56.13:263][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.10.24-10.56.14:135][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.10.24-10.56.14:220][  0]LogDerivedDataCache: Loaded boot cache 0.08s 77MB C:/Users/ANY180817/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.10.24-10.56.14:220][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/ANY180817/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2020.10.24-10.56.14:220][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../UnrealProjects/Final_Project/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.10.24-10.56.14:220][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.10.24-10.56.14:220][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../UnrealProjects/Final_Project/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.10.24-10.56.14:220][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.10.24-10.56.14:236][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.10.24-10.56.14:236][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.10.24-10.56.14:236][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.10.24-10.56.14:238][  0]LogDerivedDataCache: Using Local data cache path C:/Users/ANY180817/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.10.24-10.56.14:238][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.10.24-10.56.14:238][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.10.24-10.56.14:294][  0]LogSlate: Using FreeType 2.10.0
+[2020.10.24-10.56.14:295][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.10.24-10.56.14:333][  0]LogAssetRegistry: FAssetRegistry took 0.0033 seconds to start up
+[2020.10.24-10.56.14:599][  0]LogInit: Selected Device Profile: [Windows]
+[2020.10.24-10.56.14:746][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.10.24-10.56.14:746][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.10.24-10.56.14:746][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.10.24-10.56.14:746][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.10.24-10.56.14:746][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.10.24-10.56.14:777][  0]LogNetVersion: Final_Project 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 4264652595)
+[2020.10.24-10.56.15:421][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000025F56D66180), frame # 0
+[2020.10.24-10.56.15:421][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025F56CEAAC0), frame # 0
+[2020.10.24-10.56.15:423][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025F56D50A00), frame # 0
+[2020.10.24-10.56.15:479][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.048825 seconds
+[2020.10.24-10.56.15:486][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2020.10.24-10.56.15:486][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2020.10.24-10.56.15:486][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.10.24-10.56.16:041][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.10.24-10.56.16:050][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.10.24-10.56.16:396][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.24-10.56.16:397][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.24-10.56.16:404][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.24-10.56.16:410][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.24-10.56.16:437][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.24-10.56.16:924][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.10.24-10.56.16:969][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.10.24-10.56.16:969][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.10.24-10.56.17:046][  0]LogOcInput: OculusInput pre-init called
+[2020.10.24-10.56.17:067][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.10.24-10.56.17:068][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.10.24-10.56.17:153][  0]LogEngine: Initializing Engine...
+[2020.10.24-10.56.17:155][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.10.24-10.56.17:155][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2020.10.24-10.56.17:156][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.10.24-10.56.17:411][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.10.24-10.56.17:423][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.10.24-10.56.17:423][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025F5ECFDE00), frame # 0
+[2020.10.24-10.56.17:423][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025F5ED50680), frame # 0
+[2020.10.24-10.56.17:432][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.24-10.56.17:432][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.24-10.56.17:432][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.24-10.56.17:432][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.24-10.56.17:432][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.24-10.56.17:432][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.24-10.56.17:432][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.24-10.56.17:432][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.24-10.56.17:432][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.24-10.56.17:432][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.24-10.56.17:507][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.24-10.56.17:507][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.10.24-10.56.17:844][  0]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.24-10.56.17:844][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.24-10.56.17:846][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.24-10.56.17:846][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.24-10.56.17:847][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.24-10.56.17:849][  0]LogInit: FAudioDevice initialized.
+[2020.10.24-10.56.17:849][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.10.24-10.56.17:937][  0]LogDerivedDataCache: Saved boot cache 0.09s 77MB C:/Users/ANY180817/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.10.24-10.56.17:938][  0]LogInit: Texture streaming: Enabled
+[2020.10.24-10.56.17:975][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.10.24-10.56.17:975][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={D6D791F2-4E59-12D2-FEEF-768DA395623C}
+[2020.10.24-10.56.17:975][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.10.24-10.56.17:983][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.10.24-10.56.18:040][  0]LogInit: Transaction tracking system initialized
+[2020.10.24-10.56.18:079][  0]BlueprintLog: New page: 에디터 로드
+[2020.10.24-10.56.18:207][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2020.10.24-10.56.18:428][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.10.24-10.56.18:428][  0]LogCook: Display: Mobile HDR setting 1
+[2020.10.24-10.56.18:511][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealEngine/UnrealProjects/Final_Project/Content/' took 0.03s
+[2020.10.24-10.56.19:055][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2020.10.24-10.56.19:055][  0]LogUnrealEdMisc: Loading editor; pre map load, took 10.333
+[2020.10.24-10.56.19:055][  0]Cmd: MAP LOAD FILE="../../../../../UnrealProjects/Final_Project/Content/Stage/TestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.10.24-10.56.19:056][  0]LightingResults: New page: 라이팅 빌드
+[2020.10.24-10.56.19:057][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.10.24-10.56.19:057][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-10.56.19:057][  0]MapCheck: New page: 맵 체크
+[2020.10.24-10.56.19:057][  0]LightingResults: New page: 라이팅 빌드
+[2020.10.24-10.56.19:067][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025F5ECFDE00), frame # 0
+[2020.10.24-10.56.19:067][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025F5ED50680), frame # 0
+[2020.10.24-10.56.19:068][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2020.10.24-10.56.19:166][  0]LogAIModule: Creating AISystem for world TestMap
+[2020.10.24-10.56.19:166][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025F51983E00), frame # 0
+[2020.10.24-10.56.19:166][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025F5B355E40), frame # 0
+[2020.10.24-10.56.19:174][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.10.24-10.56.19:190][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2020.10.24-10.56.19:191][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.10.24-10.56.19:191][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.126ms.
+[2020.10.24-10.56.19:191][  0]LogFileHelpers: Loading map 'TestMap' took 0.136
+[2020.10.24-10.56.19:194][  0]LogUnrealEdMisc: Total Editor Startup Time, took 10.471
+[2020.10.24-10.56.19:394][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-10.56.19:401][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-10.56.19:408][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-10.56.19:415][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-10.56.19:430][  0]LogCollectionManager: Loaded 0 collections in 0.002744 seconds
+[2020.10.24-10.56.19:447][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealEngine/UnrealProjects/Final_Project/Saved/Collections/' took 0.00s
+[2020.10.24-10.56.19:447][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealEngine/UnrealProjects/Final_Project/Content/Developers/ANY180817/Collections/' took 0.00s
+[2020.10.24-10.56.19:447][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealEngine/UnrealProjects/Final_Project/Content/Collections/' took 0.00s
+[2020.10.24-10.56.19:447][  0]LogContentBrowser: Native class hierarchy populated in 0.0102 seconds. Added 3439 classes and 823 folders.
+[2020.10.24-10.56.19:450][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2020.10.24-10.56.19:522][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2020.10.24-10.56.19:525][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 2 classes and 0 folders.
+[2020.10.24-10.56.19:632][  0]LogSlate: Took 0.000416 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.10.24-10.56.19:637][  0]LogSlate: Took 0.003475 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2020.10.24-10.56.19:640][  0]LogSlate: Took 0.002554 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2020.10.24-10.56.19:640][  0]LogSlate: Took 0.000263 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.10.24-10.56.19:645][  0]LogSlate: Took 0.000436 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.10.24-10.56.19:744][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
+[2020.10.24-10.56.19:928][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2020.10.24-10.56.19:928][  0]LogLoad: (Engine Initialization) Total time: 11.21 seconds
+[2020.10.24-10.56.19:928][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.10.24-10.56.19:983][  0]LogAssetRegistry: Asset discovery search completed in 5.6515 seconds
+[2020.10.24-10.56.19:986][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2020.10.24-10.56.19:987][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.10.24-10.56.20:022][  0]LogSlate: Took 0.000247 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.10.24-10.56.21:304][143]Cmd: POLY SELECT MEMORY INTERSECTION
+[2020.10.24-10.56.30:324][427]Candidate modules for hot reload:
+[2020.10.24-10.56.30:324][427]  Final_Project
+[2020.10.24-10.56.30:324][427]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,2820 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.24-10.56.30:328][427]Warning: Starting HotReload took  0.1s.
+[2020.10.24-10.56.45:965][952]CompilerResultsLog: New page: 컴파일 - 2020. 10. 25. 오전 4:56:45
+[2020.10.24-10.56.45:965][952]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.24-10.56.45:965][952]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.24-10.56.45:965][952]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.24-10.56.45:965][952]CompilerResultsLog: Building 4 actions with 8 processes...
+[2020.10.24-10.56.45:965][952]CompilerResultsLog:   [1/4] FPAIController.cpp
+[2020.10.24-10.56.45:965][952]CompilerResultsLog:   [2/4] UE4Editor-Final_Project-2820.lib
+[2020.10.24-10.56.45:965][952]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2820.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2820.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.24-10.56.45:966][952]CompilerResultsLog:   [3/4] UE4Editor-Final_Project-2820.dll
+[2020.10.24-10.56.45:966][952]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2820.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-2820.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.24-10.56.45:966][952]CompilerResultsLog:   [4/4] Final_ProjectEditor.target
+[2020.10.24-10.56.45:966][952]CompilerResultsLog: Total time in Parallel executor: 13.66 seconds
+[2020.10.24-10.56.45:966][952]CompilerResultsLog: Total execution time: 15.12 seconds
+[2020.10.24-10.56.45:966][952]LogMainFrame: MainFrame: Module compiling took 15.646 seconds
+[2020.10.24-10.56.46:022][952]LogClass: FPCharacterData HotReload.
+[2020.10.24-10.56.46:028][952]LogHotReload: Re-instancing FPCharacter after hot-reload.
+[2020.10.24-10.56.46:041][952]LogContentBrowser: Native class hierarchy updated for 'Final_Project' in 0.0009 seconds. Added 12 classes and 2 folders.
+[2020.10.24-10.56.46:043][952]Display: HotReload successful (5 functions remapped  1 scriptstructs remapped)
+[2020.10.24-10.56.46:092][952]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 3439 classes and 823 folders.
+[2020.10.24-10.56.46:092][952]Display: HotReload took 15.8s.
+[2020.10.24-10.57.02:099][  0]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.24-10.57.02:122][  0]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.24-10.57.02:122][  0]PIE: New page: PIE 세션: TestMap (2020. 10. 25. 오전 4:57:02)
+[2020.10.24-10.57.02:123][  0]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.10.24-10.57.02:124][  0]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.10.24-10.57.02:124][  0]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-10.57.02:129][  0]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004375s)
+[2020.10.24-10.57.02:131][  0]LogAIModule: Creating AISystem for world TestMap
+[2020.10.24-10.57.02:131][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025F73425800), frame # 1000
+[2020.10.24-10.57.02:131][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025F68601580), frame # 1000
+[2020.10.24-10.57.02:131][  0]LogPlayLevel: PIE: World Init took: (0.001921s)
+[2020.10.24-10.57.02:131][  0]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.006522s)
+[2020.10.24-10.57.02:140][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2020.10.24-10.57.02:142][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.24-10.57.02:142][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.24-10.57.02:142][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.24-10.57.02:142][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.24-10.57.02:142][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.24-10.57.02:142][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.24-10.57.02:142][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.24-10.57.02:142][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.24-10.57.02:143][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.24-10.57.02:143][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.24-10.57.02:199][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.24-10.57.02:199][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.10.24-10.57.02:367][  0]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.24-10.57.02:367][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.24-10.57.02:367][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.24-10.57.02:367][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.24-10.57.02:367][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.24-10.57.02:381][  0]LogInit: FAudioDevice initialized.
+[2020.10.24-10.57.02:393][  0]LogLoad: Game class is 'FPGameMode'
+[2020.10.24-10.57.02:395][  0]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.24-19.57.02
+[2020.10.24-10.57.02:396][  0]LogWorld: Bringing up level for play took: 0.002223
+[2020.10.24-10.57.02:396][  0]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2020.10.24-10.57.02:437][  0]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 20 classes and 0 folders.
+[2020.10.24-10.57.02:452][  0]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-10.57.02:452][  0]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : 780.000
+[2020.10.24-10.57.02:463][  0]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-10.57.02:463][  0]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.24-10.57.02:463][  0]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-10.57.02:463][  0]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.24-10.57.02:474][  0]PIE: 서버가 로그인했습니다.
+[2020.10.24-10.57.02:478][  0]PIE: 에디터에서 플레이 총 시작 시간 0.363초입니다.
+[2020.10.24-10.57.03:472][103]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.03:764][138]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.05:199][306]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-381.018 Y=220.850 Z=10.000
+[2020.10.24-10.57.05:199][306]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=12.870 Y=357.338 Z=10.000
+[2020.10.24-10.57.08:167][659]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-12.098 Y=495.702 Z=10.000
+[2020.10.24-10.57.08:167][659]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=97.535 Y=233.591 Z=10.000
+[2020.10.24-10.57.11:166][ 18]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-10.57.11:167][ 18]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-195.599 Y=308.185 Z=10.000
+[2020.10.24-10.57.14:168][378]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=410.505 Y=13.702 Z=10.000
+[2020.10.24-10.57.14:168][378]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=126.725 Y=-415.038 Z=10.000
+[2020.10.24-10.57.14:668][438]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-10.57.16:700][680]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.16:700][680]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-10.57.16:700][680]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-10.57.16:986][714]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.17:170][736]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-335.218 Y=-127.948 Z=10.000
+[2020.10.24-10.57.17:170][736]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=228.473 Y=-185.249 Z=10.000
+[2020.10.24-10.57.20:169][ 95]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-10.57.20:170][ 95]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-304.784 Y=-209.392 Z=10.000
+[2020.10.24-10.57.20:921][185]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-10.57.21:673][275]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.21:673][275]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter_3
+[2020.10.24-10.57.21:673][275]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter_3 took Damage : 10.000000
+[2020.10.24-10.57.21:964][310]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.22:206][339]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.22:573][383]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.22:875][419]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.23:166][454]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-10.57.23:166][454]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=300.867 Y=192.149 Z=10.000
+[2020.10.24-10.57.23:240][463]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.24:122][568]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.24:122][568]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-10.57.24:122][568]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-10.57.25:410][722]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.25:410][722]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-10.57.25:410][722]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-10.57.25:695][755]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.25:945][785]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.25:945][785]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter_3
+[2020.10.24-10.57.25:945][785]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter_3 took Damage : 10.000000
+[2020.10.24-10.57.26:163][811]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-47.612 Y=-186.688 Z=10.000
+[2020.10.24-10.57.26:163][811]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=149.566 Y=-379.517 Z=10.000
+[2020.10.24-10.57.26:312][829]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.26:604][864]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.26:972][908]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.27:856][ 14]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.27:856][ 14]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter_3
+[2020.10.24-10.57.27:856][ 14]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter_3 took Damage : 10.000000
+[2020.10.24-10.57.29:164][171]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=106.312 Y=-195.383 Z=10.000
+[2020.10.24-10.57.29:165][171]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=254.584 Y=-413.903 Z=10.000
+[2020.10.24-10.57.29:256][182]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.29:256][182]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-10.57.29:256][182]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-10.57.29:547][217]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.29:790][246]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.29:790][246]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-10.57.29:790][246]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-10.57.30:156][290]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.30:457][326]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.30:457][326]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-10.57.30:457][326]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-10.57.30:825][370]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.57.31:705][475]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.57.31:706][475]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-10.57.31:706][475]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-10.57.32:166][530]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=426.879 Y=-157.656 Z=10.000
+[2020.10.24-10.57.32:166][530]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-101.592 Y=469.090 Z=10.000
+[2020.10.24-10.57.32:506][566]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-10.57.32:506][566]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-10.57.32:506][566]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.24-10.57.32:507][566]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-10.57.32:515][566]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.24-10.57.32:517][566]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-10.57.32:569][566]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-10.57.32:570][566]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025F73425800), frame # 4566
+[2020.10.24-10.57.32:570][566]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025F68601580), frame # 4566
+[2020.10.24-10.57.32:571][566]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2020.10.24-10.57.32:602][567]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2020.10.24-10.59.30:004][513]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.24-10.59.30:025][513]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.24-10.59.30:025][513]PIE: New page: PIE 세션: TestMap (2020. 10. 25. 오전 4:59:30)
+[2020.10.24-10.59.30:025][513]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-10.59.30:031][513]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006453s)
+[2020.10.24-10.59.30:032][513]LogAIModule: Creating AISystem for world TestMap
+[2020.10.24-10.59.30:033][513]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025F06295C00), frame # 5513
+[2020.10.24-10.59.30:318][513]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025F7343F100), frame # 5513
+[2020.10.24-10.59.30:319][513]LogPlayLevel: PIE: World Init took: (0.286903s)
+[2020.10.24-10.59.30:319][513]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.293699s)
+[2020.10.24-10.59.30:351][513]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2020.10.24-10.59.30:353][513]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.24-10.59.30:353][513]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.24-10.59.30:353][513]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.24-10.59.30:353][513]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.24-10.59.30:353][513]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.24-10.59.30:353][513]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.24-10.59.30:353][513]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.24-10.59.30:353][513]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.24-10.59.30:353][513]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.24-10.59.30:353][513]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.24-10.59.30:414][513]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.24-10.59.30:414][513]LogAudioMixer: Display: 1: FrontRight
+[2020.10.24-10.59.30:598][513]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.24-10.59.30:599][513]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.24-10.59.30:599][513]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.24-10.59.30:599][513]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.24-10.59.30:599][513]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.24-10.59.30:617][513]LogInit: FAudioDevice initialized.
+[2020.10.24-10.59.30:630][513]LogLoad: Game class is 'FPGameMode'
+[2020.10.24-10.59.30:632][513]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.24-19.59.30
+[2020.10.24-10.59.30:633][513]LogWorld: Bringing up level for play took: 0.002556
+[2020.10.24-10.59.30:634][513]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2020.10.24-10.59.30:637][513]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-10.59.30:637][513]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : 780.000
+[2020.10.24-10.59.30:637][513]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-10.59.30:637][513]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.24-10.59.30:637][513]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-10.59.30:637][513]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.24-10.59.30:638][513]PIE: 서버가 로그인했습니다.
+[2020.10.24-10.59.30:639][513]PIE: 에디터에서 플레이 총 시작 시간 0.618초입니다.
+[2020.10.24-10.59.31:538][601]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.59.31:820][635]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.59.33:262][807]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-10.59.33:262][807]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-157.845 Y=16.112 Z=10.000
+[2020.10.24-10.59.34:148][895]LogSlate: Took 0.035107 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.10.24-10.59.34:237][895]LogSlate: Took 0.045837 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2020.10.24-10.59.34:299][895]LogSlate: Took 0.050739 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2020.10.24-10.59.34:300][895]LogSlate: Last resort fallback font was requested. Font: '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf', Character: 'ϰ (U+03f0)'
+[2020.10.24-10.59.34:418][895]LogSlate: Took 0.110760 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2020.10.24-10.59.36:318][113]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-337.291 Y=-30.122 Z=10.000
+[2020.10.24-10.59.36:318][113]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=350.741 Y=-34.750 Z=10.000
+[2020.10.24-10.59.37:292][230]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-10.59.39:318][473]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=256.924 Y=164.224 Z=10.000
+[2020.10.24-10.59.39:318][473]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=126.057 Y=437.889 Z=10.000
+[2020.10.24-10.59.42:317][831]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=361.038 Y=-140.387 Z=10.000
+[2020.10.24-10.59.42:317][831]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=273.733 Y=90.607 Z=10.000
+[2020.10.24-10.59.42:744][882]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-10.59.43:026][916]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-10.59.45:320][191]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=356.781 Y=-27.970 Z=10.000
+[2020.10.24-10.59.45:320][191]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-292.665 Y=281.179 Z=10.000
+[2020.10.24-10.59.48:314][548]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=323.153 Y=-246.566 Z=10.000
+[2020.10.24-10.59.48:314][548]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=71.445 Y=38.737 Z=10.000
+[2020.10.24-10.59.51:317][908]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=95.000 Y=-304.000 Z=10.000
+[2020.10.24-10.59.51:317][908]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=187.683 Y=12.760 Z=10.000
+[2020.10.24-10.59.54:318][268]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-439.941 Y=95.389 Z=10.000
+[2020.10.24-10.59.54:318][268]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=194.896 Y=-279.814 Z=10.000
+[2020.10.24-10.59.57:318][628]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-189.693 Y=120.202 Z=10.000
+[2020.10.24-10.59.57:318][628]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=11.285 Y=-158.034 Z=10.000
+[2020.10.24-11.00.00:320][988]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-166.333 Y=386.120 Z=10.000
+[2020.10.24-11.00.00:320][988]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=31.924 Y=-83.771 Z=10.000
+[2020.10.24-11.00.03:318][347]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=95.000 Y=-304.000 Z=10.000
+[2020.10.24-11.00.03:318][347]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-94.585 Y=-202.244 Z=10.000
+[2020.10.24-11.00.06:319][707]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-45.769 Y=201.774 Z=10.000
+[2020.10.24-11.00.06:319][707]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=0.000 Y=0.000 Z=10.000
+[2020.10.24-11.00.09:320][ 67]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-90.327 Y=-122.019 Z=10.000
+[2020.10.24-11.00.09:320][ 67]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.00.12:316][426]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-427.811 Y=196.604 Z=10.000
+[2020.10.24-11.00.12:316][426]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-122.173 Y=87.759 Z=10.000
+[2020.10.24-11.00.15:317][786]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-127.140 Y=-194.664 Z=10.000
+[2020.10.24-11.00.15:317][786]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.00.18:316][146]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.00.18:316][146]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=187.708 Y=-178.516 Z=10.000
+[2020.10.24-11.00.21:320][506]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.00.21:320][506]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-228.710 Y=-165.686 Z=10.000
+[2020.10.24-11.00.24:321][866]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=303.967 Y=-140.857 Z=10.000
+[2020.10.24-11.00.24:321][866]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=475.455 Y=55.499 Z=10.000
+[2020.10.24-11.00.27:313][225]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=246.550 Y=337.296 Z=10.000
+[2020.10.24-11.00.27:313][225]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-79.195 Y=390.204 Z=10.000
+[2020.10.24-11.00.30:313][585]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-34.440 Y=-206.540 Z=10.000
+[2020.10.24-11.00.30:313][585]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=2.060 Y=-207.577 Z=10.000
+[2020.10.24-11.00.33:314][945]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=275.579 Y=380.675 Z=10.000
+[2020.10.24-11.00.33:314][945]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-433.764 Y=245.239 Z=10.000
+[2020.10.24-11.00.36:315][305]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=280.786 Y=145.141 Z=10.000
+[2020.10.24-11.00.36:315][305]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=78.374 Y=148.345 Z=10.000
+[2020.10.24-11.00.39:317][665]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-173.967 Y=62.267 Z=10.000
+[2020.10.24-11.00.39:317][665]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=16.653 Y=-119.223 Z=10.000
+[2020.10.24-11.00.42:317][ 25]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-271.459 Y=186.211 Z=10.000
+[2020.10.24-11.00.42:317][ 25]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-229.702 Y=-40.017 Z=10.000
+[2020.10.24-11.00.45:319][385]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-106.098 Y=94.749 Z=10.000
+[2020.10.24-11.00.45:319][385]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=129.310 Y=-275.475 Z=10.000
+[2020.10.24-11.00.48:321][745]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=150.628 Y=-313.359 Z=10.000
+[2020.10.24-11.00.48:321][745]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=66.733 Y=474.440 Z=10.000
+[2020.10.24-11.00.51:317][104]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-265.757 Y=-137.663 Z=10.000
+[2020.10.24-11.00.51:317][104]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=401.287 Y=-81.745 Z=10.000
+[2020.10.24-11.00.54:316][464]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-51.594 Y=56.372 Z=10.000
+[2020.10.24-11.00.54:316][464]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=276.327 Y=276.764 Z=10.000
+[2020.10.24-11.00.57:317][824]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-213.110 Y=-193.778 Z=10.000
+[2020.10.24-11.00.57:318][824]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-397.205 Y=263.710 Z=10.000
+[2020.10.24-11.01.00:319][184]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=38.833 Y=32.511 Z=10.000
+[2020.10.24-11.01.00:319][184]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-422.733 Y=-77.494 Z=10.000
+[2020.10.24-11.01.03:321][543]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=23.142 Y=-232.142 Z=10.000
+[2020.10.24-11.01.03:321][543]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-303.166 Y=117.850 Z=10.000
+[2020.10.24-11.01.06:315][902]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-45.179 Y=97.581 Z=10.000
+[2020.10.24-11.01.06:315][902]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=171.230 Y=70.007 Z=10.000
+[2020.10.24-11.01.09:322][262]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=247.176 Y=-231.131 Z=10.000
+[2020.10.24-11.01.09:322][262]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-137.613 Y=-176.171 Z=10.000
+[2020.10.24-11.01.12:316][621]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-438.779 Y=177.677 Z=10.000
+[2020.10.24-11.01.12:316][621]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=402.904 Y=-136.973 Z=10.000
+[2020.10.24-11.01.15:319][981]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=146.722 Y=-146.504 Z=10.000
+[2020.10.24-11.01.15:319][981]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.01.18:314][339]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=273.908 Y=-85.219 Z=10.000
+[2020.10.24-11.01.18:314][339]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-125.442 Y=55.448 Z=10.000
+[2020.10.24-11.01.21:316][699]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=179.268 Y=128.328 Z=10.000
+[2020.10.24-11.01.21:316][699]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-471.157 Y=117.974 Z=10.000
+[2020.10.24-11.01.24:316][ 59]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=197.686 Y=320.846 Z=10.000
+[2020.10.24-11.01.24:316][ 59]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=52.590 Y=-16.850 Z=10.000
+[2020.10.24-11.01.27:319][419]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=248.173 Y=-101.965 Z=10.000
+[2020.10.24-11.01.27:319][419]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=171.961 Y=-163.477 Z=10.000
+[2020.10.24-11.01.30:319][779]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-29.894 Y=-32.213 Z=10.000
+[2020.10.24-11.01.30:319][779]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-3.627 Y=-37.776 Z=10.000
+[2020.10.24-11.01.33:319][139]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=0.000 Y=0.000 Z=10.000
+[2020.10.24-11.01.33:319][139]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=79.392 Y=484.660 Z=10.000
+[2020.10.24-11.01.36:320][499]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=220.713 Y=20.757 Z=10.000
+[2020.10.24-11.01.36:320][499]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-81.937 Y=413.466 Z=10.000
+[2020.10.24-11.01.39:320][859]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-295.816 Y=106.136 Z=10.000
+[2020.10.24-11.01.39:320][859]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.01.42:315][218]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=91.281 Y=-75.976 Z=10.000
+[2020.10.24-11.01.42:315][218]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=446.075 Y=74.411 Z=10.000
+[2020.10.24-11.01.45:316][578]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=95.000 Y=-304.000 Z=10.000
+[2020.10.24-11.01.45:316][578]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-235.277 Y=425.088 Z=10.000
+[2020.10.24-11.01.48:321][938]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-4.978 Y=331.714 Z=10.000
+[2020.10.24-11.01.48:321][938]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=53.323 Y=-262.323 Z=10.000
+[2020.10.24-11.01.51:321][298]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=328.078 Y=-50.147 Z=10.000
+[2020.10.24-11.01.51:321][298]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=200.018 Y=79.192 Z=10.000
+[2020.10.24-11.01.54:313][657]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=68.518 Y=349.793 Z=10.000
+[2020.10.24-11.01.54:313][657]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=50.993 Y=102.882 Z=10.000
+[2020.10.24-11.01.57:317][ 17]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=53.176 Y=-214.067 Z=10.000
+[2020.10.24-11.01.57:317][ 17]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=66.101 Y=-275.101 Z=10.000
+[2020.10.24-11.02.00:318][377]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=119.102 Y=-388.358 Z=10.000
+[2020.10.24-11.02.00:318][377]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.02.03:317][736]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=190.462 Y=32.936 Z=10.000
+[2020.10.24-11.02.03:317][736]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-50.517 Y=312.326 Z=10.000
+[2020.10.24-11.02.06:318][ 96]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-259.917 Y=-19.850 Z=10.000
+[2020.10.24-11.02.06:318][ 96]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-106.894 Y=105.859 Z=10.000
+[2020.10.24-11.02.09:319][456]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-58.467 Y=-204.824 Z=10.000
+[2020.10.24-11.02.09:319][456]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-320.041 Y=3.774 Z=10.000
+[2020.10.24-11.02.12:321][816]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-10.987 Y=236.355 Z=10.000
+[2020.10.24-11.02.12:321][816]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-119.786 Y=427.963 Z=10.000
+[2020.10.24-11.02.15:314][175]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-161.981 Y=-26.558 Z=10.000
+[2020.10.24-11.02.15:314][175]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-228.042 Y=159.600 Z=10.000
+[2020.10.24-11.02.18:315][535]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=227.599 Y=-315.924 Z=10.000
+[2020.10.24-11.02.18:316][535]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-165.954 Y=10.883 Z=10.000
+[2020.10.24-11.02.21:317][895]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-478.370 Y=133.820 Z=10.000
+[2020.10.24-11.02.21:317][895]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-174.770 Y=370.380 Z=10.000
+[2020.10.24-11.02.24:317][255]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-119.961 Y=-200.431 Z=10.000
+[2020.10.24-11.02.24:317][255]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=70.890 Y=405.422 Z=10.000
+[2020.10.24-11.02.27:319][615]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.02.27:319][615]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=253.057 Y=332.883 Z=10.000
+[2020.10.24-11.02.30:314][974]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-282.111 Y=-116.130 Z=10.000
+[2020.10.24-11.02.30:314][974]Final_Project: Warning: AFPAIController::OnRepeatTimer(37) Next Location : X=-342.000 Y=-228.000 Z=10.000
+[2020.10.24-11.02.31:416][101]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.02.31:416][101]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-11.02.31:416][101]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.24-11.02.31:416][101]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.02.31:425][101]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.24-11.02.31:426][101]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.02.31:435][101]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.02.31:455][101]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025F7343F100), frame # 27101
+[2020.10.24-11.02.31:456][101]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025F06295C00), frame # 27101
+[2020.10.24-11.02.31:456][101]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2020.10.24-11.02.31:480][102]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2020.10.24-11.06.03:605][146]Candidate modules for hot reload:
+[2020.10.24-11.06.03:605][146]  Final_Project
+[2020.10.24-11.06.03:605][146]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,4932 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.24-11.06.03:608][146]Warning: Starting HotReload took  0.0s.
+[2020.10.24-11.06.18:834][886]CompilerResultsLog: New page: 컴파일 - 2020. 10. 25. 오전 5:06:18
+[2020.10.24-11.06.18:834][886]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.24-11.06.18:834][886]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.24-11.06.18:834][886]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.24-11.06.18:834][886]CompilerResultsLog: Building 4 actions with 8 processes...
+[2020.10.24-11.06.18:834][886]CompilerResultsLog:   [1/4] FPAIController.cpp
+[2020.10.24-11.06.18:834][886]CompilerResultsLog:   [2/4] UE4Editor-Final_Project-4932.lib
+[2020.10.24-11.06.18:834][886]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-4932.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-4932.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.24-11.06.18:834][886]CompilerResultsLog:   [3/4] UE4Editor-Final_Project-4932.dll
+[2020.10.24-11.06.18:834][886]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-4932.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-4932.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.24-11.06.18:834][886]CompilerResultsLog:   [4/4] Final_ProjectEditor.target
+[2020.10.24-11.06.18:834][886]CompilerResultsLog: Total time in Parallel executor: 13.46 seconds
+[2020.10.24-11.06.18:834][886]CompilerResultsLog: Total execution time: 15.07 seconds
+[2020.10.24-11.06.18:834][886]LogMainFrame: MainFrame: Module compiling took 15.233 seconds
+[2020.10.24-11.06.18:891][886]LogClass: FPCharacterData HotReload.
+[2020.10.24-11.06.18:903][886]LogHotReload: Re-instancing FPCharacter after hot-reload.
+[2020.10.24-11.06.18:918][886]LogContentBrowser: Native class hierarchy updated for 'Final_Project' in 0.0006 seconds. Added 12 classes and 2 folders.
+[2020.10.24-11.06.18:920][886]Display: HotReload successful (5 functions remapped  1 scriptstructs remapped)
+[2020.10.24-11.06.18:967][886]LogContentBrowser: Native class hierarchy populated in 0.0106 seconds. Added 3439 classes and 823 folders.
+[2020.10.24-11.06.18:967][886]Display: HotReload took 15.4s.
+[2020.10.24-11.06.20:925][114]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.24-11.06.20:945][114]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.24-11.06.20:946][114]PIE: New page: PIE 세션: TestMap (2020. 10. 25. 오전 5:06:20)
+[2020.10.24-11.06.20:981][114]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-11.06.20:987][114]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005975s)
+[2020.10.24-11.06.20:990][114]LogAIModule: Creating AISystem for world TestMap
+[2020.10.24-11.06.20:990][114]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025F72F7A400), frame # 30114
+[2020.10.24-11.06.20:991][114]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025F0657E340), frame # 30114
+[2020.10.24-11.06.20:991][114]LogPlayLevel: PIE: World Init took: (0.003741s)
+[2020.10.24-11.06.20:991][114]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.009990s)
+[2020.10.24-11.06.21:016][114]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.10.24-11.06.21:017][114]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.24-11.06.21:017][114]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.24-11.06.21:017][114]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.24-11.06.21:017][114]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.24-11.06.21:017][114]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.24-11.06.21:017][114]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.24-11.06.21:017][114]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.24-11.06.21:017][114]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.24-11.06.21:018][114]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.24-11.06.21:018][114]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.24-11.06.21:073][114]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.24-11.06.21:073][114]LogAudioMixer: Display: 1: FrontRight
+[2020.10.24-11.06.21:293][114]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.24-11.06.21:293][114]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.24-11.06.21:293][114]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.24-11.06.21:293][114]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.24-11.06.21:294][114]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.24-11.06.21:307][114]LogInit: FAudioDevice initialized.
+[2020.10.24-11.06.21:314][114]LogLoad: Game class is 'FPGameMode'
+[2020.10.24-11.06.21:316][114]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.24-20.06.21
+[2020.10.24-11.06.21:316][114]LogWorld: Bringing up level for play took: 0.001931
+[2020.10.24-11.06.21:316][114]LogOnline: OSS: Creating online subsystem instance for: :Context_3
+[2020.10.24-11.06.21:319][114]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.06.21:319][114]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : 780.000
+[2020.10.24-11.06.21:319][114]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.06.21:319][114]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.24-11.06.21:320][114]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.06.21:320][114]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.24-11.06.21:320][114]PIE: 서버가 로그인했습니다.
+[2020.10.24-11.06.21:321][114]PIE: 에디터에서 플레이 총 시작 시간 0.382초입니다.
+[2020.10.24-11.06.23:947][425]Final_Project: Error: AFPAIController::OnRepeatTimer(30) ASSERTION : 'nullptr == CurrentPawn'
+[2020.10.24-11.06.23:947][425]Final_Project: Error: AFPAIController::OnRepeatTimer(30) ASSERTION : 'nullptr == CurrentPawn'
+[2020.10.24-11.06.26:951][776]Final_Project: Error: AFPAIController::OnRepeatTimer(30) ASSERTION : 'nullptr == CurrentPawn'
+[2020.10.24-11.06.26:951][776]Final_Project: Error: AFPAIController::OnRepeatTimer(30) ASSERTION : 'nullptr == CurrentPawn'
+[2020.10.24-11.06.27:663][858]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.06.27:664][858]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-11.06.27:664][858]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.24-11.06.27:664][858]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.06.27:674][858]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.24-11.06.27:676][858]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.06.27:727][858]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.06.27:728][858]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025F0657E340), frame # 30858
+[2020.10.24-11.06.27:728][858]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025F72F7A400), frame # 30858
+[2020.10.24-11.06.27:729][858]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2020.10.24-11.06.27:762][859]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2020.10.24-11.06.33:192][250]Candidate modules for hot reload:
+[2020.10.24-11.06.33:192][250]  Final_Project
+[2020.10.24-11.06.33:192][250]Launching UnrealBuildTool... [D:/UnrealEngine/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Final_Project,6529 Final_ProjectEditor Win64 Development -Project="D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject" "D:/UnrealEngine/UnrealProjects/Final_Project/Final_Project.uproject"  -IgnoreJunk]
+[2020.10.24-11.06.33:196][250]Warning: Starting HotReload took  0.1s.
+[2020.10.24-11.06.44:999][653]CompilerResultsLog: New page: 컴파일 - 2020. 10. 25. 오전 5:06:44
+[2020.10.24-11.06.44:999][653]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\UnrealProjects\Final_Project).
+[2020.10.24-11.06.45:000][653]CompilerResultsLog: Building Final_ProjectEditor...
+[2020.10.24-11.06.45:000][653]CompilerResultsLog: Using Visual Studio 2017 14.16.27031 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.10.24-11.06.45:000][653]CompilerResultsLog: Building 4 actions with 8 processes...
+[2020.10.24-11.06.45:000][653]CompilerResultsLog:   [1/4] FPAIController.cpp
+[2020.10.24-11.06.45:000][653]CompilerResultsLog:   [2/4] UE4Editor-Final_Project-6529.lib
+[2020.10.24-11.06.45:000][653]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-6529.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-6529.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.24-11.06.45:000][653]CompilerResultsLog:   [3/4] UE4Editor-Final_Project-6529.dll
+[2020.10.24-11.06.45:000][653]CompilerResultsLog:      D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-6529.suppressed.lib ???̺귯?? ?? D:\UnrealEngine\UnrealProjects\Final_Project\Intermediate\Build\Win64\UE4Editor\Development\Final_Project\UE4Editor-Final_Project-6529.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2020.10.24-11.06.45:000][653]CompilerResultsLog:   [4/4] Final_ProjectEditor.target
+[2020.10.24-11.06.45:000][653]CompilerResultsLog: Total time in Parallel executor: 10.22 seconds
+[2020.10.24-11.06.45:000][653]CompilerResultsLog: Total execution time: 11.56 seconds
+[2020.10.24-11.06.45:000][653]LogMainFrame: MainFrame: Module compiling took 11.813 seconds
+[2020.10.24-11.06.45:044][653]LogClass: FPCharacterData HotReload.
+[2020.10.24-11.06.45:049][653]LogHotReload: Re-instancing FPCharacter after hot-reload.
+[2020.10.24-11.06.45:065][653]LogContentBrowser: Native class hierarchy updated for 'Final_Project' in 0.0006 seconds. Added 12 classes and 2 folders.
+[2020.10.24-11.06.45:066][653]Display: HotReload successful (5 functions remapped  1 scriptstructs remapped)
+[2020.10.24-11.06.45:115][653]LogContentBrowser: Native class hierarchy populated in 0.0152 seconds. Added 3439 classes and 823 folders.
+[2020.10.24-11.06.45:115][653]Display: HotReload took 12.0s.
+[2020.10.24-11.08.36:885][178]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Floors_Flat01)
+[2020.10.24-11.08.38:030][218]LogEditorViewport: Clicking on Actor (LMB): Fountain (Fountain2)
+[2020.10.24-11.08.42:704][740]Cmd: TRANSACTION UNDO
+[2020.10.24-11.08.42:704][740]LogEditorTransaction: Undo 액터 이동
+[2020.10.24-11.08.42:712][740]LogSlate: Took 0.000322 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.10.24-11.08.44:558][906]Cmd: EDIT COPY
+[2020.10.24-11.08.45:075][957]Cmd: EDIT PASTE
+[2020.10.24-11.08.49:717][429]Cmd: TRANSACTION UNDO
+[2020.10.24-11.08.49:717][429]LogEditorTransaction: Undo 액터 이동
+[2020.10.24-11.08.51:366][576]Cmd: EDIT PASTE
+[2020.10.24-11.08.55:383][965]Cmd: EDIT PASTE
+[2020.10.24-11.08.59:588][356]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.24-11.08.59:608][356]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.24-11.08.59:608][356]PIE: New page: PIE 세션: TestMap (2020. 10. 25. 오전 5:08:59)
+[2020.10.24-11.08.59:608][356]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-11.08.59:612][356]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004284s)
+[2020.10.24-11.08.59:613][356]LogAIModule: Creating AISystem for world TestMap
+[2020.10.24-11.08.59:613][356]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025F056AC200), frame # 35356
+[2020.10.24-11.08.59:613][356]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025F7343D1C0), frame # 35356
+[2020.10.24-11.08.59:614][356]LogPlayLevel: PIE: World Init took: (0.001407s)
+[2020.10.24-11.08.59:614][356]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.005827s)
+[2020.10.24-11.08.59:624][356]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2020.10.24-11.08.59:626][356]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.24-11.08.59:626][356]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.24-11.08.59:626][356]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.24-11.08.59:626][356]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.24-11.08.59:626][356]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.24-11.08.59:626][356]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.24-11.08.59:626][356]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.24-11.08.59:626][356]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.24-11.08.59:626][356]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.24-11.08.59:626][356]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.24-11.08.59:678][356]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.24-11.08.59:678][356]LogAudioMixer: Display: 1: FrontRight
+[2020.10.24-11.08.59:846][356]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.24-11.08.59:847][356]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.24-11.08.59:847][356]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.24-11.08.59:847][356]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.24-11.08.59:848][356]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.24-11.08.59:861][356]LogInit: FAudioDevice initialized.
+[2020.10.24-11.08.59:872][356]LogLoad: Game class is 'FPGameMode'
+[2020.10.24-11.08.59:875][356]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.24-20.08.59
+[2020.10.24-11.08.59:875][356]LogWorld: Bringing up level for play took: 0.001914
+[2020.10.24-11.08.59:875][356]LogOnline: OSS: Creating online subsystem instance for: :Context_6
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : 780.000
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain3, ID : 0, Location X : -300.000
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain6, ID : 0, Location X : -160.000
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.08.59:878][356]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain7, ID : 0, Location X : 440.000
+[2020.10.24-11.08.59:879][356]PIE: 서버가 로그인했습니다.
+[2020.10.24-11.08.59:880][356]PIE: 에디터에서 플레이 총 시작 시간 0.277초입니다.
+[2020.10.24-11.09.01:013][476]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.09.01:301][508]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.09.02:592][643]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-79.587 Y=412.806 Z=10.000
+[2020.10.24-11.09.02:592][643]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-19.000 Y=304.000 Z=10.000
+[2020.10.24-11.09.02:990][685]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-11.09.05:593][967]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-31.401 Y=-206.757 Z=10.000
+[2020.10.24-11.09.05:594][967]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.09.06:308][ 39]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.09.06:308][ 39]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-11.09.06:309][ 39]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.24-11.09.06:310][ 39]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.09.06:335][ 39]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.24-11.09.06:338][ 39]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.09.06:394][ 39]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.09.06:396][ 39]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025F056AC200), frame # 36039
+[2020.10.24-11.09.06:396][ 39]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025F7343D1C0), frame # 36039
+[2020.10.24-11.09.06:397][ 39]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2020.10.24-11.09.06:438][ 40]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2020.10.24-11.09.07:097][106]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.24-11.09.07:116][106]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.24-11.09.07:116][106]PIE: New page: PIE 세션: TestMap (2020. 10. 25. 오전 5:09:07)
+[2020.10.24-11.09.07:150][106]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-11.09.07:154][106]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004318s)
+[2020.10.24-11.09.07:156][106]LogAIModule: Creating AISystem for world TestMap
+[2020.10.24-11.09.07:156][106]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025F058D2A00), frame # 36106
+[2020.10.24-11.09.07:156][106]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025F0657C900), frame # 36106
+[2020.10.24-11.09.07:156][106]LogPlayLevel: PIE: World Init took: (0.001811s)
+[2020.10.24-11.09.07:156][106]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.006290s)
+[2020.10.24-11.09.07:165][106]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2020.10.24-11.09.07:167][106]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.24-11.09.07:167][106]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.24-11.09.07:167][106]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.24-11.09.07:167][106]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.24-11.09.07:167][106]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.24-11.09.07:167][106]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.24-11.09.07:167][106]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.24-11.09.07:167][106]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.24-11.09.07:167][106]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.24-11.09.07:167][106]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.24-11.09.07:216][106]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.24-11.09.07:216][106]LogAudioMixer: Display: 1: FrontRight
+[2020.10.24-11.09.07:374][106]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.24-11.09.07:375][106]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.24-11.09.07:375][106]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.24-11.09.07:375][106]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.24-11.09.07:375][106]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.24-11.09.07:388][106]LogInit: FAudioDevice initialized.
+[2020.10.24-11.09.07:399][106]LogLoad: Game class is 'FPGameMode'
+[2020.10.24-11.09.07:401][106]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.24-20.09.07
+[2020.10.24-11.09.07:402][106]LogWorld: Bringing up level for play took: 0.002163
+[2020.10.24-11.09.07:402][106]LogOnline: OSS: Creating online subsystem instance for: :Context_7
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : 780.000
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain3, ID : 0, Location X : -300.000
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain6, ID : 0, Location X : -160.000
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.09.07:405][106]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain7, ID : 0, Location X : 440.000
+[2020.10.24-11.09.07:406][106]PIE: 서버가 로그인했습니다.
+[2020.10.24-11.09.07:407][106]PIE: 에디터에서 플레이 총 시작 시간 0.294초입니다.
+[2020.10.24-11.09.09:061][299]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.09.09:347][333]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.09.10:105][419]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.09.10:105][419]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-22.622 Y=447.761 Z=10.000
+[2020.10.24-11.09.12:158][638]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-11.09.13:105][731]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-65.218 Y=14.376 Z=10.000
+[2020.10.24-11.09.13:106][731]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-24.328 Y=327.875 Z=10.000
+[2020.10.24-11.09.16:104][ 51]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-133.000 Y=475.000 Z=10.000
+[2020.10.24-11.09.16:104][ 51]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=95.000 Y=-304.000 Z=10.000
+[2020.10.24-11.09.19:107][410]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-371.483 Y=-159.207 Z=10.000
+[2020.10.24-11.09.19:107][410]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=95.000 Y=-304.000 Z=10.000
+[2020.10.24-11.09.22:101][762]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-19.000 Y=304.000 Z=10.000
+[2020.10.24-11.09.22:101][762]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=280.565 Y=-305.779 Z=10.000
+[2020.10.24-11.09.25:104][101]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.09.25:104][101]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=95.000 Y=-304.000 Z=10.000
+[2020.10.24-11.09.28:100][449]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-484.428 Y=-58.101 Z=10.000
+[2020.10.24-11.09.28:100][449]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=311.163 Y=-371.846 Z=10.000
+[2020.10.24-11.09.31:106][809]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-120.532 Y=-66.297 Z=10.000
+[2020.10.24-11.09.31:106][809]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-19.000 Y=304.000 Z=10.000
+[2020.10.24-11.09.34:102][168]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-219.593 Y=-193.315 Z=10.000
+[2020.10.24-11.09.34:103][168]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=40.884 Y=162.057 Z=10.000
+[2020.10.24-11.09.34:152][174]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-11.09.34:152][174]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(81) FPCharacter_0 can't equip weapon currently.
+[2020.10.24-11.09.37:119][524]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-116.370 Y=-28.836 Z=10.000
+[2020.10.24-11.09.37:119][524]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-205.148 Y=-194.347 Z=10.000
+[2020.10.24-11.09.40:105][876]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-433.617 Y=-210.358 Z=10.000
+[2020.10.24-11.09.40:105][876]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=97.574 Y=-93.582 Z=10.000
+[2020.10.24-11.09.43:108][231]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=370.695 Y=-126.658 Z=10.000
+[2020.10.24-11.09.43:108][231]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-187.405 Y=455.565 Z=10.000
+[2020.10.24-11.09.46:106][588]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.09.46:106][588]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-19.000 Y=304.000 Z=10.000
+[2020.10.24-11.09.49:101][935]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=172.920 Y=182.103 Z=10.000
+[2020.10.24-11.09.49:101][935]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=184.135 Y=433.943 Z=10.000
+[2020.10.24-11.09.52:099][291]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=67.359 Y=-156.654 Z=10.000
+[2020.10.24-11.09.52:099][291]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=97.875 Y=-202.916 Z=10.000
+[2020.10.24-11.09.55:313][535]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=89.562 Y=3.574 Z=10.000
+[2020.10.24-11.09.55:314][535]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.09.58:454][902]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-136.998 Y=-141.518 Z=10.000
+[2020.10.24-11.09.58:454][902]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=236.616 Y=-367.882 Z=10.000
+[2020.10.24-11.09.58:987][946]LogSlate: Took 0.000292 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.10.24-11.10.01:449][200]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=197.788 Y=-316.509 Z=10.000
+[2020.10.24-11.10.01:449][200]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=85.237 Y=340.345 Z=10.000
+[2020.10.24-11.10.04:550][452]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=227.091 Y=-131.310 Z=10.000
+[2020.10.24-11.10.04:550][452]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-19.000 Y=304.000 Z=10.000
+[2020.10.24-11.10.06:706][621]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.10.06:999][646]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.10.07:297][673]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-11.10.07:297][673]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(81) FPCharacter_0 can't equip weapon currently.
+[2020.10.24-11.10.07:534][695]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.10.07:535][695]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-368.565 Y=-177.231 Z=10.000
+[2020.10.24-11.10.08:301][765]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-11.10.08:301][765]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(81) FPCharacter_0 can't equip weapon currently.
+[2020.10.24-11.10.10:535][973]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=33.405 Y=229.199 Z=10.000
+[2020.10.24-11.10.10:535][973]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-371.483 Y=-159.207 Z=10.000
+[2020.10.24-11.10.13:093][206]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-11.10.13:094][206]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(81) FPCharacter_0 can't equip weapon currently.
+[2020.10.24-11.10.13:544][243]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-174.531 Y=-70.380 Z=10.000
+[2020.10.24-11.10.13:544][243]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=28.838 Y=-60.023 Z=10.000
+[2020.10.24-11.10.16:533][516]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-290.094 Y=-202.047 Z=10.000
+[2020.10.24-11.10.16:533][516]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=77.448 Y=455.792 Z=10.000
+[2020.10.24-11.10.19:537][797]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=363.301 Y=-304.635 Z=10.000
+[2020.10.24-11.10.19:537][797]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=228.735 Y=-26.611 Z=10.000
+[2020.10.24-11.10.22:160][ 41]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-11.10.22:161][ 41]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(81) FPCharacter_0 can't equip weapon currently.
+[2020.10.24-11.10.22:544][ 71]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-178.358 Y=-136.657 Z=10.000
+[2020.10.24-11.10.22:544][ 71]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=29.480 Y=197.232 Z=10.000
+[2020.10.24-11.10.25:532][331]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=397.867 Y=-124.371 Z=10.000
+[2020.10.24-11.10.25:532][331]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=64.317 Y=16.597 Z=10.000
+[2020.10.24-11.10.28:536][606]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=76.310 Y=257.812 Z=10.000
+[2020.10.24-11.10.28:536][606]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=209.076 Y=82.222 Z=10.000
+[2020.10.24-11.10.31:531][875]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=98.642 Y=-141.911 Z=10.000
+[2020.10.24-11.10.31:531][875]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=303.333 Y=-143.898 Z=10.000
+[2020.10.24-11.10.34:533][141]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=54.311 Y=-25.029 Z=10.000
+[2020.10.24-11.10.34:533][141]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=130.773 Y=407.684 Z=10.000
+[2020.10.24-11.10.37:534][401]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=361.451 Y=-205.683 Z=10.000
+[2020.10.24-11.10.37:534][401]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-19.000 Y=304.000 Z=10.000
+[2020.10.24-11.10.40:537][675]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=95.000 Y=-304.000 Z=10.000
+[2020.10.24-11.10.40:537][675]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=321.460 Y=-53.751 Z=10.000
+[2020.10.24-11.10.43:535][950]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=93.341 Y=-145.307 Z=10.000
+[2020.10.24-11.10.43:536][950]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-59.926 Y=-1.833 Z=10.000
+[2020.10.24-11.10.46:533][222]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-477.442 Y=-47.626 Z=10.000
+[2020.10.24-11.10.46:533][222]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=288.439 Y=-281.027 Z=10.000
+[2020.10.24-11.10.49:535][493]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-40.415 Y=-68.426 Z=10.000
+[2020.10.24-11.10.49:535][493]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=98.235 Y=-210.111 Z=10.000
+[2020.10.24-11.10.52:114][716]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.10.52:114][716]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-11.10.52:114][716]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.24-11.10.52:114][716]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.10.52:124][716]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.24-11.10.52:125][716]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.10.52:135][716]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.10.52:157][716]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025F0657C900), frame # 46716
+[2020.10.24-11.10.52:157][716]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025F058D2A00), frame # 46716
+[2020.10.24-11.10.52:163][716]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2020.10.24-11.10.52:208][717]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2020.10.24-11.10.54:659][978]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.54:659][978]LogEditorTransaction: Undo 액터 이동
+[2020.10.24-11.10.55:035][988]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.55:035][988]LogEditorTransaction: Undo 액터 이동
+[2020.10.24-11.10.55:290][  5]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.55:290][  5]LogEditorTransaction: Undo 붙여넣기
+[2020.10.24-11.10.55:617][ 26]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.55:617][ 26]LogEditorTransaction: Undo 액터 이동
+[2020.10.24-11.10.55:896][ 53]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.55:896][ 53]LogEditorTransaction: Undo 붙여넣기
+[2020.10.24-11.10.57:032][172]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.57:032][172]LogEditorTransaction: Undo 액터 이동
+[2020.10.24-11.10.57:306][202]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.57:306][202]LogEditorTransaction: Undo 액터 이동
+[2020.10.24-11.10.58:359][325]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.58:359][325]LogEditorTransaction: Undo 붙여넣기
+[2020.10.24-11.10.58:636][347]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.58:636][347]LogEditorTransaction: Undo 액터 클릭
+[2020.10.24-11.10.59:155][400]Cmd: TRANSACTION UNDO
+[2020.10.24-11.10.59:155][400]LogEditorTransaction: Undo 액터 클릭
+[2020.10.24-11.11.02:947][853]Cmd: TRANSACTION REDO
+[2020.10.24-11.11.02:947][853]LogEditorTransaction: Redo 액터 클릭
+[2020.10.24-11.11.04:534][992]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2020.10.24-11.11.07:047][275]LogTemp: Repeating last play command: 선택된 뷰포트
+[2020.10.24-11.11.07:064][275]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.24-11.11.07:065][275]PIE: New page: PIE 세션: TestMap (2020. 10. 25. 오전 5:11:07)
+[2020.10.24-11.11.07:100][275]LogPlayLevel: Creating play world package: /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-11.11.07:105][275]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004442s)
+[2020.10.24-11.11.07:106][275]LogAIModule: Creating AISystem for world TestMap
+[2020.10.24-11.11.07:106][275]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025F72DFA000), frame # 48275
+[2020.10.24-11.11.07:106][275]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025F68600680), frame # 48275
+[2020.10.24-11.11.07:106][275]LogPlayLevel: PIE: World Init took: (0.001363s)
+[2020.10.24-11.11.07:106][275]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Stage/TestMap.TestMap to /Game/Stage/UEDPIE_0_TestMap.TestMap (0.005967s)
+[2020.10.24-11.11.07:116][275]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.10.24-11.11.07:119][275]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.24-11.11.07:119][275]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.24-11.11.07:119][275]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.24-11.11.07:119][275]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.24-11.11.07:119][275]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.24-11.11.07:119][275]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.24-11.11.07:119][275]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.24-11.11.07:119][275]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.24-11.11.07:120][275]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.24-11.11.07:120][275]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.24-11.11.07:175][275]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.24-11.11.07:175][275]LogAudioMixer: Display: 1: FrontRight
+[2020.10.24-11.11.07:340][275]LogAudioMixer: Display: Using Audio Device 스피커(Realtek High Definition Audio)
+[2020.10.24-11.11.07:340][275]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.24-11.11.07:340][275]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.24-11.11.07:340][275]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.24-11.11.07:341][275]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.24-11.11.07:354][275]LogInit: FAudioDevice initialized.
+[2020.10.24-11.11.07:361][275]LogLoad: Game class is 'FPGameMode'
+[2020.10.24-11.11.07:363][275]LogWorld: Bringing World /Game/Stage/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2020.10.24-20.11.07
+[2020.10.24-11.11.07:364][275]LogWorld: Bringing up level for play took: 0.001806
+[2020.10.24-11.11.07:364][275]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2020.10.24-11.11.07:366][275]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.11.07:366][275]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_5, ID : 0, Location X : 780.000
+[2020.10.24-11.11.07:366][275]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.11.07:366][275]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_4, ID : 0, Location X : 240.000
+[2020.10.24-11.11.07:366][275]Final_Project: Warning: AFountain::BeginPlay(71)
+[2020.10.24-11.11.07:366][275]Final_Project: Warning: AFountain::BeginPlay(72) Actor Name : Fountain_2, ID : 0, Location X : -160.000
+[2020.10.24-11.11.07:367][275]PIE: 서버가 로그인했습니다.
+[2020.10.24-11.11.07:368][275]PIE: 에디터에서 플레이 총 시작 시간 0.308초입니다.
+[2020.10.24-11.11.08:074][351]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.08:362][385]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.10:052][580]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-0.000 Y=-0.000 Z=10.000
+[2020.10.24-11.11.10:052][580]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=400.472 Y=-48.460 Z=10.000
+[2020.10.24-11.11.11:712][775]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-11.11.13:052][931]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-403.994 Y=282.974 Z=10.000
+[2020.10.24-11.11.13:052][931]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-303.725 Y=23.137 Z=10.000
+[2020.10.24-11.11.13:311][962]Final_Project: Warning: AFPItemBox::OnCharacterOverlap(62)
+[2020.10.24-11.11.13:506][985]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.13:506][985]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter_3
+[2020.10.24-11.11.13:506][985]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter_3 took Damage : 10.000000
+[2020.10.24-11.11.13:796][ 18]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.16:047][276]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=66.876 Y=145.799 Z=10.000
+[2020.10.24-11.11.16:048][276]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-338.119 Y=118.468 Z=10.000
+[2020.10.24-11.11.17:246][413]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.17:246][413]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-11.11.17:246][413]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-11.11.17:536][447]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.17:788][474]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.17:788][474]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-11.11.17:788][474]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-11.11.18:152][517]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.18:447][552]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.18:447][552]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-11.11.18:447][552]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-11.11.18:813][594]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.19:053][621]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=75.145 Y=76.662 Z=10.000
+[2020.10.24-11.11.19:053][621]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=236.616 Y=440.070 Z=10.000
+[2020.10.24-11.11.19:693][694]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.21:038][848]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.21:039][848]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-11.11.21:039][848]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-11.11.21:324][882]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.21:569][910]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.21:569][910]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-11.11.21:569][910]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-11.11.21:937][954]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.22:053][967]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=126.533 Y=418.338 Z=10.000
+[2020.10.24-11.11.22:053][967]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=99.779 Y=109.926 Z=10.000
+[2020.10.24-11.11.22:230][988]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.22:230][988]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter4
+[2020.10.24-11.11.22:230][988]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter4 took Damage : 10.000000
+[2020.10.24-11.11.22:600][ 32]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.23:483][135]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.23:483][135]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter_3
+[2020.10.24-11.11.23:483][135]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter_3 took Damage : 10.000000
+[2020.10.24-11.11.24:831][293]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.24:831][293]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter_3
+[2020.10.24-11.11.24:831][293]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter_3 took Damage : 10.000000
+[2020.10.24-11.11.25:052][319]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-145.757 Y=38.463 Z=10.000
+[2020.10.24-11.11.25:052][319]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-268.995 Y=79.494 Z=10.000
+[2020.10.24-11.11.25:118][327]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.25:370][356]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.25:370][356]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter_3
+[2020.10.24-11.11.25:370][356]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter_3 took Damage : 10.000000
+[2020.10.24-11.11.25:732][398]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.26:034][434]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.26:401][477]Final_Project: Warning: AFPCharacter::PostInitializeComponents::<lambda_6cb156047772b763a4a0f354dd8a1179>::operator ()(214) OnNextAttackCheck
+[2020.10.24-11.11.27:272][578]Final_Project: Warning: UFPAnimInstance::AnimNotify_AttackHitCheck(60)
+[2020.10.24-11.11.27:272][578]Final_Project: Warning: AFPCharacter::AttackCheck(435) Hit Actor Name : FPCharacter_3
+[2020.10.24-11.11.27:272][578]Final_Project: Warning: AFPCharacter::TakeDamage(236) Actor : FPCharacter_3 took Damage : 10.000000
+[2020.10.24-11.11.28:047][669]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-133.678 Y=337.968 Z=10.000
+[2020.10.24-11.11.28:047][669]Final_Project: Warning: AFPAIController::OnRepeatTimer(39) Next Location : X=-343.775 Y=-107.715 Z=10.000
+[2020.10.24-11.11.28:093][671]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.11.28:093][671]LogWorld: BeginTearingDown for /Game/Stage/UEDPIE_0_TestMap
+[2020.10.24-11.11.28:094][671]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.24-11.11.28:094][671]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.11.28:102][671]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.24-11.11.28:103][671]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.24-11.11.28:130][671]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.24-11.11.28:131][671]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025F68600680), frame # 50671
+[2020.10.24-11.11.28:131][671]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025F72DFA000), frame # 50671
+[2020.10.24-11.11.28:132][671]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2020.10.24-11.11.28:170][672]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2020.10.24-11.12.11:604][933]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2020.10.24-11.12.11:607][933]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.017
+[2020.10.24-11.22.12:046][727]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2020.10.24-11.22.12:049][727]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.026
+[2020.10.24-11.32.38:704][600]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2020.10.24-11.32.38:707][600]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.014
+[2020.10.24-11.42.39:304][396]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2020.10.24-11.42.39:307][396]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.032
+[2020.10.24-11.52.39:859][193]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2020.10.24-11.52.39:861][193]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.025
+[2020.10.24-12.02.40:561][991]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2020.10.24-12.02.40:564][991]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.030
+[2020.10.24-12.12.40:993][788]LogUObjectHash: Compacting FUObjectHashTables data took   0.38ms
+[2020.10.24-12.12.40:995][788]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.019
+[2020.10.24-12.22.41:386][585]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2020.10.24-12.22.41:388][585]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.022
+[2020.10.24-12.32.42:059][383]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2020.10.24-12.32.42:062][383]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.025
+[2020.10.24-12.42.42:497][180]LogUObjectHash: Compacting FUObjectHashTables data took   0.37ms
+[2020.10.24-12.42.42:500][180]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.021
+[2020.10.24-12.52.42:922][977]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2020.10.24-12.52.42:924][977]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.017
+[2020.10.24-13.02.43:329][774]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2020.10.24-13.02.43:332][774]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.021
+[2020.10.24-13.12.43:666][571]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2020.10.24-13.12.43:669][571]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.023
+[2020.10.24-13.22.44:317][369]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2020.10.24-13.22.44:323][369]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.027
+[2020.10.24-13.32.44:785][167]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2020.10.24-13.32.44:787][167]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.011
+[2020.10.24-13.42.45:335][964]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2020.10.24-13.42.45:337][964]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.025
+[2020.10.24-13.52.45:985][762]LogUObjectHash: Compacting FUObjectHashTables data took   0.31ms
+[2020.10.24-13.52.45:987][762]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.016
+[2020.10.24-14.02.46:691][560]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2020.10.24-14.02.46:693][560]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.022
+[2020.10.24-14.12.47:062][357]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2020.10.24-14.12.47:064][357]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.021
+[2020.10.24-14.22.47:562][154]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2020.10.24-14.22.47:566][154]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.027
+[2020.10.24-14.32.47:899][951]LogUObjectHash: Compacting FUObjectHashTables data took   0.34ms
+[2020.10.24-14.32.47:901][951]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.026
+[2020.10.24-14.40.29:685][405]LogTcpMessaging: Started Connection to '127.0.0.1:6666'
+[2020.10.24-14.43.00:923][855]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2020.10.24-14.43.00:927][855]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Stage/TestMap' took 0.016
+[2020.10.24-14.44.00:010][266]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
+[2020.10.24-14.44.00:234][266]LogSlate: Window 'Final_Project - 언리얼 에디터' being destroyed
+[2020.10.24-14.44.00:267][266]LogWindowsTextInputMethodSystem: Display: IME system now activated using TSF (Microsoft 입력기).
+[2020.10.24-14.44.01:141][267]Cmd: QUIT_EDITOR
+[2020.10.24-14.44.01:141][267]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2020.10.24-14.44.01:279][267]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2020.10.24-14.44.02:091][267]LogExit: Preparing to exit.
+[2020.10.24-14.44.03:476][267]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2020.10.24-14.44.03:492][267]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2020.10.24-14.44.03:492][267]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2020.10.24-14.44.03:492][267]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
