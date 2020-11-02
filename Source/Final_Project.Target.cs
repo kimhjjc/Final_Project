@@ -10,6 +10,6 @@ public class Final_ProjectTarget : TargetRules
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 
-		ExtraModuleNames.AddRange( new string[] { "Final_Project" } );
-	}
+		ExtraModuleNames.AddRange( new string[] { "Final_Project", "Final_ProjectSetting" } );
+    }
 }

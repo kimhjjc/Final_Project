@@ -1,0 +1,35 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "Final_Project.h"
+#include "GameFramework/PlayerController.h"
+#include "FPPlayerController.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class FINAL_PROJECT_API AFPPlayerController : public APlayerController
+{
+	GENERATED_BODY()
+	
+public:
+	AFPPlayerController();
+
+	class UFPHUDWidget* GetHUDWidget() const;
+	void NPCKill(class AFPCharacter* KilledNPC) const;
+
+protected:
+	virtual void BeginPlay() override;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
+	TSubclassOf<class UFPHUDWidget> HUDWidgetClass;
+
+private:
+	UPROPERTY()
+	class UFPHUDWidget* HUDWidget;
+
+	UPROPERTY()
+	class AFPPlayerState* FPPlayerState;
+};

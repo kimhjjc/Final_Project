@@ -5,13 +5,22 @@
 	"Description": "",
 	"Modules": [
 		{
+			"Name": "Final_ProjectSetting",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"AdditionalDependencies": [
+				"CoreUObject"
+			]
+		},
+		{
 			"Name": "Final_Project",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
 				"Engine",
 				"UMG",
-				"AIModule"
+				"AIModule",
+				"Final_ProjectSetting"
 			]
 		}
 	]

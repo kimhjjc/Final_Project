@@ -1,9 +1,11 @@
 */Saved
 */Intermediate
 */Build
-*/Plugins
+*/DerivedDataCache
+*/Binaries
+*/.vs
+/Content/InfinityBladeGrassLands/Maps
 *.sln
 *.ipch
 *.db
 *.pch
-*.umap

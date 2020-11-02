@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Final_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C55F5ADA-1F3A-46D1-8C49-B2614D50E253}</UniqueIdentifier>
+      <UniqueIdentifier>{D37C1291-AFF9-4EA4-A760-E2F82FB07911}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project.Target.cs">
       <Filter>Source</Filter>
@@ -12,8 +12,9 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.gitignore" />
+    <None Include="..\..\프로젝트 빌드 다시하기 방법.txt" />
     <Filter Include="Config">
-      <UniqueIdentifier>{8E84176B-DAE7-4D2F-8654-E93B32E8D169}</UniqueIdentifier>
+      <UniqueIdentifier>{FDF555B3-BD09-41BD-8A40-567268C9DB61}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,6 +25,9 @@
     <None Include="..\..\Config\DefaultEngine.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultFinal_Project.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
@@ -31,100 +35,166 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Final_Project">
-      <UniqueIdentifier>{2A275F5A-B457-4BC3-B524-DB1D36A5902C}</UniqueIdentifier>
+      <UniqueIdentifier>{A23D9BA2-CD49-4A9E-867C-73A05E1F6190}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\Final_Project\BTService_Detect.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\BTService_Detect.h">
-      <Filter>Source\Final_Project</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\BTTask_FindPatrolPos.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\BTTask_FindPatrolPos.h">
-      <Filter>Source\Final_Project</Filter>
-    </ClInclude>
     <None Include="..\..\Source\Final_Project\Final_Project.Build.cs">
       <Filter>Source\Final_Project</Filter>
     </None>
-    <ClCompile Include="..\..\Source\Final_Project\Final_Project.cpp">
-      <Filter>Source\Final_Project</Filter>
+    <Filter Include="Source\Final_Project\Private">
+      <UniqueIdentifier>{B86CAFA5-8A59-45C4-B8AC-6E32A8A0726C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\BTDecorator_IsInAttackRange.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\Final_Project.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\BTService_Detect.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\BTTask_Attack.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\BTTask_FindPatrolPos.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\BTTask_TurnToTarget.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Final_Project.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Fountain.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPAIController.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPAnimInstance.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPCharacter.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPCharacterStatComponent.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPCharacterWidget.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPGameInstance.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPGameMode.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPHUDWidget.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPItemBox.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPPawn.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPPlayerController.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPPlayerState.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPSection.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPWeapon.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Final_Project\Public">
+      <UniqueIdentifier>{34DAB1A4-297F-47B9-8A6F-FCE685F1CB10}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\BTDecorator_IsInAttackRange.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\Fountain.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\Fountain.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\BTService_Detect.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPAIController.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPAIController.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\BTTask_Attack.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPAnimInstance.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPAnimInstance.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\BTTask_FindPatrolPos.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPCharacter.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPCharacter.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\BTTask_TurnToTarget.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPCharacterStatComponent.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPCharacterStatComponent.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Final_Project.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPCharacterWidget.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPCharacterWidget.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Fountain.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPGameInstance.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPGameInstance.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPAIController.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPGameMode.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPGameMode.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPAnimInstance.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPItemBox.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPItemBox.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPCharacter.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPPawn.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPPawn.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPCharacterStatComponent.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPPlayerController.cpp">
-      <Filter>Source\Final_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPPlayerController.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPCharacterWidget.h">
+      <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Final_Project\FPWeapon.cpp">
-      <Filter>Source\Final_Project</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPGameInstance.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPGameMode.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPHUDWidget.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPItemBox.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPPawn.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPPlayerController.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPPlayerState.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPSection.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPWeapon.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\Final_ProjectSetting">
+      <UniqueIdentifier>{540DA1D5-4A12-4468-8F84-2E6CFB65EA67}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Final_ProjectSetting\Final_ProjectSetting.Build.cs">
+      <Filter>Source\Final_ProjectSetting</Filter>
+    </None>
+    <Filter Include="Source\Final_ProjectSetting\Private">
+      <UniqueIdentifier>{6C5F585A-EDD5-4DD4-81BB-43ECC866257B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_ProjectSetting\Private\Final_ProjectSetting.cpp">
+      <Filter>Source\Final_ProjectSetting\Private</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\Final_Project\FPWeapon.h">
-      <Filter>Source\Final_Project</Filter>
+    <ClCompile Include="..\..\Source\Final_ProjectSetting\Private\FPCharacterSetting1.cpp">
+      <Filter>Source\Final_ProjectSetting\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Final_ProjectSetting\Public">
+      <UniqueIdentifier>{F3756948-C956-467B-8A04-7FE71ED5178F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_ProjectSetting\Public\Final_ProjectSetting.h">
+      <Filter>Source\Final_ProjectSetting\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_ProjectSetting\Public\FPCharacterSetting1.h">
+      <Filter>Source\Final_ProjectSetting\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

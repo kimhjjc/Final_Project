@@ -1,0 +1,8 @@
+프로젝트 빌드 다시 하기.
+
+1. Config, Content, Source, 프로젝트명.uproject 을 제외한 나머지 모두 지우기.
+2. .uproject 파일 우클릭 후 generate 클릭.
+3. 생성된 .sin 파일을 열어 Development Editor로 빌드하여 binary 폴더에 .exe파일 생성하기.
+4. 다시 정상 작동
+
+협업 시에는 Config, Content, Source, 프로젝트명.uproject 과 Plugins 만 제외하고 나머지는 삭제해도 무방하다.

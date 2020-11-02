@@ -729,6 +729,14 @@
 			"Type": "SymbolFile"
 		},
 		{
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Final_ProjectSetting.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Final_ProjectSetting.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-BuildSettings.dll",
 			"Type": "DynamicLibrary"
 		},
