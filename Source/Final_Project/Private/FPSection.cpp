@@ -4,6 +4,8 @@
 #include "FPSection.h"
 #include "FPCharacter.h"
 #include "FPItemBox.h"
+#include "FPPlayerController.h"
+#include "FPGameMode.h"
 
 // Sets default values
 AFPSection::AFPSection()
@@ -190,6 +192,27 @@ void AFPSection::OnGateTriggerBeginOverlap(UPrimitiveComponent * OverlappedCompo
 
 void AFPSection::OnNPCSpawn()
 {
-	GetWorld()->SpawnActor<AFPCharacter>(GetActorLocation() + FVector::UpVector * 88.0f, FRotator::ZeroRotator);
+	GetWorld()->GetTimerManager().ClearTimer(SpawnNPCTimerHandle);
+	auto KeyNPC = GetWorld()->SpawnActor<AFPCharacter>(GetActorLocation() + FVector::UpVector * 88.0f, FRotator::ZeroRotator);
+	if (nullptr != KeyNPC)
+	{
+		KeyNPC->OnDestroyed.AddDynamic(this, &AFPSection::OnKeyNPCDestroyed);
+	}
+}
+
+void AFPSection::OnKeyNPCDestroyed(AActor * DestroyedActor)
+{
+	auto FPCharacter = Cast<AFPCharacter>(DestroyedActor);
+	FPCHECK(nullptr != FPCharacter);
+
+	// 경험치 전달같은 경우 데미지를 입을 때마다 Instigator (FPCharacter의 TakeDamage)를 검사하는 방식보다 LastHitBy를 사용해 처리하는 것이 효율적이다.
+	auto FPPlayerController = Cast<AFPPlayerController>(FPCharacter->LastHitBy);
+	FPCHECK(nullptr != FPPlayerController);
+
+	auto FPGameMode = Cast<AFPGameMode>(GetWorld()->GetAuthGameMode());
+	FPCHECK(nullptr != FPGameMode);
+	FPGameMode->AddScore(FPPlayerController);
+
+	SetState(ESectionState::COMPLETE);
 }
 

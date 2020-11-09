@@ -19,6 +19,7 @@ public:
 
 	class UFPHUDWidget* GetHUDWidget() const;
 	void NPCKill(class AFPCharacter* KilledNPC) const;
+	void AddGameScore() const;
 
 protected:
 	virtual void BeginPlay() override;

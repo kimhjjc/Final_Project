@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Final_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{D37C1291-AFF9-4EA4-A760-E2F82FB07911}</UniqueIdentifier>
+      <UniqueIdentifier>{E00FB9D0-3DBB-4CB5-AF52-604EDB36BEBA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitignore" />
     <None Include="..\..\프로젝트 빌드 다시하기 방법.txt" />
     <Filter Include="Config">
-      <UniqueIdentifier>{FDF555B3-BD09-41BD-8A40-567268C9DB61}</UniqueIdentifier>
+      <UniqueIdentifier>{F1BDB09F-69CD-4AF1-B280-FA060E31AB2C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -35,13 +35,13 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Final_Project">
-      <UniqueIdentifier>{A23D9BA2-CD49-4A9E-867C-73A05E1F6190}</UniqueIdentifier>
+      <UniqueIdentifier>{F9B9CA0B-64E0-4F93-8E73-83AFF27ACBFE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project\Final_Project.Build.cs">
       <Filter>Source\Final_Project</Filter>
     </None>
     <Filter Include="Source\Final_Project\Private">
-      <UniqueIdentifier>{B86CAFA5-8A59-45C4-B8AC-6E32A8A0726C}</UniqueIdentifier>
+      <UniqueIdentifier>{45FAAE4D-8040-46BE-9161-7479CBEACDE6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\BTDecorator_IsInAttackRange.cpp">
       <Filter>Source\Final_Project\Private</Filter>
@@ -85,6 +85,9 @@
     <ClCompile Include="..\..\Source\Final_Project\Private\FPGameMode.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPGameState.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPHUDWidget.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
@@ -100,6 +103,9 @@
     <ClCompile Include="..\..\Source\Final_Project\Private\FPPlayerState.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPSaveGame.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPSection.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
@@ -107,7 +113,7 @@
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Public">
-      <UniqueIdentifier>{34DAB1A4-297F-47B9-8A6F-FCE685F1CB10}</UniqueIdentifier>
+      <UniqueIdentifier>{25DCB2B2-12EA-4158-BAD7-EDFC17363E68}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\BTDecorator_IsInAttackRange.h">
       <Filter>Source\Final_Project\Public</Filter>
@@ -151,6 +157,9 @@
     <ClInclude Include="..\..\Source\Final_Project\Public\FPGameMode.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPGameState.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPHUDWidget.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
@@ -166,6 +175,9 @@
     <ClInclude Include="..\..\Source\Final_Project\Public\FPPlayerState.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPSaveGame.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPSection.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
@@ -173,13 +185,13 @@
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
     <Filter Include="Source\Final_ProjectSetting">
-      <UniqueIdentifier>{540DA1D5-4A12-4468-8F84-2E6CFB65EA67}</UniqueIdentifier>
+      <UniqueIdentifier>{2A62E6F5-9F49-44A7-B89F-12412B36CD61}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_ProjectSetting\Final_ProjectSetting.Build.cs">
       <Filter>Source\Final_ProjectSetting</Filter>
     </None>
     <Filter Include="Source\Final_ProjectSetting\Private">
-      <UniqueIdentifier>{6C5F585A-EDD5-4DD4-81BB-43ECC866257B}</UniqueIdentifier>
+      <UniqueIdentifier>{8D2F99E9-6D29-4B02-9F1D-374A6645831C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_ProjectSetting\Private\Final_ProjectSetting.cpp">
       <Filter>Source\Final_ProjectSetting\Private</Filter>
@@ -188,7 +200,7 @@
       <Filter>Source\Final_ProjectSetting\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Final_ProjectSetting\Public">
-      <UniqueIdentifier>{F3756948-C956-467B-8A04-7FE71ED5178F}</UniqueIdentifier>
+      <UniqueIdentifier>{DD569AF3-C706-4027-8C02-9147E1597209}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_ProjectSetting\Public\Final_ProjectSetting.h">
       <Filter>Source\Final_ProjectSetting\Public</Filter>

@@ -16,6 +16,7 @@
 #include "FPPlayerController.h"
 #include "FPPlayerState.h"
 #include "FPHUDWidget.h"
+#include "FPGameMode.h"
 
 // Sets default values
 AFPCharacter::AFPCharacter()
@@ -71,7 +72,7 @@ AFPCharacter::AFPCharacter()
 	MaxCombo = 4;
 	AttackEndComboState();
 
-	AttackRange = 200.0f;
+	AttackRange = 80.0f;
 	AttackRadius = 50.0f;
 
 	// 프로젝트 세팅 -> 콜리전에서 프리셋에 FPCharacter이라는 이름을 찾아 그 프리셋으로 콜리전을 변경한다.
@@ -131,6 +132,16 @@ void AFPCharacter::SetCharacterState(ECharacterState NewState)
 			auto FPPlayerState = Cast<AFPPlayerState>(GetPlayerState());
 			FPCHECK(nullptr != FPPlayerState);
 			CharacterStat->SetNewLevel(FPPlayerState->GetCharacterLevel());
+		}
+		else
+		{
+			auto FPGameMode = Cast<AFPGameMode>(GetWorld()->GetAuthGameMode());
+			FPCHECK(nullptr != FPGameMode);
+			int32 TargetLevel = FMath::CeilToInt(((float)FPGameMode->GetScore() * 0.8f));
+			int32 FinalLevel = FMath::Clamp<int32>(TargetLevel, 1, 20);
+			FPLOG(Warning, TEXT("New NPC Level : %d"), FinalLevel);
+			CharacterStat->SetNewLevel(FinalLevel);
+		
 		}
 
 		SetActorHiddenInGame(true);
@@ -209,6 +220,19 @@ ECharacterState AFPCharacter::GetCharacterState() const
 int32 AFPCharacter::GetExp() const
 {
 	return CharacterStat->GetDropExp();
+}
+
+float AFPCharacter::GetFinalAttackRange() const
+{
+	return (nullptr != CurrentWeapon) ? CurrentWeapon->GetAttackRange() : AttackRange;
+}
+
+float AFPCharacter::GetFinalAttackDamage() const
+{
+	float AttackDamage = (nullptr != CurrentWeapon) ? (CharacterStat->GetAttack() + CurrentWeapon->GetAttackDamage()) : CharacterStat->GetAttack();
+	float AttackModifier = (nullptr != CurrentWeapon) ? CurrentWeapon->GetAttackModifier() : 1.0f;
+
+	return AttackDamage * AttackModifier;
 }
 
 // Called when the game starts or when spawned
@@ -467,12 +491,21 @@ void AFPCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 bool AFPCharacter::CanSetWeapon()
 {
-	return (nullptr == CurrentWeapon);
+	//return (nullptr == CurrentWeapon);
+	return true;
 }
 
 void AFPCharacter::Setweapon(AFPWeapon * NewWeapon)
 {
-	FPCHECK(nullptr != NewWeapon && nullptr == CurrentWeapon);
+	//FPCHECK(nullptr != NewWeapon && nullptr == CurrentWeapon);
+	FPCHECK(nullptr != NewWeapon);
+
+	if (nullptr != CurrentWeapon)
+	{
+		CurrentWeapon->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+		CurrentWeapon->Destroy();
+		CurrentWeapon = nullptr;
+	}
 	FName WeaponSocket(TEXT("hand_rSocket"));
 	if (nullptr != NewWeapon)
 	{
@@ -603,13 +636,15 @@ void AFPCharacter::AttackEndComboState()
 
 void AFPCharacter::AttackCheck()
 {
+	float FinalAttackRange = GetFinalAttackRange();
+
 	FHitResult HitResult;
 	FCollisionQueryParams Params(NAME_None, false, this);
 	// 플레이어 앞으로 200cm만큼 쓸면서 충돌체가 있는지 탐색
 	bool bResult = GetWorld()->SweepSingleByChannel(
 		HitResult,
 		GetActorLocation(),
-		GetActorLocation() + GetActorForwardVector() * AttackRange,
+		GetActorLocation() + GetActorForwardVector() * FinalAttackRange,
 		FQuat::Identity,
 		ECollisionChannel::ECC_GameTraceChannel2,	// 이것은 Attack 트레이스 채널을 의미한다. 콜리전 채널을 따로 추가하면 프로젝트명/Config/DefaultEngine.ini에서 등록된 채널 개수만큼 ECC_GameTraceChannel이 생겨 그 파일을 열어봐야 알 수 있다.
 		FCollisionShape::MakeSphere(AttackRadius),
@@ -617,9 +652,9 @@ void AFPCharacter::AttackCheck()
 
 	// 이 부분은 디버그 드로잉으로 디버깅 환경에서 공격 범위를 눈으로 보이게 해준다.
 #if ENABLE_DRAW_DEBUG
-	FVector TraceVec = GetActorForwardVector() * AttackRange;
+	FVector TraceVec = GetActorForwardVector() * FinalAttackRange;
 	FVector Center = GetActorLocation() + TraceVec * 0.5f;
-	float HalfHeight = AttackRange * 0.5f + AttackRadius;
+	float HalfHeight = FinalAttackRange * 0.5f + AttackRadius;
 	FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
 	FColor DrawColor = bResult ? FColor::Green : FColor::Red;
 	float DebugLifeTime = 5.0f;
@@ -643,7 +678,8 @@ void AFPCharacter::AttackCheck()
 			FPLOG(Warning, TEXT("Hit Actor Name : %s"), *HitResult.Actor->GetName());
 
 			FDamageEvent DamageEvent;
-			HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
+			//HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
+			HitResult.Actor->TakeDamage(GetFinalAttackDamage(), DamageEvent, GetController(), this);
 		}
 	}
 

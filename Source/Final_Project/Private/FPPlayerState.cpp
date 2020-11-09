@@ -3,17 +3,25 @@
 
 #include "FPPlayerState.h"
 #include "FPGameInstance.h"
+#include "FPSaveGame.h"
 
 AFPPlayerState::AFPPlayerState()
 {
 	CharacterLevel = 1;
 	GameScore = 0;
+	GameHighScore = 0;
 	Exp = 0;
+	SaveSlotName = TEXT("Player1");
 }
 
 int32 AFPPlayerState::GetGameScore() const
 {
 	return GameScore;
+}
+
+int32 AFPPlayerState::GetGameHighScore() const
+{
+	return GameHighScore;
 }
 
 int32 AFPPlayerState::GetCharacterLevel() const
@@ -31,7 +39,8 @@ float AFPPlayerState::GetExpRatio() const
 	return Result;
 }
 
-bool AFPPlayerState::AddExp(int IncomeExp)
+
+bool AFPPlayerState::AddExp(int32 IncomeExp)
 {
 	if (CurrentStatData->NextExp == -1)
 		return false;
@@ -46,16 +55,57 @@ bool AFPPlayerState::AddExp(int IncomeExp)
 	}
 
 	OnPlayerStateChanged.Broadcast();
+	SavePlayerData();
 	return DidLevelUp;
+}
+
+void AFPPlayerState::AddGameScore()
+{
+	GameScore++;
+	if (GameScore >= GameHighScore)
+	{
+		GameHighScore = GameScore;
+	}
+	OnPlayerStateChanged.Broadcast();
+	SavePlayerData();
 }
 
 void AFPPlayerState::InitPlayerData()
 {
-	SetPlayerName(TEXT("Destiny"));
-	//CharacterLevel = 5;
-	SetCharacterLevel(5);
-	Exp = 0;
+	//SetPlayerName(TEXT("Destiny"));
+	//SetCharacterLevel(5);
+	//Exp = 0;
+	//GameScore = 0;
+
+	// 게임의 데이터를 가져온다.
+	auto FPSaveGame = Cast<UFPSaveGame>(UGameplayStatics::LoadGameFromSlot(SaveSlotName, 0));
+	if (nullptr == FPSaveGame)
+	{
+		// 만약 세이브 데이터가 없다면 생성한다.
+		FPSaveGame = GetMutableDefault<UFPSaveGame>();
+	}
+
+	SetPlayerName(FPSaveGame->PlayerName);
+	SetCharacterLevel(FPSaveGame->Level);
 	GameScore = 0;
+	GameHighScore = FPSaveGame->HighScore;
+	Exp = FPSaveGame->Exp;
+	SavePlayerData();
+}
+
+void AFPPlayerState::SavePlayerData()
+{
+	UFPSaveGame* NewPlayerData = NewObject<UFPSaveGame>();
+	NewPlayerData->PlayerName = GetPlayerName();
+	NewPlayerData->Level = CharacterLevel;
+	NewPlayerData->HighScore = GameHighScore;
+	NewPlayerData->Exp = Exp;
+
+	// 만약 세이브 데이터가 없다면 생성한다. 있으면 그대로 저장.
+	if (!(UGameplayStatics::SaveGameToSlot(NewPlayerData, SaveSlotName, 0)))
+	{
+		FPLOG(Error, TEXT("SaveGame Error!"));
+	}
 }
 
 void AFPPlayerState::SetCharacterLevel(int32 NewCharacterLevel)

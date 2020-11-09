@@ -25,6 +25,11 @@ void AFPPlayerController::NPCKill(AFPCharacter * KilledNPC) const
 	FPPlayerState->AddExp(KilledNPC->GetExp());
 }
 
+void AFPPlayerController::AddGameScore() const
+{
+	FPPlayerState->AddGameScore();
+}
+
 void AFPPlayerController::BeginPlay()
 {
 	Super::BeginPlay();

@@ -17,5 +17,14 @@ class FINAL_PROJECT_API AFPGameMode : public AGameModeBase
 public:
 	AFPGameMode();
 
+	virtual void PostInitializeComponents() override;
 	virtual void PostLogin(APlayerController* NewPlayer) override;
+	void AddScore(class AFPPlayerController *ScoredPlayer);
+	int32 GetScore() const;
+
+private:
+	UPROPERTY()
+	class AFPGameState* FPGameState;
+
+
 };

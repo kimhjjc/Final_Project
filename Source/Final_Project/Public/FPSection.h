@@ -46,6 +46,9 @@ private:
 
 	void OnNPCSpawn();
 
+	UFUNCTION()
+	void OnKeyNPCDestroyed(AActor* DestroyedActor);
+
 private:
 	// 기능이 같은 것들은 TArray로 묶어서 관리한다.
 	UPROPERTY(VisibleAnywhere, Category = Mesh, Meta = (AllowPrivateAccess = true))

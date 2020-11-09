@@ -19,11 +19,37 @@ AFPWeapon::AFPWeapon()
 	}
 
 	Weapon->SetCollisionProfileName(TEXT("NoCollision"));
+
+	AttackRange = 150.0f;
+	AttackDamageMin = -2.5f;
+	AttackDamageMax = 10.0f;
+	AttackModifierMin = 0.85f;
+	AttackModifierMax = 1.25f;
 }
+
+float AFPWeapon::GetAttackRange() const
+{
+	return AttackRange;
+}
+
+float AFPWeapon::GetAttackDamage() const
+{
+	return AttackDamage;
+}
+
+float AFPWeapon::GetAttackModifier() const
+{
+	return AttackModifier;
+}
+
 
 // Called when the game starts or when spawned
 void AFPWeapon::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	AttackDamage = FMath::RandRange(AttackDamageMin, AttackDamageMax);
+	AttackModifier = FMath::RandRange(AttackModifierMin, AttackModifierMax);
+
+	FPLOG(Warning, TEXT("Weapon Damage : %f, Modifier : %f"), AttackDamage, AttackModifier);
 }
