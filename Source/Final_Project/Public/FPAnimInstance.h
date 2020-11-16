@@ -17,6 +17,8 @@
 // 사용시 장점 : 델리게이트에 연결된 함수만 호출하면 되므로 다른 클래스와 연결되지 않는 의존성 없는 설계를 할 수 있다.
 DECLARE_MULTICAST_DELEGATE(FOnNextAttackCheckDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnAttackHitCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnMotionBasedMovementDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnMotionBasedMovementFinishDelegate);
 
 UCLASS()
 class FINAL_PROJECT_API UFPAnimInstance : public UAnimInstance
@@ -33,6 +35,8 @@ public:
 public:
 	FOnNextAttackCheckDelegate OnNextAttackCheck;
 	FOnAttackHitCheckDelegate OnAttackHitCheck;
+	FOnMotionBasedMovementDelegate OnMotionBasedMovement;
+	FOnMotionBasedMovementFinishDelegate OnMotionBasedMovementFinish;
 	void SetDeadAnim() { IsDead = true; }
 
 private:
@@ -42,6 +46,12 @@ private:
 
 	UFUNCTION()
 	void AnimNotify_NextAttackCheck();
+
+	UFUNCTION()
+	void AnimNotify_MotionBasedMovement();
+
+	UFUNCTION()
+	void AnimNotify_MotionBasedMovementFinish();
 
 	FName GetAttackMontageSectionName(int32 Section);
 

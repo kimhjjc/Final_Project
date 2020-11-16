@@ -115,6 +115,7 @@ private:
 	void AttackStartComboState();
 	void AttackEndComboState();
 	void AttackCheck();
+	void MovementAnimMotionState();
 
 	void OnAssetLoadCompleted();
 
@@ -140,6 +141,9 @@ private:
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	float AttackRadius;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool isAnimMotionMoveing;
 
 	// 자주 사용하는 클래스를 전방선언 시켜준다.
 	UPROPERTY()

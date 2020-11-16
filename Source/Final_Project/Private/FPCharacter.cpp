@@ -75,6 +75,8 @@ AFPCharacter::AFPCharacter()
 	AttackRange = 80.0f;
 	AttackRadius = 50.0f;
 
+	isAnimMotionMoveing = false;
+
 	// 프로젝트 세팅 -> 콜리전에서 프리셋에 FPCharacter이라는 이름을 찾아 그 프리셋으로 콜리전을 변경한다.
 	GetCapsuleComponent()->SetCollisionProfileName(TEXT("FPCharacter"));
 
@@ -383,6 +385,9 @@ void AFPCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	// 공격 애니메이션에서 움직이는 부분
+	MovementAnimMotionState();
+
 	//FMath::FInterpTo --> 목표 지점까지 부드럽게 움직이기
 	SpringArm->TargetArmLength = FMath::FInterpTo(SpringArm->TargetArmLength, ArmLengthTo, DeltaTime, ArmLengthSpeed);
 
@@ -427,6 +432,16 @@ void AFPCharacter::PostInitializeComponents()
 	});
 
 	FPAnim->OnAttackHitCheck.AddUObject(this, &AFPCharacter::AttackCheck);
+
+	FPAnim->OnMotionBasedMovement.AddLambda([this]() -> void {
+		FPLOG(Warning, TEXT("OnMotionBasedMovement"));
+		isAnimMotionMoveing = true;
+	});
+
+	FPAnim->OnMotionBasedMovementFinish.AddLambda([this]() -> void {
+		FPLOG(Warning, TEXT("OnMotionBasedMovement"));
+		isAnimMotionMoveing = false;
+		});
 
 	// 이 부분은 SetCharacterState의 DEAD에서 대신 처리하게 된다.
 	//CharacterStat->OnHPIsZero.AddLambda([this]() -> void {
@@ -518,6 +533,9 @@ void AFPCharacter::Setweapon(AFPWeapon * NewWeapon)
 
 void AFPCharacter::UpDown(float NewAxisValue)
 {
+	if (IsAttacking)
+		return;
+
 	switch (CurrentControlMode)
 	{
 	case EControlMode::GTA:
@@ -534,6 +552,9 @@ void AFPCharacter::UpDown(float NewAxisValue)
 
 void AFPCharacter::LeftRight(float NewAxisValue)
 {
+	if (IsAttacking)
+		return;
+
 	switch (CurrentControlMode)
 	{
 	case EControlMode::GTA:
@@ -683,6 +704,14 @@ void AFPCharacter::AttackCheck()
 		}
 	}
 
+}
+
+void AFPCharacter::MovementAnimMotionState()
+{
+	if (!IsAttacking || !isAnimMotionMoveing)
+		return;
+
+		AddMovementInput(FRotationMatrix(FRotator(0.0f, GetControlRotation().Yaw, 0.0f)).GetUnitAxis(EAxis::X), 1);
 }
 
 void AFPCharacter::OnAssetLoadCompleted()

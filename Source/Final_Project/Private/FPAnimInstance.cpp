@@ -66,6 +66,16 @@ void UFPAnimInstance::AnimNotify_NextAttackCheck()
 	OnNextAttackCheck.Broadcast();
 }
 
+void UFPAnimInstance::AnimNotify_MotionBasedMovement()
+{
+	OnMotionBasedMovement.Broadcast();
+}
+
+void UFPAnimInstance::AnimNotify_MotionBasedMovementFinish()
+{
+	OnMotionBasedMovementFinish.Broadcast();
+}
+
 FName UFPAnimInstance::GetAttackMontageSectionName(int32 Section)
 {
 	FPCHECK(FMath::IsWithinInclusive<int32>(Section, 1, 4), NAME_None);

@@ -1,9 +1,9 @@
-*/Saved
-*/Intermediate
-*/Build
-*/DerivedDataCache
-*/Binaries
-*/.vs
+Saved/
+Intermediate/
+Build/
+DerivedDataCache/
+Binaries/
+.vs/
 /Content/InfinityBladeGrassLands/Maps
 *.sln
 *.ipch

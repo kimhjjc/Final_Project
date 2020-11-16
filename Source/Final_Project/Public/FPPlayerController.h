@@ -16,6 +16,7 @@ class FINAL_PROJECT_API AFPPlayerController : public APlayerController
 	
 public:
 	AFPPlayerController();
+	virtual void OnPossess(APawn* InPawn) override;
 
 	class UFPHUDWidget* GetHUDWidget() const;
 	void NPCKill(class AFPCharacter* KilledNPC) const;

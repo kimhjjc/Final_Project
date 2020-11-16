@@ -15,6 +15,13 @@ AFPPlayerController::AFPPlayerController()
 	}
 }
 
+void AFPPlayerController::OnPossess(APawn * InPawn)
+{
+	Super::OnPossess(InPawn);
+	HUDWidget = CreateWidget<UFPHUDWidget>(this, HUDWidgetClass);
+	HUDWidget->AddToViewport();
+}
+
 UFPHUDWidget * AFPPlayerController::GetHUDWidget() const
 {
 	return HUDWidget;
@@ -33,12 +40,14 @@ void AFPPlayerController::AddGameScore() const
 void AFPPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	FInputModeGameOnly InputMode;
 	SetInputMode(InputMode);
 
-	HUDWidget = CreateWidget<UFPHUDWidget>(this, HUDWidgetClass);
-	HUDWidget->AddToViewport();
+	// 패키징 오류로 인하여 순서를 앞부분으로 바꿔준다. (OnPossess로)
+	// https://m.blog.naver.com/PostView.nhn?blogId=uriel1234&logNo=221539024076&proxyReferer=https:%2F%2Fwww.google.com%2F 참조
+	/*HUDWidget = CreateWidget<UFPHUDWidget>(this, HUDWidgetClass);
+	HUDWidget->AddToViewport();*/
 
 	FPPlayerState = Cast<AFPPlayerState>(PlayerState);
 	FPCHECK(nullptr != FPPlayerState);
