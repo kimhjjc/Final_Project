@@ -19,6 +19,10 @@ DECLARE_MULTICAST_DELEGATE(FOnNextAttackCheckDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnAttackHitCheckDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnMotionBasedMovementDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnMotionBasedMovementFinishDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnFinishMontageDelegate);
+
+DECLARE_MULTICAST_DELEGATE(FOnRest_LoopingDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnRest_FinishDelegate);
 
 UCLASS()
 class FINAL_PROJECT_API UFPAnimInstance : public UAnimInstance
@@ -32,11 +36,20 @@ public:
 	void PlayAttackMontage();
 	void JumpToAttackMontageSection(int32 NewSection);
 
+	void PlayAttack_RMBMontage();
+
+	void PlayRest_Montage();
+	void JumpToRest_End_MontageSection();
+
 public:
 	FOnNextAttackCheckDelegate OnNextAttackCheck;
 	FOnAttackHitCheckDelegate OnAttackHitCheck;
 	FOnMotionBasedMovementDelegate OnMotionBasedMovement;
 	FOnMotionBasedMovementFinishDelegate OnMotionBasedMovementFinish;
+	FOnFinishMontageDelegate OnFinishMontage;
+
+	FOnRest_LoopingDelegate OnRest_Looping;
+	FOnRest_FinishDelegate OnRest_Finish;
 	void SetDeadAnim() { IsDead = true; }
 
 private:
@@ -53,6 +66,15 @@ private:
 	UFUNCTION()
 	void AnimNotify_MotionBasedMovementFinish();
 
+	UFUNCTION()
+	void AnimNotify_FinishMontage();
+
+	UFUNCTION()
+	void AnimNotify_Rest_Looping();
+
+	UFUNCTION()
+	void AnimNotify_Rest_Finish();
+
 	FName GetAttackMontageSectionName(int32 Section);
 
 private:
@@ -65,6 +87,12 @@ private:
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	UAnimMontage* AttackMontage;
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* Attack_RMBMontage;
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* Rest_Montage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
 	bool IsDead;

@@ -23,13 +23,28 @@ void UFPCharacterStatComponent::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	
+
 }
 
 void UFPCharacterStatComponent::InitializeComponent()
 {
 	Super::InitializeComponent();
 	SetNewLevel(Level);
+
+	OnHPChanged.AddLambda([this]() -> void {
+		if (IsRecoveringHP)
+		{
+			IsRecoveringHP = false;
+			OnRecoverHP.Broadcast();
+		}
+		});
+	OnHPChanged.AddLambda([this]() -> void {
+		if (IsDamagingHP)
+		{
+			IsDamagingHP = false;
+			OnDamagedHP.Broadcast();
+		}
+		});
 }
 
 void UFPCharacterStatComponent::SetNewLevel(int32 NewLevel)
@@ -50,19 +65,25 @@ void UFPCharacterStatComponent::SetNewLevel(int32 NewLevel)
 	}
 }
 
+void UFPCharacterStatComponent::SetHeal(float NewRecoverHP)
+{
+	FPCHECK(nullptr != CurrentStatData);
+	SetHP(FMath::Clamp<float>(CurrentHP + NewRecoverHP, 0.0f, CurrentStatData->MaxHP));
+}
+
 void UFPCharacterStatComponent::SetDamage(float NewDamage)
 {
 	FPCHECK(nullptr != CurrentStatData);
-	//CurrentHP = FMath::Clamp<float>(CurrentHP - NewDamage, 0.0f, CurrentStatData->MaxHP);
-	//if (CurrentHP <= 0.0f)
-	//{
-	//	OnHPIsZero.Broadcast();
-	//}
 	SetHP(FMath::Clamp<float>(CurrentHP - NewDamage, 0.0f, CurrentStatData->MaxHP));
 }
 
 void UFPCharacterStatComponent::SetHP(float NewHP)
 {
+	if (CurrentHP < NewHP)
+		IsRecoveringHP = true;
+	else if (CurrentHP > NewHP)
+		IsDamagingHP = true;
+
 	CurrentHP = NewHP;
 	OnHPChanged.Broadcast();
 	// float의 값을 0과 비교할 때는 미세한 오차 범위 내에 있는지를 보고 판단하는 것이 좋다. 그래서 언리얼에서는 KINDA_SMALL_NUMBER라는 매크로를 통해 그러한 판단을 가능하게 해준다.

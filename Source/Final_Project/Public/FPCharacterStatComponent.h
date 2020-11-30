@@ -8,6 +8,8 @@
 
 DECLARE_MULTICAST_DELEGATE(FOnHPIsZeroDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnHPChangedDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnRecoverHPDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnDamagedHPDelegate);
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -29,6 +31,7 @@ public:
 	//virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void SetNewLevel(int32 NewLevel);
 	void SetDamage(float NewDamage);
+	void SetHeal(float NewRecoverHP);
 	void SetHP(float NewHP);
 	float GetAttack();
 	float GetHPRatio();
@@ -36,6 +39,8 @@ public:
 
 	FOnHPIsZeroDelegate OnHPIsZero;
 	FOnHPChangedDelegate OnHPChanged;
+	FOnRecoverHPDelegate OnRecoverHP;
+	FOnDamagedHPDelegate OnDamagedHP;
 
 private:
 	struct FFPCharacterData* CurrentStatData = nullptr;
@@ -46,5 +51,11 @@ private:
 	// 언리얼 오브젝트에는 직렬화 기능이 있어서 UPROPERTY 속성을 저장, 로딩이 가능한데, 이 중 Transient키워드를 추가하면 해당 속성을 직렬화에서 제외시킬 수 있다.
 	UPROPERTY(Transient, VisibleInstanceOnly, Category = Stat, Meta = (AllowPrivateAccess = true))
 	float CurrentHP;
+
+	UPROPERTY(EditInstanceOnly, Category = Stat, Meta = (AllowPrivateAccess = true))
+	bool IsRecoveringHP;
+
+	UPROPERTY(EditInstanceOnly, Category = Stat, Meta = (AllowPrivateAccess = true))
+	bool IsDamagingHP;
 		
 };

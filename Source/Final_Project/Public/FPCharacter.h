@@ -98,6 +98,7 @@ public:
 	FOnAttackEndDelegate OnAttackEnd;
 
 
+
 private:
 	// Axis 매핑 활용해서 이동키 만들기
 	void UpDown(float NewAxisValue);
@@ -105,10 +106,17 @@ private:
 	void LookUp(float NewAxisValue);
 	void Turn(float NewAxisValue);
 
+	// Action 매핑
+	void Skill_Rest();
+	void Attack_RMB();
+	
+	void ActFinish();
 	void ViewChange();
-	//void Attack();
 
 	// 애니메이션 몽타주에 델리게이트를 사용해보기
+	UFUNCTION()
+	void OnAttackMontageStarted(UAnimMontage* Montage);
+
 	UFUNCTION()
 	void OnAttackMontageEnded(UAnimMontage* Montage, bool bInterrupted);
 
@@ -119,15 +127,28 @@ private:
 
 	void OnAssetLoadCompleted();
 
+	bool IsActing();
+
+	void FinishResting();
+
 private:
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	bool IsAttacking;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool IsRestEntered;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool IsResting;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	bool CanNextCombo;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	bool IsComboInputOn;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool IsRMBComboInputOn;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	int32 CurrentCombo;
@@ -143,8 +164,10 @@ private:
 	float AttackRadius;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
-	bool isAnimMotionMoveing;
+	bool IsAnimMotionMoveing;
 
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool IsAnimFinish;
 	// 자주 사용하는 클래스를 전방선언 시켜준다.
 	UPROPERTY()
 	class UFPAnimInstance* FPAnim;

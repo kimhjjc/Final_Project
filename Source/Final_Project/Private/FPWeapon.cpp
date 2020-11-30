@@ -12,10 +12,17 @@ AFPWeapon::AFPWeapon()
 	Weapon = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WEAPON"));
 	RootComponent = Weapon;
 
+	//static ConstructorHelpers::FObjectFinder<USkeletalMesh> SK_WEAPON(TEXT("/Game/AdvancedMagicFX12/Meshes/SK_ky_bigSword_anim.SK_ky_bigSword_anim"));
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SK_WEAPON(TEXT("/Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_HeroSword11/SK_Blade_HeroSword11.SK_Blade_HeroSword11"));
 	if (SK_WEAPON.Succeeded())
 	{
 		Weapon->SetSkeletalMesh(SK_WEAPON.Object);
+	}
+
+	static ConstructorHelpers::FObjectFinder<UAnimationAsset> ET_WEAPON(TEXT("/Game/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_HeroSword11/SK_Blade_HeroSword_01_Skeleton_Sequence.SK_Blade_HeroSword_01_Skeleton_Sequence"));
+	if (ET_WEAPON.Succeeded())
+	{
+		//Effect_Trail->SetParentAsset(ET_WEAPON.Object);
 	}
 
 	Weapon->SetCollisionProfileName(TEXT("NoCollision"));
@@ -25,6 +32,10 @@ AFPWeapon::AFPWeapon()
 	AttackDamageMax = 10.0f;
 	AttackModifierMin = 0.85f;
 	AttackModifierMax = 1.25f;
+	
+	Weapon->SetAnimationMode(EAnimationMode::AnimationSingleNode);
+	//Weapon->PlayAnimation(ET_WEAPON.Object ,true);
+	//Weapon->SetAnimation(ET_WEAPON.Object);
 }
 
 float AFPWeapon::GetAttackRange() const

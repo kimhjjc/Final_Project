@@ -67,7 +67,10 @@ AFPCharacter::AFPCharacter()
 	ArmRotationSpeed = 10.0f;
 	GetCharacterMovement()->JumpZVelocity = 800.0f;
 
+	IsRestEntered = false;
+	IsResting = false;
 	IsAttacking = false;
+	IsAnimFinish = true;
 
 	MaxCombo = 4;
 	AttackEndComboState();
@@ -75,7 +78,7 @@ AFPCharacter::AFPCharacter()
 	AttackRange = 80.0f;
 	AttackRadius = 50.0f;
 
-	isAnimMotionMoveing = false;
+	IsAnimMotionMoveing = false;
 
 	// 프로젝트 세팅 -> 콜리전에서 프리셋에 FPCharacter이라는 이름을 찾아 그 프리셋으로 콜리전을 변경한다.
 	GetCapsuleComponent()->SetCollisionProfileName(TEXT("FPCharacter"));
@@ -143,7 +146,7 @@ void AFPCharacter::SetCharacterState(ECharacterState NewState)
 			int32 FinalLevel = FMath::Clamp<int32>(TargetLevel, 1, 20);
 			FPLOG(Warning, TEXT("New NPC Level : %d"), FinalLevel);
 			CharacterStat->SetNewLevel(FinalLevel);
-		
+
 		}
 
 		SetActorHiddenInGame(true);
@@ -241,7 +244,7 @@ float AFPCharacter::GetFinalAttackDamage() const
 void AFPCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 	bIsPlayer = IsPlayerControlled();
 	if (bIsPlayer)
 	{
@@ -309,7 +312,7 @@ void AFPCharacter::BeginPlay()
 		CurWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, WeaponSocket);
 	}
 	*/
-	
+
 	// 이건 무기 액터를 생성하는게 아니라 메쉬의 오른손에 직접 컴포넌트로 생성해주는 방법.
 	//FName WeaponSocket(TEXT("hand_rSocket"));
 	//if (GetMesh()->DoesSocketExist(WeaponSocket))
@@ -325,7 +328,6 @@ void AFPCharacter::BeginPlay()
 	//}
 
 }
-
 
 
 void AFPCharacter::SetControlMode(EControlMode NewControlMode)
@@ -385,6 +387,12 @@ void AFPCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (IsRestEntered)
+		if (IsResting)
+		{
+			CharacterStat->SetHeal(1);
+		}
+
 	// 공격 애니메이션에서 움직이는 부분
 	MovementAnimMotionState();
 
@@ -417,6 +425,7 @@ void AFPCharacter::PostInitializeComponents()
 	FPAnim = Cast<UFPAnimInstance>(GetMesh()->GetAnimInstance());
 	FPCHECK(nullptr != FPAnim);
 
+	FPAnim->OnMontageStarted.AddDynamic(this, &AFPCharacter::OnAttackMontageStarted);
 	FPAnim->OnMontageEnded.AddDynamic(this, &AFPCharacter::OnAttackMontageEnded); // 이 함수가 선언되면, 몽타주가 끝났을 때 여기에 이런식으로 바인딩한 모든 함수들이 실행된다.
 
 	// 이렇게 선언하면 몽타주에서 NextAttackCheck 노티파이가 실행 되었을 때, 아래 람다 구문이 발동된다.
@@ -429,18 +438,44 @@ void AFPCharacter::PostInitializeComponents()
 			AttackStartComboState();
 			FPAnim->JumpToAttackMontageSection(CurrentCombo);
 		}
-	});
+		else if (IsRMBComboInputOn)
+		{
+			AttackStartComboState();
+			FPAnim->PlayAttack_RMBMontage();
+		}
+		});
 
 	FPAnim->OnAttackHitCheck.AddUObject(this, &AFPCharacter::AttackCheck);
 
 	FPAnim->OnMotionBasedMovement.AddLambda([this]() -> void {
 		FPLOG(Warning, TEXT("OnMotionBasedMovement"));
-		isAnimMotionMoveing = true;
-	});
+		IsAnimMotionMoveing = true;
+		});
 
 	FPAnim->OnMotionBasedMovementFinish.AddLambda([this]() -> void {
 		FPLOG(Warning, TEXT("OnMotionBasedMovement"));
-		isAnimMotionMoveing = false;
+		IsAnimMotionMoveing = false;
+		});
+
+	FPAnim->OnFinishMontage.AddLambda([this]() -> void {
+		FPLOG(Warning, TEXT("OnAnimFinish"));
+		IsAnimFinish = true;
+		});
+
+	FPAnim->OnRest_Looping.AddLambda([this]() -> void {
+		FPLOG(Warning, TEXT("OnRest_Looping"));
+		IsResting = true;
+		});
+
+	FPAnim->OnRest_Finish.AddLambda([this]() -> void {
+		FPLOG(Warning, TEXT("OnRest_Finish"));
+		IsRestEntered = false;
+		});
+
+
+	CharacterStat->OnDamagedHP.AddLambda([this]() -> void {
+		if (bIsPlayer)
+			ActFinish();
 		});
 
 	// 이 부분은 SetCharacterState의 DEAD에서 대신 처리하게 된다.
@@ -453,6 +488,12 @@ void AFPCharacter::PostInitializeComponents()
 
 float AFPCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
+	//if (EventInstigator->IsPlayerController())
+	//{
+	//	auto PlayerCharacter = Cast<AFPCharacter>(EventInstigator->GetPawn());
+	//	FPCHECK(nullptr != PlayerCharacter, 0.0f);
+	//	PlayerCharacter->ActFinish();
+	//}
 	float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	FPLOG(Warning, TEXT("Actor : %s took Damage : %f"), *GetName(), FinalDamage);
 
@@ -474,16 +515,6 @@ void AFPCharacter::PossessedBy(AController * NewController)
 {
 	Super::PossessedBy(NewController);
 
-	//if (IsPlayerControlled())
-	//{
-	//	SetControlMode(EControlMode::GTA);
-	//	GetCharacterMovement()->MaxWalkSpeed = 600.0f;
-	//}
-	//else
-	//{
-	//	SetControlMode(EControlMode::NPC);
-	//	GetCharacterMovement()->MaxWalkSpeed = 300.0f;
-	//}
 }
 
 // Called to bind functionality to input
@@ -491,9 +522,14 @@ void AFPCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	// Action 매핑
+	PlayerInputComponent->BindAction(TEXT("ActFinish"), EInputEvent::IE_Pressed, this, &AFPCharacter::ActFinish);
 	PlayerInputComponent->BindAction(TEXT("ViewChange"), EInputEvent::IE_Pressed, this, &AFPCharacter::ViewChange);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &AFPCharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Attack"), EInputEvent::IE_Pressed, this, &AFPCharacter::Attack);
+	PlayerInputComponent->BindAction(TEXT("Attack_RMB"), EInputEvent::IE_Pressed, this, &AFPCharacter::Attack_RMB);
+	PlayerInputComponent->BindAction(TEXT("Rest"), EInputEvent::IE_Pressed, this, &AFPCharacter::Skill_Rest);
+
 
 	// Axis 매핑 활용하여 이동키 만들기
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &AFPCharacter::UpDown);
@@ -533,7 +569,7 @@ void AFPCharacter::Setweapon(AFPWeapon * NewWeapon)
 
 void AFPCharacter::UpDown(float NewAxisValue)
 {
-	if (IsAttacking)
+	if (IsActing())
 		return;
 
 	switch (CurrentControlMode)
@@ -552,7 +588,7 @@ void AFPCharacter::UpDown(float NewAxisValue)
 
 void AFPCharacter::LeftRight(float NewAxisValue)
 {
-	if (IsAttacking)
+	if (IsActing())
 		return;
 
 	switch (CurrentControlMode)
@@ -588,6 +624,21 @@ void AFPCharacter::Turn(float NewAxisValue)
 	}
 }
 
+void AFPCharacter::Skill_Rest()
+{
+	FPCHECK(!IsActing());
+
+	IsRestEntered = true;
+	FPAnim->PlayRest_Montage();
+}
+
+void AFPCharacter::ActFinish()
+{
+	// 나중에 Rest같이 행동을 중단해야 하는 것이 나오면 사용.
+	if (IsResting)
+		FinishResting();
+}
+
 void AFPCharacter::ViewChange()
 {
 	FPLOG_S(Warning);
@@ -606,10 +657,7 @@ void AFPCharacter::ViewChange()
 
 void AFPCharacter::Attack()
 {
-	//if (IsAttacking) return;
-
-	//FPAnim->PlayAttackMontage();
-	//IsAttacking = true;
+	FPCHECK(!IsActing() || IsAttacking);
 
 	if (IsAttacking)
 	{
@@ -617,6 +665,7 @@ void AFPCharacter::Attack()
 		if (CanNextCombo)
 		{
 			IsComboInputOn = true;
+			IsRMBComboInputOn = false;
 		}
 	}
 	else
@@ -629,9 +678,40 @@ void AFPCharacter::Attack()
 	}
 }
 
+void AFPCharacter::Attack_RMB()
+{
+
+	FPCHECK(!IsActing() || IsAttacking);
+
+	// 기본 공격 콤보 중 RMB는 총 4회 콤보 중 CurrentCombo가 0과 2일때만 들어갈 수 있다.
+	if (!(CurrentCombo == 0 || CurrentCombo == 2))
+		return;
+
+	if (IsAttacking)
+	{
+		IsRMBComboInputOn = true;
+		IsComboInputOn = false;
+	}
+	else
+	{
+		AttackStartComboState();
+		FPAnim->PlayAttack_RMBMontage();
+		IsAttacking = true;
+	}
+}
+
+void AFPCharacter::OnAttackMontageStarted(UAnimMontage * Montage)
+{
+	IsAnimFinish = false;
+}
+
 void AFPCharacter::OnAttackMontageEnded(UAnimMontage * Montage, bool bInterrupted)
 {
 	//IsAttacking = false;
+	//FPCHECK(IsAnimFinish);
+	if (!IsAnimFinish)	return;
+
+	IsAnimFinish = false;
 
 	FPCHECK(IsAttacking);
 	FPCHECK(CurrentCombo > 0);
@@ -644,6 +724,7 @@ void AFPCharacter::AttackStartComboState()
 {
 	CanNextCombo = true;
 	IsComboInputOn = false;
+	IsRMBComboInputOn = false;
 	FPCHECK(FMath::IsWithinInclusive<int32>(CurrentCombo, 0, MaxCombo - 1));
 	CurrentCombo = FMath::Clamp<int32>(CurrentCombo + 1, 1, MaxCombo);
 }
@@ -651,6 +732,7 @@ void AFPCharacter::AttackStartComboState()
 void AFPCharacter::AttackEndComboState()
 {
 	IsComboInputOn = false;
+	IsRMBComboInputOn = false;
 	CanNextCombo = false;
 	CurrentCombo = 0;
 }
@@ -690,7 +772,7 @@ void AFPCharacter::AttackCheck()
 		DebugLifeTime);
 
 #endif
-	
+
 	// 실제로 맞았는지 체크하는 부분
 	if (bResult)
 	{
@@ -708,10 +790,10 @@ void AFPCharacter::AttackCheck()
 
 void AFPCharacter::MovementAnimMotionState()
 {
-	if (!IsAttacking || !isAnimMotionMoveing)
+	if (!IsAttacking || !IsAnimMotionMoveing)
 		return;
 
-		AddMovementInput(FRotationMatrix(FRotator(0.0f, GetControlRotation().Yaw, 0.0f)).GetUnitAxis(EAxis::X), 1);
+	AddMovementInput(FRotationMatrix(FRotator(0.0f, GetControlRotation().Yaw, 0.0f)).GetUnitAxis(EAxis::X), 1);
 }
 
 void AFPCharacter::OnAssetLoadCompleted()
@@ -722,5 +804,21 @@ void AFPCharacter::OnAssetLoadCompleted()
 	GetMesh()->SetSkeletalMesh(AssetLoaded);
 
 	SetCharacterState(ECharacterState::READY);
+}
+
+bool AFPCharacter::IsActing()
+{
+	if (IsAttacking || IsResting || IsRestEntered)
+		return true;
+
+	return false;
+}
+
+void AFPCharacter::FinishResting()
+{
+	// 이 함수가 들어간 곳
+	// 방향키(좌우, 앞뒤), 공격(LMB,RMB), 나중에 공격 맞았을 때, 그리고 각종 상호작용들
+	IsResting = false;
+	FPAnim->JumpToRest_End_MontageSection();
 }
 
