@@ -27,8 +27,8 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = Weapon)
 	USkeletalMeshComponent* Weapon;
 
-	UPROPERTY(VisibleAnywhere, Category = Weapon)
-	UAnimationAsset* Effect_Trail;
+	/*UPROPERTY(VisibleAnywhere, Category = Weapon)
+	UAnimSequence* Effect_Trail;*/
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Attack)
