@@ -28,6 +28,17 @@ AFPAIController::AFPAIController()
 		BTAsset = BTObject.Object;
 	}
 
+	static ConstructorHelpers::FObjectFinder<UBlackboardData> BBMonsterObject(TEXT("/Game/AI/BB_FPMonster.BB_FPMonster"));
+	if (BBMonsterObject.Succeeded())
+	{
+		BBMonsterAsset = BBMonsterObject.Object;
+	}
+
+	static ConstructorHelpers::FObjectFinder<UBehaviorTree> BTMonsterObject(TEXT("/Game/AI/BT_FPMonster.BT_FPMonster"));
+	if (BTMonsterObject.Succeeded())
+	{
+		BTMonsterAsset = BTMonsterObject.Object;
+	}
 	//RepeatInterval = 3.0f;
 }
 
@@ -51,12 +62,36 @@ void AFPAIController::OnPossess(APawn * InPawn)
 	//GetWorld()->GetTimerManager().SetTimer(RepeatTimerHandle, this, &AFPAIController::OnRepeatTimer, RepeatInterval, true);
 }
 
-void AFPAIController::RUNAI()
+void AFPAIController::RUNAI(AFPCharacter* FPCharacter)
 {
 	if (UseBlackboard(BBAsset, Blackboard))
 	{
 		Blackboard->SetValueAsVector(HomePosKey, GetPawn()->GetActorLocation());
 		if (!RunBehaviorTree(BTAsset))
+		{
+			FPLOG(Error, TEXT("AIController couldn't run behavior tree!"));
+		}
+	}
+}
+
+void AFPAIController::RUNAI(AFPMonster* FPMonster)
+{
+	if (UseBlackboard(BBMonsterAsset, Blackboard))
+	{
+		Blackboard->SetValueAsVector(HomePosKey, GetPawn()->GetActorLocation());
+		if (!RunBehaviorTree(BTMonsterAsset))
+		{
+			FPLOG(Error, TEXT("AIController couldn't run behavior tree!"));
+		}
+	}
+}
+
+void AFPAIController::RUNAI(AFPSpaiderBoss* FPSpaiderBoss)
+{
+	if (UseBlackboard(BBMonsterAsset, Blackboard))
+	{
+		Blackboard->SetValueAsVector(HomePosKey, GetPawn()->GetActorLocation());
+		if (!RunBehaviorTree(BTMonsterAsset))
 		{
 			FPLOG(Error, TEXT("AIController couldn't run behavior tree!"));
 		}

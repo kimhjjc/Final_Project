@@ -23,7 +23,10 @@ public:
 	static const FName PatrolPosKey;
 	static const FName TargetKey;
 
-	void RUNAI();
+	
+	void RUNAI(class AFPCharacter* FPCharacter);
+	void RUNAI(class AFPMonster* FPMonster);
+	void RUNAI(class AFPSpaiderBoss* FPSpaiderBoss);
 	void StopAI();
 
 private:
@@ -32,6 +35,12 @@ private:
 
 	UPROPERTY()
 	class UBlackboardData* BBAsset;
+
+	UPROPERTY()
+	class UBehaviorTree* BTMonsterAsset;
+
+	UPROPERTY()
+	class UBlackboardData* BBMonsterAsset;
 
 	//void OnRepeatTimer();
 

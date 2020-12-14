@@ -20,8 +20,11 @@ public:
 
 	class UFPHUDWidget* GetHUDWidget() const;
 	void NPCKill(class AFPCharacter* KilledNPC) const;
+	void NPCKill(class AFPMonster* KilledNPC) const;
+	void NPCKill(class AFPSpaiderBoss* KilledNPC) const;
 	void AddGameScore() const;
 
+	class AFPPlayerState* GetFPPlayerState() { return FPPlayerState; }
 protected:
 	virtual void BeginPlay() override;
 

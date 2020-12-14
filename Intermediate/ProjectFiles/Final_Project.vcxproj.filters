@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Final_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{FF9E3818-AEAD-42DB-930D-1926F2DF7993}</UniqueIdentifier>
+      <UniqueIdentifier>{D6845342-D57F-482E-B643-D4721F6459FD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\PN_OpenWorldFoliage.png" />
     <None Include="..\..\프로젝트 빌드 다시하기 방법.txt" />
     <Filter Include="Config">
-      <UniqueIdentifier>{869E6177-C7AE-462E-A002-7A9F72E6E559}</UniqueIdentifier>
+      <UniqueIdentifier>{5BA733DD-7478-42EA-8D2C-8001F2F734A3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -37,13 +37,13 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Final_Project">
-      <UniqueIdentifier>{6424210A-8923-4417-8D6E-8E31CFDB9A32}</UniqueIdentifier>
+      <UniqueIdentifier>{307C55EA-D6FC-4D77-9BDD-3EB2245DC8D0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project\Final_Project.Build.cs">
       <Filter>Source\Final_Project</Filter>
     </None>
     <Filter Include="Source\Final_Project\Private">
-      <UniqueIdentifier>{2A73E1C1-E7B1-4123-9732-506A36FBD80E}</UniqueIdentifier>
+      <UniqueIdentifier>{F231AD0C-3C16-48C1-B5B5-AB5F18BAA2A0}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\BTDecorator_IsInAttackRange.cpp">
       <Filter>Source\Final_Project\Private</Filter>
@@ -90,6 +90,15 @@
     <ClCompile Include="..\..\Source\Final_Project\Private\FPGameState.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPHitBossEffect.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPHitEffect.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPHitPunchEffect.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPHUDWidget.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
@@ -100,6 +109,9 @@
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPMonsterAnimInstance.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPMonsterSpawner.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPPawn.cpp">
@@ -117,11 +129,14 @@
     <ClCompile Include="..\..\Source\Final_Project\Private\FPSection.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPSpaiderBoss.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPWeapon.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Public">
-      <UniqueIdentifier>{B86FCD4E-5B14-49D0-8009-9E500E46DE86}</UniqueIdentifier>
+      <UniqueIdentifier>{9099D9A3-EB8C-4D62-835C-99A72674CA30}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\BTDecorator_IsInAttackRange.h">
       <Filter>Source\Final_Project\Public</Filter>
@@ -168,6 +183,15 @@
     <ClInclude Include="..\..\Source\Final_Project\Public\FPGameState.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPHitBossEffect.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPHitEffect.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPHitPunchEffect.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPHUDWidget.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
@@ -178,6 +202,9 @@
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPMonsterAnimInstance.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPMonsterSpawner.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPPawn.h">
@@ -195,17 +222,20 @@
     <ClInclude Include="..\..\Source\Final_Project\Public\FPSection.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPSpaiderBoss.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPWeapon.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
     <Filter Include="Source\Final_ProjectSetting">
-      <UniqueIdentifier>{BA7F21C1-6576-4CAC-AC18-23D8F280EFEC}</UniqueIdentifier>
+      <UniqueIdentifier>{668CC24D-BA1E-4D47-869C-988DC28EDA54}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_ProjectSetting\Final_ProjectSetting.Build.cs">
       <Filter>Source\Final_ProjectSetting</Filter>
     </None>
     <Filter Include="Source\Final_ProjectSetting\Private">
-      <UniqueIdentifier>{2AF23866-A38D-40D7-B5D8-23A05AB41D8F}</UniqueIdentifier>
+      <UniqueIdentifier>{3EEE5359-A065-43A5-BE34-191D7F9B1112}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_ProjectSetting\Private\Final_ProjectSetting.cpp">
       <Filter>Source\Final_ProjectSetting\Private</Filter>
@@ -214,7 +244,7 @@
       <Filter>Source\Final_ProjectSetting\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Final_ProjectSetting\Public">
-      <UniqueIdentifier>{42BE5DE7-B009-48FF-A119-BCF3A590FAA4}</UniqueIdentifier>
+      <UniqueIdentifier>{AD5D5AAE-37AF-4307-BF1B-A54008502D79}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_ProjectSetting\Public\Final_ProjectSetting.h">
       <Filter>Source\Final_ProjectSetting\Public</Filter>

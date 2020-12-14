@@ -17,6 +17,8 @@
 #include "FPPlayerState.h"
 #include "FPHUDWidget.h"
 #include "FPGameMode.h"
+#include "FPHitEffect.h"
+#include "FPHitPunchEffect.h"
 
 // Sets default values
 AFPCharacter::AFPCharacter()
@@ -142,7 +144,8 @@ void AFPCharacter::SetCharacterState(ECharacterState NewState)
 		{
 			auto FPGameMode = Cast<AFPGameMode>(GetWorld()->GetAuthGameMode());
 			FPCHECK(nullptr != FPGameMode);
-			int32 TargetLevel = FMath::CeilToInt(((float)FPGameMode->GetScore() * 0.8f));
+			//int32 TargetLevel = FMath::CeilToInt(((float)FPGameMode->GetScore() * 0.8f));
+			int32 TargetLevel = 2;
 			int32 FinalLevel = FMath::Clamp<int32>(TargetLevel, 1, 20);
 			FPLOG(Warning, TEXT("New NPC Level : %d"), FinalLevel);
 			CharacterStat->SetNewLevel(FinalLevel);
@@ -173,12 +176,18 @@ void AFPCharacter::SetCharacterState(ECharacterState NewState)
 			SetControlMode(EControlMode::GTA);
 			GetCharacterMovement()->MaxWalkSpeed = 600.0f;
 			EnableInput(FPPlayerController);
+
+			auto FPPlayerState = Cast<AFPPlayerState>(GetPlayerState());
+			FPCHECK(nullptr != FPPlayerState);
+			FPPlayerController->GetFPPlayerState()->OnLevelUpDelegate.AddLambda([this]() -> void {
+				CharacterStat->SetNewLevel(FPPlayerController->GetFPPlayerState()->GetCharacterLevel());
+				});
 		}
 		else
 		{
 			SetControlMode(EControlMode::NPC);
 			GetCharacterMovement()->MaxWalkSpeed = 300.0f;
-			FPAIController->RUNAI();
+			FPAIController->RUNAI(this);
 		}
 
 		break;
@@ -390,7 +399,7 @@ void AFPCharacter::Tick(float DeltaTime)
 	if (IsRestEntered)
 		if (IsResting)
 		{
-			CharacterStat->SetHeal(1);
+			CharacterStat->SetHeal(0.1f);
 		}
 
 	// 공격 애니메이션에서 움직이는 부분
@@ -478,6 +487,12 @@ void AFPCharacter::PostInitializeComponents()
 			ActFinish();
 		});
 
+
+	//auto FPPlayerState = Cast<AFPPlayerState>(GetPlayerState());
+	//FPCHECK(nullptr != FPPlayerState);
+	//FPPlayerController->GetFPPlayerState()->OnLevelUpDelegate.AddLambda([this]() -> void {
+	//	CharacterStat->SetNewLevel(FPPlayerController->GetFPPlayerState()->GetCharacterLevel());
+	//	});
 	// 이 부분은 SetCharacterState의 DEAD에서 대신 처리하게 된다.
 	//CharacterStat->OnHPIsZero.AddLambda([this]() -> void {
 	//	FPLOG(Warning, TEXT("OnHPIsZero"));
@@ -488,12 +503,6 @@ void AFPCharacter::PostInitializeComponents()
 
 float AFPCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
-	//if (EventInstigator->IsPlayerController())
-	//{
-	//	auto PlayerCharacter = Cast<AFPCharacter>(EventInstigator->GetPawn());
-	//	FPCHECK(nullptr != PlayerCharacter, 0.0f);
-	//	PlayerCharacter->ActFinish();
-	//}
 	float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	FPLOG(Warning, TEXT("Actor : %s took Damage : %f"), *GetName(), FinalDamage);
 
@@ -780,6 +789,15 @@ void AFPCharacter::AttackCheck()
 		{
 			FPLOG(Warning, TEXT("Hit Actor Name : %s"), *HitResult.Actor->GetName());
 
+			auto SpawnLocation = HitResult.Actor->GetActorLocation() + FVector(rand() % 70 - 35, rand() % 70 - 35, rand() % 30 - 15);
+			if (bIsPlayer && CurrentWeapon)
+			{
+				auto SpawnedHitEffect = GetWorld()->SpawnActor<AFPHitEffect>(AFPHitEffect::StaticClass(), SpawnLocation, FRotator(rand() % 360, rand() % 360, rand() % 360));
+			}
+			else
+			{
+				auto SpawnedHitEffect = GetWorld()->SpawnActor<AFPHitPunchEffect>(AFPHitPunchEffect::StaticClass(), SpawnLocation, FRotator(rand() % 360, rand() % 360, rand() % 360));
+			}
 			FDamageEvent DamageEvent;
 			//HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
 			HitResult.Actor->TakeDamage(GetFinalAttackDamage(), DamageEvent, GetController(), this);

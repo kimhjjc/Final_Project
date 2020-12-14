@@ -13,6 +13,7 @@
  */
 
 DECLARE_MULTICAST_DELEGATE(FOnPlayerStateChangedDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnLevelUpDelegate);
 
 UCLASS()
 class FINAL_PROJECT_API AFPPlayerState : public APlayerState
@@ -34,6 +35,7 @@ public:
 	void SavePlayerData();
 
 	FOnPlayerStateChangedDelegate OnPlayerStateChanged;
+	FOnLevelUpDelegate OnLevelUpDelegate;
 
 protected:
 	UPROPERTY(Transient)

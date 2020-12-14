@@ -52,6 +52,7 @@ bool AFPPlayerState::AddExp(int32 IncomeExp)
 		Exp -= CurrentStatData->NextExp;
 		SetCharacterLevel(CharacterLevel + 1);
 		DidLevelUp = true;
+		OnLevelUpDelegate.Broadcast();
 	}
 
 	OnPlayerStateChanged.Broadcast();

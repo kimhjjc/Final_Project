@@ -68,7 +68,7 @@ void UFPCharacterStatComponent::SetNewLevel(int32 NewLevel)
 void UFPCharacterStatComponent::SetHeal(float NewRecoverHP)
 {
 	FPCHECK(nullptr != CurrentStatData);
-	SetHP(FMath::Clamp<float>(CurrentHP + NewRecoverHP, 0.0f, CurrentStatData->MaxHP));
+	SetHP(FMath::Clamp<float>(CurrentHP + NewRecoverHP * (CurrentStatData->MaxHP / 100.0f), 0.0f, CurrentStatData->MaxHP));
 }
 
 void UFPCharacterStatComponent::SetDamage(float NewDamage)

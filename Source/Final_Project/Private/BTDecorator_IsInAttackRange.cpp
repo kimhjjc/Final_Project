@@ -16,13 +16,14 @@ bool UBTDecorator_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeCompo
 {
 	bool bResult = Super::CalculateRawConditionValue(OwnerComp, NodeMemory);
 
-	auto ControllingPawn = Cast<AFPCharacter>(OwnerComp.GetAIOwner()->GetPawn());
-	//auto ControllingPawn = OwnerComp.GetAIOwner()->GetPawn();
+	//auto ControllingPawn = Cast<AFPCharacter>(OwnerComp.GetAIOwner()->GetPawn());
+	auto ControllingPawn = OwnerComp.GetAIOwner()->GetPawn();
 	if (nullptr == ControllingPawn)
 		return false;
 	auto Target = Cast<AFPCharacter>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(AFPAIController::TargetKey));
 	if (nullptr == Target)
 		return false;
-	bResult = (Target->GetDistanceTo(ControllingPawn) <= ControllingPawn->GetFinalAttackRange());
+	//bResult = (Target->GetDistanceTo(ControllingPawn) <= ControllingPawn->GetFinalAttackRange());
+	bResult = (Target->GetDistanceTo(ControllingPawn) <= 150.0);
 	return bResult;
 }

@@ -16,19 +16,30 @@ EBTNodeResult::Type UBTTask_TurnToTarget::ExecuteTask(UBehaviorTreeComponent & O
 {
 	EBTNodeResult::Type Result = Super::ExecuteTask(OwnerComp, NodeMemory);
 
-	auto FPCharacter = Cast<AFPCharacter>(OwnerComp.GetAIOwner()->GetPawn());
-	if (nullptr == FPCharacter)
+	APawn* ControllingPawn = OwnerComp.GetAIOwner()->GetPawn();
+	if (nullptr == ControllingPawn)
 		return EBTNodeResult::Failed;
+
+
+	/*auto FPCharacter = Cast<AFPCharacter>(OwnerComp.GetAIOwner()->GetPawn());
+	if (nullptr == FPCharacter)
+		return EBTNodeResult::Failed;*/
 
 
 	auto Target = Cast<AFPCharacter>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(AFPAIController::TargetKey));
 	if (nullptr == Target)
 		return EBTNodeResult::Failed;
 
-	FVector LookVector = Target->GetActorLocation() - FPCharacter->GetActorLocation();
+	FVector LookVector = Target->GetActorLocation() - ControllingPawn->GetActorLocation();
 	LookVector.Z = 0.0f;		// 일단은 무조건 모두 Z = 0.0f에 있다는 가정하에 사용한다.
 	FRotator TargetRot = FRotationMatrix::MakeFromX(LookVector).Rotator();
-	FPCharacter->SetActorRotation(FMath::RInterpTo(FPCharacter->GetActorRotation(), TargetRot, GetWorld()->GetDeltaSeconds(), 2.0f));
+	ControllingPawn->SetActorRotation(FMath::RInterpTo(ControllingPawn->GetActorRotation(), TargetRot, GetWorld()->GetDeltaSeconds(), 2.0f));
+
+
+	//FVector LookVector = Target->GetActorLocation() - FPCharacter->GetActorLocation();
+	//LookVector.Z = 0.0f;		// 일단은 무조건 모두 Z = 0.0f에 있다는 가정하에 사용한다.
+	//FRotator TargetRot = FRotationMatrix::MakeFromX(LookVector).Rotator();
+	//FPCharacter->SetActorRotation(FMath::RInterpTo(FPCharacter->GetActorRotation(), TargetRot, GetWorld()->GetDeltaSeconds(), 2.0f));
 
 	return EBTNodeResult::Succeeded;
 }

@@ -5,6 +5,7 @@
 #include "FPHUDWidget.h"
 #include "FPPlayerState.h"
 #include "FPCharacter.h"
+#include "FPMonster.h"
 
 AFPPlayerController::AFPPlayerController()
 {
@@ -30,6 +31,16 @@ UFPHUDWidget * AFPPlayerController::GetHUDWidget() const
 void AFPPlayerController::NPCKill(AFPCharacter * KilledNPC) const
 {
 	FPPlayerState->AddExp(KilledNPC->GetExp());
+}
+
+void AFPPlayerController::NPCKill(AFPMonster * KilledNPC) const
+{
+	FPPlayerState->AddExp(10);
+}
+
+void AFPPlayerController::NPCKill(AFPSpaiderBoss * KilledNPC) const
+{
+	FPPlayerState->AddExp(200);
 }
 
 void AFPPlayerController::AddGameScore() const

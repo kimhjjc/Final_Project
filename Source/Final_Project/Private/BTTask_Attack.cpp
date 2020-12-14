@@ -4,6 +4,8 @@
 #include "BTTask_Attack.h"
 #include "FPAIController.h"
 #include "FPCharacter.h"
+#include "FPMonster.h"
+#include "FPSpaiderBoss.h"
 
 
 UBTTask_Attack::UBTTask_Attack() 
@@ -18,14 +20,38 @@ EBTNodeResult::Type UBTTask_Attack::ExecuteTask(UBehaviorTreeComponent & OwnerCo
 	EBTNodeResult::Type Result = Super::ExecuteTask(OwnerComp, NodeMemory);
 
 	auto FPCharacter = Cast<AFPCharacter>(OwnerComp.GetAIOwner()->GetPawn());
-	if (nullptr == FPCharacter)
+	auto FPMonster = Cast<AFPMonster>(OwnerComp.GetAIOwner()->GetPawn());
+	auto FPSpaiderBoss = Cast<AFPSpaiderBoss>(OwnerComp.GetAIOwner()->GetPawn());
+	if (nullptr == FPCharacter && nullptr == FPMonster && nullptr == FPSpaiderBoss)
 		return EBTNodeResult::Failed;
 
-	FPCharacter->Attack();
-	IsAttacking = true;
-	FPCharacter->OnAttackEnd.AddLambda([this]() -> void {
-		IsAttacking = false;
-		});
+	if (FPSpaiderBoss)
+	{
+		FPLOG(Warning, TEXT("Monster Attack"));
+		FPSpaiderBoss->Attack();
+		IsAttacking = true;
+		FPSpaiderBoss->OnAttackEnd.AddLambda([this]() -> void {
+			IsAttacking = false;
+			});
+	}
+	else if (FPMonster)
+	{
+		FPLOG(Warning, TEXT("Monster Attack"));
+		FPMonster->Attack();
+		IsAttacking = true;
+		FPMonster->OnAttackEnd.AddLambda([this]() -> void {
+			IsAttacking = false;
+			});
+	}
+	else if (FPCharacter)
+	{
+		FPLOG(Warning, TEXT("AI Attack"));
+		FPCharacter->Attack();
+		IsAttacking = true;
+		FPCharacter->OnAttackEnd.AddLambda([this]() -> void {
+			IsAttacking = false;
+			});
+	}
 
 
 	return EBTNodeResult::InProgress;
