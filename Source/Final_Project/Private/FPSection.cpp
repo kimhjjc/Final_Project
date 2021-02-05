@@ -2,9 +2,9 @@
 
 
 #include "FPSection.h"
-#include "FPCharacter.h"
-#include "FPItemBox.h"
-#include "FPPlayerController.h"
+#include "Characters/Player/FPCharacter.h"
+#include "Characters/Player/FPPlayerController.h"
+#include "Item/FPItemBox.h"
 #include "FPGameMode.h"
 
 // Sets default values

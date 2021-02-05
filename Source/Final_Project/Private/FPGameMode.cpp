@@ -2,8 +2,8 @@
 
 
 #include "FPGameMode.h"
-#include "FPCharacter.h"
-#include "FPPlayerController.h"
+#include "Characters/Player/FPCharacter.h"
+#include "Characters/Player/FPPlayerController.h"
 #include "FPPlayerState.h"
 #include "FPGameState.h"
 

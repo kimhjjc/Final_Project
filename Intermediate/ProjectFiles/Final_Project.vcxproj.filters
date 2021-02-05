@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Final_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{D6845342-D57F-482E-B643-D4721F6459FD}</UniqueIdentifier>
+      <UniqueIdentifier>{E3F4D96D-444B-4D30-8B13-6C31C0B402A3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\PN_OpenWorldFoliage.png" />
     <None Include="..\..\프로젝트 빌드 다시하기 방법.txt" />
     <Filter Include="Config">
-      <UniqueIdentifier>{5BA733DD-7478-42EA-8D2C-8001F2F734A3}</UniqueIdentifier>
+      <UniqueIdentifier>{3DF179E4-9F14-43E4-8CA0-D70B077E94D4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -37,48 +37,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Final_Project">
-      <UniqueIdentifier>{307C55EA-D6FC-4D77-9BDD-3EB2245DC8D0}</UniqueIdentifier>
+      <UniqueIdentifier>{9E58C144-D22A-41BE-914F-EC726AB1DC0E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project\Final_Project.Build.cs">
       <Filter>Source\Final_Project</Filter>
     </None>
     <Filter Include="Source\Final_Project\Private">
-      <UniqueIdentifier>{F231AD0C-3C16-48C1-B5B5-AB5F18BAA2A0}</UniqueIdentifier>
+      <UniqueIdentifier>{C87048A5-8165-4B01-AC65-C3F7E964F15E}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\Final_Project\Private\BTDecorator_IsInAttackRange.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\BTService_Detect.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\BTTask_Attack.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\BTTask_FindPatrolPos.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\BTTask_TurnToTarget.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\Final_Project.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\Fountain.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPAIController.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPAnimInstance.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPCharacter.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPCharacterStatComponent.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPCharacterWidget.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPGameInstance.cpp">
@@ -90,34 +60,7 @@
     <ClCompile Include="..\..\Source\Final_Project\Private\FPGameState.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPHitBossEffect.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPHitEffect.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPHitPunchEffect.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPHUDWidget.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPItemBox.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPMonster.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPMonsterAnimInstance.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPMonsterSpawner.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPPawn.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPPlayerController.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPPlayerState.cpp">
@@ -129,49 +72,100 @@
     <ClCompile Include="..\..\Source\Final_Project\Private\FPSection.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPSpaiderBoss.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
+    <Filter Include="Source\Final_Project\Private\Characters">
+      <UniqueIdentifier>{6AB8DFCE-805A-44EC-BF8E-718E827E0302}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\FPAIController.cpp">
+      <Filter>Source\Final_Project\Private\Characters</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Final_Project\Private\FPWeapon.cpp">
-      <Filter>Source\Final_Project\Private</Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\FPMonsterSpawner.cpp">
+      <Filter>Source\Final_Project\Private\Characters</Filter>
+    </ClCompile>
+    <Filter Include="Source\Final_Project\Private\Characters\AI">
+      <UniqueIdentifier>{C006EF4B-3EF9-426D-BA8B-B0C1F1611EDF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\AI\BTDecorator_IsInAttackRange.cpp">
+      <Filter>Source\Final_Project\Private\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\AI\BTService_Detect.cpp">
+      <Filter>Source\Final_Project\Private\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\AI\BTTask_Attack.cpp">
+      <Filter>Source\Final_Project\Private\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\AI\BTTask_FindPatrolPos.cpp">
+      <Filter>Source\Final_Project\Private\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\AI\BTTask_TurnToTarget.cpp">
+      <Filter>Source\Final_Project\Private\Characters\AI</Filter>
+    </ClCompile>
+    <Filter Include="Source\Final_Project\Private\Characters\Boss">
+      <UniqueIdentifier>{C37B25B6-4270-46B7-83E6-7D277842DB47}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Boss\FPSpaiderBoss.cpp">
+      <Filter>Source\Final_Project\Private\Characters\Boss</Filter>
+    </ClCompile>
+    <Filter Include="Source\Final_Project\Private\Characters\Enemy">
+      <UniqueIdentifier>{D9801868-0272-4EFA-8C84-EA250A741E01}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Enemy\FPMonster.cpp">
+      <Filter>Source\Final_Project\Private\Characters\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Enemy\FPMonsterAnimInstance.cpp">
+      <Filter>Source\Final_Project\Private\Characters\Enemy</Filter>
+    </ClCompile>
+    <Filter Include="Source\Final_Project\Private\Characters\Player">
+      <UniqueIdentifier>{1E87017B-9295-428B-945F-582674A99A4E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Player\FPAnimInstance.cpp">
+      <Filter>Source\Final_Project\Private\Characters\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Player\FPCharacter.cpp">
+      <Filter>Source\Final_Project\Private\Characters\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Player\FPCharacterStatComponent.cpp">
+      <Filter>Source\Final_Project\Private\Characters\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Player\FPPlayerController.cpp">
+      <Filter>Source\Final_Project\Private\Characters\Player</Filter>
+    </ClCompile>
+    <Filter Include="Source\Final_Project\Private\Effect">
+      <UniqueIdentifier>{B44E3BB3-B12E-4E78-8D81-BD63BF6B2BA2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Effect\FPHitBossEffect.cpp">
+      <Filter>Source\Final_Project\Private\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Effect\FPHitEffect.cpp">
+      <Filter>Source\Final_Project\Private\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Effect\FPHitPunchEffect.cpp">
+      <Filter>Source\Final_Project\Private\Effect</Filter>
+    </ClCompile>
+    <Filter Include="Source\Final_Project\Private\Item">
+      <UniqueIdentifier>{8F1D4265-3B8E-42B2-AB9F-B8DC9D313288}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Item\FPItemBox.cpp">
+      <Filter>Source\Final_Project\Private\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Item\FPWeapon.cpp">
+      <Filter>Source\Final_Project\Private\Item</Filter>
+    </ClCompile>
+    <Filter Include="Source\Final_Project\Private\UI">
+      <UniqueIdentifier>{0011AC38-4FCF-4CF5-BE83-35E91C9187C5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\UI\FPCharacterWidget.cpp">
+      <Filter>Source\Final_Project\Private\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\UI\FPHUDWidget.cpp">
+      <Filter>Source\Final_Project\Private\UI</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Public">
-      <UniqueIdentifier>{9099D9A3-EB8C-4D62-835C-99A72674CA30}</UniqueIdentifier>
+      <UniqueIdentifier>{17B31DBF-9787-44E3-A92C-D4A81CE912AC}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\Final_Project\Public\BTDecorator_IsInAttackRange.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\BTService_Detect.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\BTTask_Attack.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\BTTask_FindPatrolPos.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\BTTask_TurnToTarget.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\Final_Project.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\Fountain.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPAIController.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPAnimInstance.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPCharacter.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPCharacterStatComponent.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPCharacterWidget.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPGameInstance.h">
@@ -183,34 +177,7 @@
     <ClInclude Include="..\..\Source\Final_Project\Public\FPGameState.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPHitBossEffect.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPHitEffect.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPHitPunchEffect.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPHUDWidget.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPItemBox.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPMonster.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPMonsterAnimInstance.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPMonsterSpawner.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPPawn.h">
-      <Filter>Source\Final_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPPlayerController.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPPlayerState.h">
@@ -222,20 +189,101 @@
     <ClInclude Include="..\..\Source\Final_Project\Public\FPSection.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPSpaiderBoss.h">
-      <Filter>Source\Final_Project\Public</Filter>
+    <Filter Include="Source\Final_Project\Public\Characters">
+      <UniqueIdentifier>{E2401665-3482-4757-81D6-31ED19BFF79D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\FPAIController.h">
+      <Filter>Source\Final_Project\Public\Characters</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Final_Project\Public\FPWeapon.h">
-      <Filter>Source\Final_Project\Public</Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\FPMonsterSpawner.h">
+      <Filter>Source\Final_Project\Public\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\Final_Project\Public\Characters\AI">
+      <UniqueIdentifier>{24EACAD9-3E3B-4E52-93CB-11B901B97664}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\AI\BTDecorator_IsInAttackRange.h">
+      <Filter>Source\Final_Project\Public\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\AI\BTService_Detect.h">
+      <Filter>Source\Final_Project\Public\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\AI\BTTask_Attack.h">
+      <Filter>Source\Final_Project\Public\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\AI\BTTask_FindPatrolPos.h">
+      <Filter>Source\Final_Project\Public\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\AI\BTTask_TurnToTarget.h">
+      <Filter>Source\Final_Project\Public\Characters\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\Final_Project\Public\Characters\Boss">
+      <UniqueIdentifier>{CB6550D7-E3D1-4F75-A039-B64CAC3B4F03}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Boss\FPSpaiderBoss.h">
+      <Filter>Source\Final_Project\Public\Characters\Boss</Filter>
+    </ClInclude>
+    <Filter Include="Source\Final_Project\Public\Characters\Enemy">
+      <UniqueIdentifier>{2B2DC94D-E20F-461E-A7AF-F6446EBFE7FD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Enemy\FPMonster.h">
+      <Filter>Source\Final_Project\Public\Characters\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Enemy\FPMonsterAnimInstance.h">
+      <Filter>Source\Final_Project\Public\Characters\Enemy</Filter>
+    </ClInclude>
+    <Filter Include="Source\Final_Project\Public\Characters\Player">
+      <UniqueIdentifier>{E8FD23E5-E5A2-4A05-B140-9D148B4B3501}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Player\FPAnimInstance.h">
+      <Filter>Source\Final_Project\Public\Characters\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Player\FPCharacter.h">
+      <Filter>Source\Final_Project\Public\Characters\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Player\FPCharacterStatComponent.h">
+      <Filter>Source\Final_Project\Public\Characters\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Player\FPPlayerController.h">
+      <Filter>Source\Final_Project\Public\Characters\Player</Filter>
+    </ClInclude>
+    <Filter Include="Source\Final_Project\Public\Effect">
+      <UniqueIdentifier>{303CD200-E237-46E7-A2D9-C94F2B850A4C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Effect\FPHitBossEffect.h">
+      <Filter>Source\Final_Project\Public\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Effect\FPHitEffect.h">
+      <Filter>Source\Final_Project\Public\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Effect\FPHitPunchEffect.h">
+      <Filter>Source\Final_Project\Public\Effect</Filter>
+    </ClInclude>
+    <Filter Include="Source\Final_Project\Public\Item">
+      <UniqueIdentifier>{FCCD6169-EA66-4123-A837-675FE91A5E33}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Item\FPItemBox.h">
+      <Filter>Source\Final_Project\Public\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Item\FPWeapon.h">
+      <Filter>Source\Final_Project\Public\Item</Filter>
+    </ClInclude>
+    <Filter Include="Source\Final_Project\Public\UI">
+      <UniqueIdentifier>{77A57283-4FB7-40D6-94D6-BE765616509F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\UI\FPCharacterWidget.h">
+      <Filter>Source\Final_Project\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\UI\FPHUDWidget.h">
+      <Filter>Source\Final_Project\Public\UI</Filter>
     </ClInclude>
     <Filter Include="Source\Final_ProjectSetting">
-      <UniqueIdentifier>{668CC24D-BA1E-4D47-869C-988DC28EDA54}</UniqueIdentifier>
+      <UniqueIdentifier>{3D72433F-0C37-46E4-8E54-C1FFC010DAFC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_ProjectSetting\Final_ProjectSetting.Build.cs">
       <Filter>Source\Final_ProjectSetting</Filter>
     </None>
     <Filter Include="Source\Final_ProjectSetting\Private">
-      <UniqueIdentifier>{3EEE5359-A065-43A5-BE34-191D7F9B1112}</UniqueIdentifier>
+      <UniqueIdentifier>{881DC1DC-96CF-43DD-B9BC-7FAE08EB5EAD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_ProjectSetting\Private\Final_ProjectSetting.cpp">
       <Filter>Source\Final_ProjectSetting\Private</Filter>
@@ -244,7 +292,7 @@
       <Filter>Source\Final_ProjectSetting\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Final_ProjectSetting\Public">
-      <UniqueIdentifier>{AD5D5AAE-37AF-4307-BF1B-A54008502D79}</UniqueIdentifier>
+      <UniqueIdentifier>{B45FAA2D-3C0D-4877-BB3C-263393C6E974}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_ProjectSetting\Public\Final_ProjectSetting.h">
       <Filter>Source\Final_ProjectSetting\Public</Filter>
