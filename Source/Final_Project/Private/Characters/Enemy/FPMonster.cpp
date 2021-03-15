@@ -3,16 +3,13 @@
 
 #include "Characters/Enemy/FPMonster.h"
 #include "Characters/Enemy/FPMonsterAnimInstance.h"
-#include "Item/FPWeapon.h"
 #include "Characters/Player/FPCharacterStatComponent.h"
 #include "DrawDebugHelpers.h"
 #include "Components/WidgetComponent.h"	
 #include "UI/FPCharacterWidget.h"
 #include "Characters/FPAIController.h"
 #include "FPCharacterSetting1.h"
-#include "FPGameInstance.h"
 #include "Characters/Player/FPPlayerController.h"
-#include "FPPlayerState.h"
 #include "UI/FPHUDWidget.h"
 #include "FPGameMode.h"
 #include "Effect/FPHitPunchEffect.h"
@@ -101,7 +98,7 @@ void AFPMonster::BeginPlay()
 	int32 TargetLevel = FMath::CeilToInt(((float)FPGameMode->GetScore() * 0.8f));
 	int32 FinalLevel = FMath::Clamp<int32>(TargetLevel, 1, 20);
 	FPLOG(Warning, TEXT("New NPC Level : %d"), FinalLevel);
-	CharacterStat->SetNewLevel(FinalLevel);
+	CharacterStat->SetNewMonsterLevel(FinalLevel);
 
 	auto CharacterWidget = Cast<UFPCharacterWidget>(HPBarWidget->GetUserWidgetObject());
 	FPCHECK(nullptr != CharacterWidget);

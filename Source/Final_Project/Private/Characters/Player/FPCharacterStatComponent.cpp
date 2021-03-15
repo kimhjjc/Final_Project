@@ -65,6 +65,24 @@ void UFPCharacterStatComponent::SetNewLevel(int32 NewLevel)
 	}
 }
 
+void UFPCharacterStatComponent::SetNewMonsterLevel(int32 NewLevel)
+{
+	auto FPGameInstance = Cast<UFPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+
+	FPCHECK(nullptr != FPGameInstance);
+	CurrentStatData = FPGameInstance->GetFPCharacterData(NewLevel);
+	if (nullptr != CurrentStatData)
+	{
+		Level = NewLevel;
+		//CurrentHP = CurrentStatData->MaxHP;
+		SetHP(CurrentStatData->MaxHP);
+	}
+	else
+	{
+		FPLOG(Error, TEXT("Level (%d) data doesn't exist"), NewLevel);
+	}
+}
+
 void UFPCharacterStatComponent::SetHeal(float NewRecoverHP)
 {
 	FPCHECK(nullptr != CurrentStatData);

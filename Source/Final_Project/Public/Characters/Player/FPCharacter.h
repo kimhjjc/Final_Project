@@ -33,6 +33,10 @@ class FINAL_PROJECT_API AFPCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
+	/** inventory */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	class UInventoryComponent* Inventory;
+
 public:
 	// Sets default values for this character's properties
 	AFPCharacter();
@@ -97,7 +101,11 @@ public:
 	void Attack();
 	FOnAttackEndDelegate OnAttackEnd;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Health")
+	float Health;
 
+	UFUNCTION(BlueprintCallable, Category = "Items")
+	void UseItem(class UItem* Item);
 
 private:
 	// Axis 매핑 활용해서 이동키 만들기

@@ -55,6 +55,7 @@ public:
 
 	virtual void Init() override;
 	FFPCharacterData* GetFPCharacterData(int32 Level);
+	FFPCharacterData* GetFPMonsterData(int32 Level);
 
 	// 이 클래스는 게임 내에서 단 하나만 생성하는 것이 좋다.
 	FStreamableManager StreamableManager;
@@ -62,4 +63,7 @@ public:
 private:
 	UPROPERTY()
 	class UDataTable* FPCharacterTable;
+
+	UPROPERTY()
+	class UDataTable* FPMonsterTable;
 };

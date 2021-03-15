@@ -11,7 +11,6 @@
 #include "FPCharacterSetting1.h"
 #include "FPGameInstance.h"
 #include "Characters/Player/FPPlayerController.h"
-#include "FPPlayerState.h"
 #include "UI/FPHUDWidget.h"
 #include "FPGameMode.h"
 #include "Effect/FPHitBossEffect.h"
@@ -83,7 +82,7 @@ void AFPSpaiderBoss::BeginPlay()
 	int32 TargetLevel = 3;
 	int32 FinalLevel = FMath::Clamp<int32>(TargetLevel, 1, 20);
 	FPLOG(Warning, TEXT("New NPC Level : %d"), FinalLevel);
-	CharacterStat->SetNewLevel(FinalLevel);
+	CharacterStat->SetNewMonsterLevel(FinalLevel);
 
 	auto CharacterWidget = Cast<UFPCharacterWidget>(HPBarWidget->GetUserWidgetObject());
 	FPCHECK(nullptr != CharacterWidget);

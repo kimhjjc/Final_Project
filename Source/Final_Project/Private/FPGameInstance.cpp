@@ -10,6 +10,11 @@ UFPGameInstance::UFPGameInstance()
 	FPCHECK(DT_FPCHARACTER.Succeeded());
 	FPCharacterTable = DT_FPCHARACTER.Object;
 	//FPCHECK(FPCharacterTable->RowMap.Num() > 0);
+
+	FString MonsterDataPath = TEXT("/Game/GameData/FPMonsterData.FPMonsterData");
+	static ConstructorHelpers::FObjectFinder<UDataTable> DT_FPMONSTER(*MonsterDataPath);
+	FPCHECK(DT_FPMONSTER.Succeeded());
+	FPMonsterTable = DT_FPMONSTER.Object;
 }
 
 void UFPGameInstance::Init()
@@ -21,4 +26,9 @@ void UFPGameInstance::Init()
 FFPCharacterData * UFPGameInstance::GetFPCharacterData(int32 Level)
 {
 	return FPCharacterTable->FindRow<FFPCharacterData>(*FString::FromInt(Level), TEXT(""));
+}
+
+FFPCharacterData * UFPGameInstance::GetFPMonsterData(int32 Level)
+{
+	return FPMonsterTable->FindRow<FFPCharacterData>(*FString::FromInt(Level), TEXT(""));
 }

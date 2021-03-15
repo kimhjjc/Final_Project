@@ -9,7 +9,14 @@
 
 AFPGameMode::AFPGameMode()
 {
-	DefaultPawnClass = AFPCharacter::StaticClass();
+	//DefaultPawnClass = AFPCharacter::StaticClass();
+	// set default pawn class to our Blueprinted character
+	static ConstructorHelpers::FClassFinder<ACharacter> PlayerPawnBPClass(TEXT("/Game/Blueprints/MyFPCharacter"));
+	if (PlayerPawnBPClass.Class != NULL)
+	{
+		DefaultPawnClass = PlayerPawnBPClass.Class;
+	}
+
 	PlayerControllerClass = AFPPlayerController::StaticClass();
 	PlayerStateClass = AFPPlayerState::StaticClass();
 	GameStateClass = AFPGameState::StaticClass();

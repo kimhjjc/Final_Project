@@ -19,6 +19,8 @@
 #include "FPGameMode.h"
 #include "Effect/FPHitEffect.h"
 #include "Effect/FPHitPunchEffect.h"
+#include "Inventory/Item.h"
+#include "Inventory/InventoryComponent.h"
 
 // Sets default values
 AFPCharacter::AFPCharacter()
@@ -26,6 +28,10 @@ AFPCharacter::AFPCharacter()
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	Inventory = CreateDefaultSubobject<UInventoryComponent>("Inventory");
+	Inventory->Capacity = 20;
+
+	Health = 100.f;
 
 	// ACharacter Class는 APawn를 상속받은 클래스로 폰보다 캐릭터의 기본적인 컴포넌트들이 이미 추가되어 있음.
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SPRINTARM"));
@@ -118,6 +124,15 @@ AFPCharacter::AFPCharacter()
 	// bCanBeDamaged = false;	 // 언리얼 버전의 진화에 따라 private으로 바뀌어 SetCanBeDamged를 이용해야함 (Actor Class).
 
 	DeadTimer = 5.0f;
+}
+
+void AFPCharacter::UseItem(UItem * Item)
+{
+	if (Item)
+	{
+		Item->Use(this);
+		Item->OnUse(this); //bp event
+	}
 }
 
 void AFPCharacter::SetCharacterState(ECharacterState NewState)
