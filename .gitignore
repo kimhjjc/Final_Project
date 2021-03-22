@@ -5,6 +5,7 @@ DerivedDataCache/
 Binaries/
 .vs/
 /Content/InfinityBladeGrassLands/Maps
+/Content/Medieval_Castle_Vol1/Maps
 *.sln
 *.ipch
 *.db

@@ -14,6 +14,8 @@ public class Final_Project : ModuleRules
         // 구현부가 모여있는 Private 폴더에서만 아래 모듈을 사용하기 때문에 PrivateDependencyModuleNames에서 추가해준다.
         PrivateDependencyModuleNames.AddRange(new string[] { "Final_ProjectSetting" });
 
+        MinFilesUsingPrecompiledHeaderOverride = 1;
+        bFasterWithoutUnity = true;
 
         // 아래 두 줄은 유니티 빌드를 사용하는 것으로 빌드 시간을 대폭 감소시켜주지만, 코드변경이 잦은 모듈에는 적합하지 않다. 다시 바꾸려면 주석처리로 바꾸면 된다.
         //bFasterWithoutUnity = true;
