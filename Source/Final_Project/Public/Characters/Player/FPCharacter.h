@@ -78,6 +78,10 @@ public:
 
 	bool CanSetWeapon();
 	void Setweapon(class AFPWeapon* NewWeapon);
+	void SetNPCInteractive(bool active) { bIsNPCInteractive = active; }
+
+	class AFPPlayerController* GetFPPlayerController() { return FPPlayerController; }
+
 
 	UPROPERTY(VisibleAnywhere, Category=Weapon)
 	class AFPWeapon* CurrentWeapon;
@@ -120,6 +124,7 @@ private:
 	
 	void ActFinish();
 	void ViewChange();
+	void Quest_Open();
 
 	// 애니메이션 몽타주에 델리게이트를 사용해보기
 	UFUNCTION()
@@ -138,6 +143,7 @@ private:
 	bool IsActing();
 
 	void FinishResting();
+
 
 private:
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
@@ -191,6 +197,9 @@ private:
 
 	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
 	bool bIsPlayer;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
+	bool bIsNPCInteractive;
 
 	UPROPERTY()
 	class AFPAIController* FPAIController;

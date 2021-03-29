@@ -4,6 +4,9 @@
 #include "Characters/NPC/FPTutorialNPC.h"
 #include "Components/WidgetComponent.h"
 #include "UI/FPNPCWidget.h"
+#include "UI/FPQuestWidget.h"
+#include "Characters/Player/FPCharacter.h"
+#include "Characters/Player/FPPlayerController.h"
 
 // Sets default values
 AFPTutorialNPC::AFPTutorialNPC()
@@ -42,8 +45,6 @@ AFPTutorialNPC::AFPTutorialNPC()
 		NPCNameWidget->SetWidgetClass(UI_NPCNAME.Class);
 		NPCNameWidget->SetDrawSize(FVector2D(150.0f, 50.0f));
 	}
-
-	IsInteractionAble = false;
 }
 
 // Called when the game starts or when spawned
@@ -52,11 +53,13 @@ void AFPTutorialNPC::BeginPlay()
 	Super::BeginPlay();
 
 	// ¿œ¥‹ æ»µ 
-	/*
+	
 	auto NPCWidget = Cast<UFPNPCWidget>(NPCNameWidget->GetUserWidgetObject());
 	FPCHECK(nullptr != NPCWidget);
 	NPCWidget->BindNPCName(NPCName);
-*/
+
+	QuestInfo = "Kill the monsters you see when you leave the gate. (0/3)";
+
 }
 
 void AFPTutorialNPC::PostInitializeComponents()
@@ -83,7 +86,17 @@ void AFPTutorialNPC::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void AFPTutorialNPC::OnCharacterOverlap(UPrimitiveComponent * OverlappedComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
-	IsInteractionAble = true;
+
+	auto FPCharacter = Cast<AFPCharacter>(OtherActor);
+	FPCHECK(nullptr != FPCharacter);
+
+	if (nullptr != FPCharacter)
+	{
+		FPLOG(Warning, TEXT("NPC Interactive!"));
+
+		auto QuestWidget = FPCharacter->GetFPPlayerController()->GetQuestWidget();
+		QuestWidget->BindNPCQuest(NPCName, QuestInfo);
+	}
 
 }
 

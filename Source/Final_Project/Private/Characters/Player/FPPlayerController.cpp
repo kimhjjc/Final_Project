@@ -3,6 +3,7 @@
 
 #include "Characters/Player/FPPlayerController.h"
 #include "UI/FPHUDWidget.h"
+#include "UI/FPQuestWidget.h"
 #include "FPPlayerState.h"
 #include "Characters/Player/FPCharacter.h"
 #include "Characters/Enemy/FPMonster.h"
@@ -14,6 +15,12 @@ AFPPlayerController::AFPPlayerController()
 	{
 		HUDWidgetClass = UI_HUD_C.Class;
 	}
+
+	static ConstructorHelpers::FClassFinder<UFPQuestWidget> UI_QUEST_C(TEXT("/Game/UI/UI_QuestWindow.UI_QuestWindow_C"));
+	if (UI_QUEST_C.Succeeded())
+	{
+		QuestWidgetClass = UI_QUEST_C.Class;
+	}
 }
 
 void AFPPlayerController::OnPossess(APawn * InPawn)
@@ -21,11 +28,20 @@ void AFPPlayerController::OnPossess(APawn * InPawn)
 	Super::OnPossess(InPawn);
 	HUDWidget = CreateWidget<UFPHUDWidget>(this, HUDWidgetClass);
 	HUDWidget->AddToViewport();
+
+	QuestWidget = CreateWidget<UFPQuestWidget>(this, QuestWidgetClass);
+	QuestWidget->AddToViewport();
+	QuestWidget->SetVisibility(ESlateVisibility::Collapsed);
 }
 
 UFPHUDWidget * AFPPlayerController::GetHUDWidget() const
 {
 	return HUDWidget;
+}
+
+UFPQuestWidget * AFPPlayerController::GetQuestWidget() const
+{
+	return QuestWidget;
 }
 
 void AFPPlayerController::NPCKill(AFPCharacter * KilledNPC) const

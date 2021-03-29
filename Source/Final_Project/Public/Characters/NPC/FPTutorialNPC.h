@@ -38,7 +38,7 @@ private:
 	FString NPCName;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = NPC, Meta = (AllowPrivateAccess = true))
-	bool IsInteractionAble;
+	FString QuestInfo;
 
 	// 다이나믹 함수에 UFUNCTION()을 쓰지 않으면 실행되지 않음.
 	UFUNCTION()

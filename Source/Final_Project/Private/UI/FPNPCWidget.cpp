@@ -7,7 +7,7 @@
 
 void UFPNPCWidget::BindNPCName(FString NPCName_F)
 {
-	NPCName->SetText(FText::FromString(NPCName_F));
+	Name = NPCName_F;
 }
 
 void UFPNPCWidget::NativeConstruct()
@@ -15,5 +15,5 @@ void UFPNPCWidget::NativeConstruct()
 	Super::NativeConstruct();
 	NPCName = Cast<UTextBlock>(GetWidgetFromName(TEXT("txtNPCName")));
 	FPCHECK(nullptr != NPCName);
-	NPCName->SetText(FText::FromString("Tutorial"));
+	NPCName->SetText(FText::FromString(Name));
 }

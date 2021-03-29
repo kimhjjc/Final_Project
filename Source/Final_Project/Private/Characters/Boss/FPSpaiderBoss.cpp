@@ -118,6 +118,13 @@ void AFPSpaiderBoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	FVector PlayerLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
+
+	if (FVector::Dist(GetActorLocation(), PlayerLocation) <= 3000)
+		HPBarWidget->SetHiddenInGame(false);
+	else
+		HPBarWidget->SetHiddenInGame(true);
+
 }
 
 void AFPSpaiderBoss::PostInitializeComponents()

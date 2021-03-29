@@ -23,4 +23,7 @@ protected:
 private:
 	UPROPERTY()
 	class UTextBlock* NPCName;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = NPC, Meta = (AllowPrivateAccess = true))
+	FString Name;
 };

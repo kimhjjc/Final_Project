@@ -10,12 +10,13 @@
 // 현재 프로젝트가 아닌 UE4 프로젝트의 헤더파일이지만, Final_Project.Build.cs에서 "Core", "CoreUObject", "Engine", "InputCore" 모듈 옆에 "UMG"를 추가해 주었기 때문에 자유로운 사용이 가능해진다.
 #include "Components/WidgetComponent.h"	
 #include "UI/FPCharacterWidget.h"
+#include "UI/FPHUDWidget.h"
+#include "UI/FPQuestWidget.h"
 #include "Characters/FPAIController.h"
+#include "Characters/Player/FPPlayerController.h"
 #include "FPCharacterSetting1.h"
 #include "FPGameInstance.h"
-#include "Characters/Player/FPPlayerController.h"
 #include "FPPlayerState.h"
-#include "UI/FPHUDWidget.h"
 #include "FPGameMode.h"
 #include "Effect/FPHitEffect.h"
 #include "Effect/FPHitPunchEffect.h"
@@ -87,6 +88,7 @@ AFPCharacter::AFPCharacter()
 	AttackRadius = 50.0f;
 
 	IsAnimMotionMoveing = false;
+	bIsNPCInteractive = false;
 
 	// 프로젝트 세팅 -> 콜리전에서 프리셋에 FPCharacter이라는 이름을 찾아 그 프리셋으로 콜리전을 변경한다.
 	GetCapsuleComponent()->SetCollisionProfileName(TEXT("FPCharacter"));
@@ -411,6 +413,14 @@ void AFPCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	FVector PlayerLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
+
+	if (FVector::Dist(GetActorLocation(), PlayerLocation) <= 3000)
+		HPBarWidget->SetHiddenInGame(false);
+	else
+		HPBarWidget->SetHiddenInGame(true);
+
+
 	if (IsRestEntered)
 		if (IsResting)
 		{
@@ -553,7 +563,7 @@ void AFPCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction(TEXT("Attack"), EInputEvent::IE_Pressed, this, &AFPCharacter::Attack);
 	PlayerInputComponent->BindAction(TEXT("Attack_RMB"), EInputEvent::IE_Pressed, this, &AFPCharacter::Attack_RMB);
 	PlayerInputComponent->BindAction(TEXT("Rest"), EInputEvent::IE_Pressed, this, &AFPCharacter::Skill_Rest);
-
+	PlayerInputComponent->BindAction(TEXT("Quest_Open"), EInputEvent::IE_Pressed, this, &AFPCharacter::Quest_Open);
 
 	// Axis 매핑 활용하여 이동키 만들기
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &AFPCharacter::UpDown);
@@ -678,6 +688,18 @@ void AFPCharacter::ViewChange()
 		break;
 	}
 }
+
+void AFPCharacter::Quest_Open()
+{
+	auto NPCQuestWidget = FPPlayerController->GetQuestWidget();
+	FPCHECK(nullptr != NPCQuestWidget);
+	// NPCQuestWidget->SetIsEnabled(!NPCQuestWidget->GetIsEnabled());
+	if (NPCQuestWidget->GetVisibility() == ESlateVisibility::Visible)
+		NPCQuestWidget->SetVisibility(ESlateVisibility::Collapsed);
+	else
+		NPCQuestWidget->SetVisibility(ESlateVisibility::Visible);
+}
+
 
 void AFPCharacter::Attack()
 {

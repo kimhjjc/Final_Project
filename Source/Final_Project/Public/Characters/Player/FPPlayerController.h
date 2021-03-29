@@ -19,6 +19,7 @@ public:
 	virtual void OnPossess(APawn* InPawn) override;
 
 	class UFPHUDWidget* GetHUDWidget() const;
+	class UFPQuestWidget* GetQuestWidget() const;
 	void NPCKill(class AFPCharacter* KilledNPC) const;
 	void NPCKill(class AFPMonster* KilledNPC) const;
 	void NPCKill(class AFPSpaiderBoss* KilledNPC) const;
@@ -31,9 +32,15 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
 	TSubclassOf<class UFPHUDWidget> HUDWidgetClass;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
+	TSubclassOf<class UFPQuestWidget> QuestWidgetClass;
+
 private:
 	UPROPERTY()
 	class UFPHUDWidget* HUDWidget;
+
+	UPROPERTY()
+	class UFPQuestWidget* QuestWidget;
 
 	UPROPERTY()
 	class AFPPlayerState* FPPlayerState;
