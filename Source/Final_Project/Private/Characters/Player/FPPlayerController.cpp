@@ -4,6 +4,7 @@
 #include "Characters/Player/FPPlayerController.h"
 #include "UI/FPHUDWidget.h"
 #include "UI/FPQuestWidget.h"
+#include "UI/FPConversationWidget.h"
 #include "FPPlayerState.h"
 #include "Characters/Player/FPCharacter.h"
 #include "Characters/Enemy/FPMonster.h"
@@ -21,6 +22,12 @@ AFPPlayerController::AFPPlayerController()
 	{
 		QuestWidgetClass = UI_QUEST_C.Class;
 	}
+
+	static ConstructorHelpers::FClassFinder<UFPConversationWidget> UI_CONTENT_C(TEXT("/Game/UI/UI_Conversation.UI_Conversation_C"));
+	if (UI_CONTENT_C.Succeeded())
+	{
+		ConversationWidgetClass = UI_CONTENT_C.Class;
+	}
 }
 
 void AFPPlayerController::OnPossess(APawn * InPawn)
@@ -32,6 +39,10 @@ void AFPPlayerController::OnPossess(APawn * InPawn)
 	QuestWidget = CreateWidget<UFPQuestWidget>(this, QuestWidgetClass);
 	QuestWidget->AddToViewport();
 	QuestWidget->SetVisibility(ESlateVisibility::Collapsed);
+
+	ConversationWidget = CreateWidget<UFPConversationWidget>(this, ConversationWidgetClass);
+	ConversationWidget->AddToViewport();
+	ConversationWidget->SetVisibility(ESlateVisibility::Collapsed);
 }
 
 UFPHUDWidget * AFPPlayerController::GetHUDWidget() const
@@ -44,6 +55,11 @@ UFPQuestWidget * AFPPlayerController::GetQuestWidget() const
 	return QuestWidget;
 }
 
+UFPConversationWidget * AFPPlayerController::GetConversationWidget() const
+{
+	return ConversationWidget;
+}
+
 void AFPPlayerController::NPCKill(AFPCharacter * KilledNPC) const
 {
 	FPPlayerState->AddExp(KilledNPC->GetExp());
@@ -52,11 +68,17 @@ void AFPPlayerController::NPCKill(AFPCharacter * KilledNPC) const
 void AFPPlayerController::NPCKill(AFPMonster * KilledNPC) const
 {
 	FPPlayerState->AddExp(10);
+	OnQuestUpdate.Broadcast();
 }
 
 void AFPPlayerController::NPCKill(AFPSpaiderBoss * KilledNPC) const
 {
 	FPPlayerState->AddExp(200);
+}
+
+void AFPPlayerController::NPCKill(int32 Exp) const
+{
+	FPPlayerState->AddExp(Exp);
 }
 
 void AFPPlayerController::AddGameScore() const

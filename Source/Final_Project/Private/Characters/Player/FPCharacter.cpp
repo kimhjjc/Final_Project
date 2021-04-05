@@ -564,6 +564,7 @@ void AFPCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction(TEXT("Attack_RMB"), EInputEvent::IE_Pressed, this, &AFPCharacter::Attack_RMB);
 	PlayerInputComponent->BindAction(TEXT("Rest"), EInputEvent::IE_Pressed, this, &AFPCharacter::Skill_Rest);
 	PlayerInputComponent->BindAction(TEXT("Quest_Open"), EInputEvent::IE_Pressed, this, &AFPCharacter::Quest_Open);
+	PlayerInputComponent->BindAction(TEXT("NPCInteraction"), EInputEvent::IE_Pressed, this, &AFPCharacter::NPCInteraction);
 
 	// Axis 매핑 활용하여 이동키 만들기
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &AFPCharacter::UpDown);
@@ -695,10 +696,24 @@ void AFPCharacter::Quest_Open()
 	FPCHECK(nullptr != NPCQuestWidget);
 	// NPCQuestWidget->SetIsEnabled(!NPCQuestWidget->GetIsEnabled());
 	if (NPCQuestWidget->GetVisibility() == ESlateVisibility::Visible)
+	{
+		//FPPlayerController->bShowMouseCursor = false;
 		NPCQuestWidget->SetVisibility(ESlateVisibility::Collapsed);
+	}
 	else
+	{
+		//FPPlayerController->bShowMouseCursor = true;
 		NPCQuestWidget->SetVisibility(ESlateVisibility::Visible);
+	}
 }
+void AFPCharacter::NPCInteraction()
+{
+	if (bIsNPCInteractive == true)
+	{
+		//FPPlayerController->GetConversationWidget()->SetVisibility(ESlateVisibility::Collapsed);
+	}
+}
+
 
 
 void AFPCharacter::Attack()

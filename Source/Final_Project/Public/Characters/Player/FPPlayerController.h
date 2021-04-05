@@ -9,6 +9,9 @@
 /**
  * 
  */
+
+DECLARE_MULTICAST_DELEGATE(FOnQuestUpdateDelegate);
+
 UCLASS()
 class FINAL_PROJECT_API AFPPlayerController : public APlayerController
 {
@@ -20,12 +23,15 @@ public:
 
 	class UFPHUDWidget* GetHUDWidget() const;
 	class UFPQuestWidget* GetQuestWidget() const;
+	class UFPConversationWidget* GetConversationWidget() const;
 	void NPCKill(class AFPCharacter* KilledNPC) const;
 	void NPCKill(class AFPMonster* KilledNPC) const;
 	void NPCKill(class AFPSpaiderBoss* KilledNPC) const;
+	void NPCKill(int32 Exp) const;
 	void AddGameScore() const;
 
 	class AFPPlayerState* GetFPPlayerState() { return FPPlayerState; }
+	FOnQuestUpdateDelegate OnQuestUpdate;
 protected:
 	virtual void BeginPlay() override;
 
@@ -35,12 +41,18 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
 	TSubclassOf<class UFPQuestWidget> QuestWidgetClass;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
+	TSubclassOf<class UFPConversationWidget> ConversationWidgetClass;
+
 private:
 	UPROPERTY()
 	class UFPHUDWidget* HUDWidget;
 
 	UPROPERTY()
 	class UFPQuestWidget* QuestWidget;
+
+	UPROPERTY()
+	class UFPConversationWidget* ConversationWidget;
 
 	UPROPERTY()
 	class AFPPlayerState* FPPlayerState;

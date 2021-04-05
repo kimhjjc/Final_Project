@@ -5,6 +5,7 @@
 #include "Components/WidgetComponent.h"
 #include "UI/FPNPCWidget.h"
 #include "UI/FPQuestWidget.h"
+#include "UI/FPConversationWidget.h"
 #include "Characters/Player/FPCharacter.h"
 #include "Characters/Player/FPPlayerController.h"
 
@@ -32,6 +33,10 @@ AFPTutorialNPC::AFPTutorialNPC()
 	Trigger->SetCollisionProfileName(TEXT("ItemBox"));
 
 	NPCName = "Tutarial NPC";
+	QuestNumber = 0;
+	MonsterKill = 0;
+	TargetKill = 0;
+	QuestAccept = false;
 
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SK_CARDBOARD(TEXT("/Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Warrior.SK_CharM_Warrior"));
 	if (SK_CARDBOARD.Succeeded())
@@ -51,14 +56,13 @@ AFPTutorialNPC::AFPTutorialNPC()
 void AFPTutorialNPC::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// 일단 안됨
 	
 	auto NPCWidget = Cast<UFPNPCWidget>(NPCNameWidget->GetUserWidgetObject());
 	FPCHECK(nullptr != NPCWidget);
 	NPCWidget->BindNPCName(NPCName);
 
-	QuestInfo = "Kill the monsters you see when you leave the gate. (0/3)";
+	QuestInfo = "";
+	ContentInfo = "";
 
 }
 
@@ -90,12 +94,73 @@ void AFPTutorialNPC::OnCharacterOverlap(UPrimitiveComponent * OverlappedComp, AA
 	auto FPCharacter = Cast<AFPCharacter>(OtherActor);
 	FPCHECK(nullptr != FPCharacter);
 
+	auto PlayerController = FPCharacter->GetFPPlayerController();
+	FPCHECK(nullptr != PlayerController);
+
 	if (nullptr != FPCharacter)
 	{
 		FPLOG(Warning, TEXT("NPC Interactive!"));
 
-		auto QuestWidget = FPCharacter->GetFPPlayerController()->GetQuestWidget();
-		QuestWidget->BindNPCQuest(NPCName, QuestInfo);
+		//FPCharacter->SetNPCInteractive(true);
+
+		if (QuestAccept == true && MonsterKill == TargetKill)
+		{
+			if (QuestNumber == 0)
+			{
+				PlayerController->NPCKill(100);
+				PlayerController->OnQuestUpdate.Clear();
+				QuestNumber++;
+				QuestAccept = false;
+				QuestInfo = "No Quest";
+				ContentInfo = "Thanks.";
+
+				PlayerController->GetQuestWidget()->BindNPCQuest("", QuestInfo);
+			}
+		}
+		else if (QuestAccept == false)
+		{
+			if (QuestNumber == 0)
+			{
+				MonsterKill = -1;
+				TargetKill = 3;
+				// 어떤 델리게이트를 받아올까?
+				// 킬을 했을 때.
+
+				PlayerController->OnQuestUpdate.AddLambda([this]() -> void {
+					FPLOG(Warning, TEXT("OnQuestUpdate"));
+					MonsterKill = FMath::Clamp<int32>(MonsterKill + 1, 0, TargetKill);
+					QuestInfo = "Kill the monsters you see when you leave the gate.\n";
+					QuestInfo += "(";
+					QuestInfo += FString::FromInt(MonsterKill);
+					QuestInfo += " / 3)";
+
+					auto PlayerController = Cast<AFPPlayerController>(GetWorld()->GetFirstPlayerController());
+					PlayerController->GetQuestWidget()->BindNPCQuest(NPCName, QuestInfo);
+					QuestAccept = true;
+					});
+
+				ContentInfo = "The weather is good too.The Goblin has been hunting?";
+				PlayerController->OnQuestUpdate.Broadcast();
+			}
+			else
+			{
+				ContentInfo = "There are more monsters these days.";
+			}
+			FPLOG(Warning, TEXT("QuestAccept false"));
+		}
+		else if (QuestAccept == true && MonsterKill != TargetKill)
+		{
+			ContentInfo = "You haven't hunted them yet?";
+		}
+
+		PlayerController->GetConversationWidget()->BindNPCContent(NPCName, ContentInfo);
+
+		PlayerController->GetConversationWidget()->SetVisibility(ESlateVisibility::Visible);
+
+		GetWorld()->GetTimerManager().SetTimer(CloseTimerHandle, FTimerDelegate::CreateLambda([this]() -> void {
+			auto PlayerController = Cast<AFPPlayerController>(GetWorld()->GetFirstPlayerController());
+			PlayerController->GetConversationWidget()->SetVisibility(ESlateVisibility::Collapsed);
+			}), 5, false);
 	}
 
 }

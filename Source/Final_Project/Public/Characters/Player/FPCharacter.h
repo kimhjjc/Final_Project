@@ -125,6 +125,7 @@ private:
 	void ActFinish();
 	void ViewChange();
 	void Quest_Open();
+	void NPCInteraction();
 
 	// 애니메이션 몽타주에 델리게이트를 사용해보기
 	UFUNCTION()
