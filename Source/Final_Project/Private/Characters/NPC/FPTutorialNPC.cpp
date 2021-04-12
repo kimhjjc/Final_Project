@@ -8,11 +8,12 @@
 #include "UI/FPConversationWidget.h"
 #include "Characters/Player/FPCharacter.h"
 #include "Characters/Player/FPPlayerController.h"
+#include "Characters/NPC/FPTutorialNPC_NextQuestPosition.h"
 
 // Sets default values
 AFPTutorialNPC::AFPTutorialNPC()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	Trigger = CreateDefaultSubobject<UBoxComponent>(TEXT("TRIGGER"));
@@ -36,7 +37,8 @@ AFPTutorialNPC::AFPTutorialNPC()
 	QuestNumber = 0;
 	MonsterKill = 0;
 	TargetKill = 0;
-	QuestAccept = false;
+	IsQuestAccept = false;
+	IsInteractive = false;
 
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SK_CARDBOARD(TEXT("/Game/InfinityBladeWarriors/Character/CompleteCharacters/SK_CharM_Warrior.SK_CharM_Warrior"));
 	if (SK_CARDBOARD.Succeeded())
@@ -56,7 +58,7 @@ AFPTutorialNPC::AFPTutorialNPC()
 void AFPTutorialNPC::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 	auto NPCWidget = Cast<UFPNPCWidget>(NPCNameWidget->GetUserWidgetObject());
 	FPCHECK(nullptr != NPCWidget);
 	NPCWidget->BindNPCName(NPCName);
@@ -71,7 +73,7 @@ void AFPTutorialNPC::PostInitializeComponents()
 	Super::PostInitializeComponents();
 	// BoxComponent에는  OnComponentBeginOverlap이라는 멀티캐스팅 델리게이트가 있다. 이를 이용하여 박스컴포넌트에 겹침 콜리전 반응 진입 시 델리게이트 발생.
 	Trigger->OnComponentBeginOverlap.AddDynamic(this, &AFPTutorialNPC::OnCharacterOverlap);
-	//Trigger->OnComponentEndOverlap.AddDynamic(this, &AFPTutorialNPC::OnCharacterOverlap);
+	Trigger->OnComponentEndOverlap.AddDynamic(this, &AFPTutorialNPC::OnOverlapEnd);
 }
 
 // Called every frame
@@ -101,23 +103,44 @@ void AFPTutorialNPC::OnCharacterOverlap(UPrimitiveComponent * OverlappedComp, AA
 	{
 		FPLOG(Warning, TEXT("NPC Interactive!"));
 
+		IsInteractive = true;
 		//FPCharacter->SetNPCInteractive(true);
 
-		if (QuestAccept == true && MonsterKill == TargetKill)
+		if (IsQuestAccept == true && MonsterKill == TargetKill)
 		{
+			static TArray<AActor*> NextPlace;
+			UGameplayStatics::GetAllActorsOfClass(GetWorld(), AFPTutorialNPC_NextQuestPosition::StaticClass(), NextPlace);
 			if (QuestNumber == 0)
 			{
 				PlayerController->NPCKill(100);
 				PlayerController->OnQuestUpdate.Clear();
 				QuestNumber++;
-				QuestAccept = false;
-				QuestInfo = "No Quest";
-				ContentInfo = "Thanks.";
+				IsQuestAccept = false;
+				QuestInfo = "go to the gate.";
+				ContentInfo = "I'll wait in front of the gate.";
 
 				PlayerController->GetQuestWidget()->BindNPCQuest("", QuestInfo);
+
+				for (auto Place : NextPlace)
+				{
+					auto TempPlace = Cast<AFPTutorialNPC_NextQuestPosition>(Place);
+					FPCHECK(nullptr != TempPlace);
+					if (TempPlace->GetQuestNumber() == QuestNumber)
+					{
+						SetActorRelativeLocation(TempPlace->GetActorLocation());
+						SetActorRelativeRotation(TempPlace->GetActorRotation());
+					}
+
+				}
+
+				CloseContentWidget();
+			}
+			else if (QuestNumber == 1)
+			{
+
 			}
 		}
-		else if (QuestAccept == false)
+		else if (IsQuestAccept == false)
 		{
 			if (QuestNumber == 0)
 			{
@@ -136,11 +159,17 @@ void AFPTutorialNPC::OnCharacterOverlap(UPrimitiveComponent * OverlappedComp, AA
 
 					auto PlayerController = Cast<AFPPlayerController>(GetWorld()->GetFirstPlayerController());
 					PlayerController->GetQuestWidget()->BindNPCQuest(NPCName, QuestInfo);
-					QuestAccept = true;
+					IsQuestAccept = true;
 					});
 
 				ContentInfo = "The weather is good too.The Goblin has been hunting?";
 				PlayerController->OnQuestUpdate.Broadcast();
+			}
+			else if (QuestNumber == 1)
+			{
+				QuestInfo = "Next Quest";
+				ContentInfo = "Next Quest Content";
+				IsQuestAccept = true;
 			}
 			else
 			{
@@ -148,7 +177,7 @@ void AFPTutorialNPC::OnCharacterOverlap(UPrimitiveComponent * OverlappedComp, AA
 			}
 			FPLOG(Warning, TEXT("QuestAccept false"));
 		}
-		else if (QuestAccept == true && MonsterKill != TargetKill)
+		else if (IsQuestAccept == true && MonsterKill != TargetKill)
 		{
 			ContentInfo = "You haven't hunted them yet?";
 		}
@@ -157,11 +186,24 @@ void AFPTutorialNPC::OnCharacterOverlap(UPrimitiveComponent * OverlappedComp, AA
 
 		PlayerController->GetConversationWidget()->SetVisibility(ESlateVisibility::Visible);
 
-		GetWorld()->GetTimerManager().SetTimer(CloseTimerHandle, FTimerDelegate::CreateLambda([this]() -> void {
-			auto PlayerController = Cast<AFPPlayerController>(GetWorld()->GetFirstPlayerController());
-			PlayerController->GetConversationWidget()->SetVisibility(ESlateVisibility::Collapsed);
-			}), 5, false);
 	}
 
 }
 
+void AFPTutorialNPC::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	IsInteractive = false;
+
+	CloseContentWidget();
+}
+
+
+void AFPTutorialNPC::CloseContentWidget()
+{
+	GetWorld()->GetTimerManager().SetTimer(CloseTimerHandle, FTimerDelegate::CreateLambda([this]() -> void {
+		if (IsInteractive) return;
+
+		auto PlayerController = Cast<AFPPlayerController>(GetWorld()->GetFirstPlayerController());
+		PlayerController->GetConversationWidget()->SetVisibility(ESlateVisibility::Collapsed);
+		}), 5, false);
+}

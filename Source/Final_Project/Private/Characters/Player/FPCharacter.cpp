@@ -12,6 +12,7 @@
 #include "UI/FPCharacterWidget.h"
 #include "UI/FPHUDWidget.h"
 #include "UI/FPQuestWidget.h"
+#include "UI/FPStatusWindowWidget.h"
 #include "Characters/FPAIController.h"
 #include "Characters/Player/FPPlayerController.h"
 #include "FPCharacterSetting1.h"
@@ -194,11 +195,27 @@ void AFPCharacter::SetCharacterState(ECharacterState NewState)
 			GetCharacterMovement()->MaxWalkSpeed = 600.0f;
 			EnableInput(FPPlayerController);
 
-			auto FPPlayerState = Cast<AFPPlayerState>(GetPlayerState());
-			FPCHECK(nullptr != FPPlayerState);
 			FPPlayerController->GetFPPlayerState()->OnLevelUpDelegate.AddLambda([this]() -> void {
 				CharacterStat->SetNewLevel(FPPlayerController->GetFPPlayerState()->GetCharacterLevel());
+
+				//FPPlayerController->GetStatusWindowWidget()->BindCharacterStat(
+				//	FPPlayerController->GetFPPlayerState()->GetCharacterLevel(),
+				//	CharacterStat->GetAttack(),
+				//	0,
+				//	CharacterStat->GetHP(),
+				//	FPPlayerController->GetFPPlayerState()->GetExp()
+				//);
 				});
+
+			//CharacterStat->OnHPChanged.AddLambda([this]() -> void {
+			//	FPPlayerController->GetStatusWindowWidget()->BindCharacterStat(
+			//		FPPlayerController->GetFPPlayerState()->GetCharacterLevel(),
+			//		CharacterStat->GetAttack(),
+			//		0,
+			//		CharacterStat->GetHP(),
+			//		FPPlayerController->GetFPPlayerState()->GetExp()
+			//	);
+			//	});
 		}
 		else
 		{
@@ -565,6 +582,7 @@ void AFPCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction(TEXT("Rest"), EInputEvent::IE_Pressed, this, &AFPCharacter::Skill_Rest);
 	PlayerInputComponent->BindAction(TEXT("Quest_Open"), EInputEvent::IE_Pressed, this, &AFPCharacter::Quest_Open);
 	PlayerInputComponent->BindAction(TEXT("NPCInteraction"), EInputEvent::IE_Pressed, this, &AFPCharacter::NPCInteraction);
+	PlayerInputComponent->BindAction(TEXT("Status_Open"), EInputEvent::IE_Pressed, this, &AFPCharacter::Status_Open);
 
 	// Axis 매핑 활용하여 이동키 만들기
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &AFPCharacter::UpDown);
@@ -714,7 +732,20 @@ void AFPCharacter::NPCInteraction()
 	}
 }
 
+void AFPCharacter::Status_Open()
+{
+	auto StatusWindowWidget = FPPlayerController->GetStatusWindowWidget();
+	FPCHECK(nullptr != StatusWindowWidget);
 
+	if (StatusWindowWidget->GetVisibility() == ESlateVisibility::Visible)
+	{
+		StatusWindowWidget->SetVisibility(ESlateVisibility::Collapsed);
+	}
+	else
+	{
+		StatusWindowWidget->SetVisibility(ESlateVisibility::Visible);
+	}
+}
 
 void AFPCharacter::Attack()
 {

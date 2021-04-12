@@ -5,6 +5,7 @@
 #include "UI/FPHUDWidget.h"
 #include "UI/FPQuestWidget.h"
 #include "UI/FPConversationWidget.h"
+#include "UI/FPStatusWindowWidget.h"
 #include "FPPlayerState.h"
 #include "Characters/Player/FPCharacter.h"
 #include "Characters/Enemy/FPMonster.h"
@@ -28,11 +29,18 @@ AFPPlayerController::AFPPlayerController()
 	{
 		ConversationWidgetClass = UI_CONTENT_C.Class;
 	}
+
+	static ConstructorHelpers::FClassFinder<UFPStatusWindowWidget> UI_STATUS_C(TEXT("/Game/UI/UI_StatusWindow.UI_StatusWindow_C"));
+	if (UI_STATUS_C.Succeeded())
+	{
+		StatusWindowWidgetClass = UI_STATUS_C.Class;
+	}
 }
 
 void AFPPlayerController::OnPossess(APawn * InPawn)
 {
 	Super::OnPossess(InPawn);
+
 	HUDWidget = CreateWidget<UFPHUDWidget>(this, HUDWidgetClass);
 	HUDWidget->AddToViewport();
 
@@ -43,6 +51,11 @@ void AFPPlayerController::OnPossess(APawn * InPawn)
 	ConversationWidget = CreateWidget<UFPConversationWidget>(this, ConversationWidgetClass);
 	ConversationWidget->AddToViewport();
 	ConversationWidget->SetVisibility(ESlateVisibility::Collapsed);
+
+	StatusWindowWidget = CreateWidget<UFPStatusWindowWidget>(this, StatusWindowWidgetClass);
+	StatusWindowWidget->AddToViewport();
+	StatusWindowWidget->SetVisibility(ESlateVisibility::Collapsed);
+
 }
 
 UFPHUDWidget * AFPPlayerController::GetHUDWidget() const
@@ -59,6 +72,12 @@ UFPConversationWidget * AFPPlayerController::GetConversationWidget() const
 {
 	return ConversationWidget;
 }
+
+UFPStatusWindowWidget * AFPPlayerController::GetStatusWindowWidget() const
+{
+	return StatusWindowWidget;
+}
+
 
 void AFPPlayerController::NPCKill(AFPCharacter * KilledNPC) const
 {

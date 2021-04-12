@@ -36,6 +36,7 @@ public:
 	void SetHP(float NewHP);
 	float GetAttack();
 	float GetHPRatio();
+	float GetHP();
 	int32 GetDropExp() const;
 
 	FOnHPIsZeroDelegate OnHPIsZero;

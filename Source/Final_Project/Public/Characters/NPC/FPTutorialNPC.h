@@ -50,14 +50,22 @@ private:
 	int32 TargetKill;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = NPC, Meta = (AllowPrivateAccess = true))
-	bool QuestAccept;
+	bool IsQuestAccept;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = NPC, Meta = (AllowPrivateAccess = true))
 	FString ContentInfo;
 
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = NPC, Meta = (AllowPrivateAccess = true))
+	bool IsInteractive;
+
 	// 다이나믹 함수에 UFUNCTION()을 쓰지 않으면 실행되지 않음.
 	UFUNCTION()
 	void OnCharacterOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	UFUNCTION()
+	void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+	void CloseContentWidget();
 
 	FTimerHandle CloseTimerHandle = { };
 };

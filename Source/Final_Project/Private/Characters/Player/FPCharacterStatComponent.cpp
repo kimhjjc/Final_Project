@@ -124,6 +124,12 @@ float UFPCharacterStatComponent::GetHPRatio()
 	return (CurrentStatData->MaxHP < KINDA_SMALL_NUMBER) ? 0.0f : (CurrentHP / CurrentStatData->MaxHP);
 }
 
+float UFPCharacterStatComponent::GetHP()
+{
+	return CurrentHP;
+}
+
+
 int32 UFPCharacterStatComponent::GetDropExp() const
 {
 	return CurrentStatData->DropExp;

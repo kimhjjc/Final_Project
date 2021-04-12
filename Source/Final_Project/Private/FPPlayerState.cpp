@@ -39,6 +39,11 @@ float AFPPlayerState::GetExpRatio() const
 	return Result;
 }
 
+float AFPPlayerState::GetExp() const
+{
+	return Exp;
+}
+
 
 bool AFPPlayerState::AddExp(int32 IncomeExp)
 {

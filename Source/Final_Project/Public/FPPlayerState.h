@@ -28,6 +28,7 @@ public:
 	FString SaveSlotName;
 	int32 GetCharacterLevel() const;
 	float GetExpRatio() const;
+	float GetExp() const;
 	bool AddExp(int32 IncomeExp);
 	void AddGameScore();
 	
