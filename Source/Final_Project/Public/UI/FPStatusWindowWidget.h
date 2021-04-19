@@ -18,7 +18,7 @@ class FINAL_PROJECT_API UFPStatusWindowWidget : public UUserWidget
 	GENERATED_BODY()
 
 public:
-	void BindCharacterStat(int32 Lv, int32 Atk, int32 Def, int32 Hp, int32 Exp);
+	void BindCharacterStat(int32 Lv, int32 Atk, int32 Def, int32 Hp, int32 MaxHp, int32 Exp, int32 NextExp);
 
 	FOnStatusUpdateDelegate OnStatusUpdate;
 

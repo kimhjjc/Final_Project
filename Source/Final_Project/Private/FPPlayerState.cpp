@@ -44,6 +44,11 @@ float AFPPlayerState::GetExp() const
 	return Exp;
 }
 
+float AFPPlayerState::GetNextExp() const
+{
+	return CurrentStatData->NextExp;
+}
+
 
 bool AFPPlayerState::AddExp(int32 IncomeExp)
 {

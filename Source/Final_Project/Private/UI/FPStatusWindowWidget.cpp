@@ -5,13 +5,16 @@
 #include "Components/TextBlock.h"
 
 
-void UFPStatusWindowWidget::BindCharacterStat(int32 Lv, int32 Atk, int32 Def, int32 Hp, int32 Exp)
+void UFPStatusWindowWidget::BindCharacterStat(int32 Lv, int32 Atk, int32 Def, int32 Hp, int32 MaxHp, int32 Exp, int32 NextExp)
 {
+	FString HPInfo = FString::FromInt(Hp) + " / " + FString::FromInt(MaxHp);
+	FString ExpInfo = FString::FromInt(Exp) + " / " + FString::FromInt(NextExp);
+
 	Level->SetText(FText::FromString(FString::FromInt(Lv)));
 	Attack->SetText(FText::FromString(FString::FromInt(Atk)));
 	Defence->SetText(FText::FromString(FString::FromInt(Def)));
-	HP->SetText(FText::FromString(FString::FromInt(Hp)));
-	EXP->SetText(FText::FromString(FString::FromInt(Exp)));
+	HP->SetText(FText::FromString(HPInfo));
+	EXP->SetText(FText::FromString(ExpInfo));
 }
 
 void UFPStatusWindowWidget::NativeConstruct()

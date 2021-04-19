@@ -129,6 +129,11 @@ float UFPCharacterStatComponent::GetHP()
 	return CurrentHP;
 }
 
+float UFPCharacterStatComponent::GetMaxHP()
+{
+	return CurrentStatData->MaxHP;
+}
+
 
 int32 UFPCharacterStatComponent::GetDropExp() const
 {

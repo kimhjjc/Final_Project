@@ -194,28 +194,42 @@ void AFPCharacter::SetCharacterState(ECharacterState NewState)
 			SetControlMode(EControlMode::GTA);
 			GetCharacterMovement()->MaxWalkSpeed = 600.0f;
 			EnableInput(FPPlayerController);
-
+			FPPlayerController->GetFPPlayerState()->OnPlayerStateChanged.AddLambda([this]() -> void {
+				FPPlayerController->GetStatusWindowWidget()->BindCharacterStat(
+					FPPlayerController->GetFPPlayerState()->GetCharacterLevel(),
+					CharacterStat->GetAttack(),
+					0,
+					CharacterStat->GetHP(),
+					CharacterStat->GetMaxHP(),
+					FPPlayerController->GetFPPlayerState()->GetExp(),
+					FPPlayerController->GetFPPlayerState()->GetNextExp()
+				);
+				});
 			FPPlayerController->GetFPPlayerState()->OnLevelUpDelegate.AddLambda([this]() -> void {
 				CharacterStat->SetNewLevel(FPPlayerController->GetFPPlayerState()->GetCharacterLevel());
 
-				//FPPlayerController->GetStatusWindowWidget()->BindCharacterStat(
-				//	FPPlayerController->GetFPPlayerState()->GetCharacterLevel(),
-				//	CharacterStat->GetAttack(),
-				//	0,
-				//	CharacterStat->GetHP(),
-				//	FPPlayerController->GetFPPlayerState()->GetExp()
-				//);
+				FPPlayerController->GetStatusWindowWidget()->BindCharacterStat(
+					FPPlayerController->GetFPPlayerState()->GetCharacterLevel(),
+					CharacterStat->GetAttack(),
+					0,
+					CharacterStat->GetHP(),
+					CharacterStat->GetMaxHP(),
+					FPPlayerController->GetFPPlayerState()->GetExp(),
+					FPPlayerController->GetFPPlayerState()->GetNextExp()
+				);
 				});
 
-			//CharacterStat->OnHPChanged.AddLambda([this]() -> void {
-			//	FPPlayerController->GetStatusWindowWidget()->BindCharacterStat(
-			//		FPPlayerController->GetFPPlayerState()->GetCharacterLevel(),
-			//		CharacterStat->GetAttack(),
-			//		0,
-			//		CharacterStat->GetHP(),
-			//		FPPlayerController->GetFPPlayerState()->GetExp()
-			//	);
-			//	});
+			CharacterStat->OnHPChanged.AddLambda([this]() -> void {
+				FPPlayerController->GetStatusWindowWidget()->BindCharacterStat(
+					FPPlayerController->GetFPPlayerState()->GetCharacterLevel(),
+					CharacterStat->GetAttack(),
+					0,
+					CharacterStat->GetHP(),
+					CharacterStat->GetMaxHP(),
+					FPPlayerController->GetFPPlayerState()->GetExp(),
+					FPPlayerController->GetFPPlayerState()->GetNextExp()
+					);
+				});
 		}
 		else
 		{
@@ -744,6 +758,15 @@ void AFPCharacter::Status_Open()
 	else
 	{
 		StatusWindowWidget->SetVisibility(ESlateVisibility::Visible);
+		FPPlayerController->GetStatusWindowWidget()->BindCharacterStat(
+			FPPlayerController->GetFPPlayerState()->GetCharacterLevel(),
+			CharacterStat->GetAttack(),
+			0,
+			CharacterStat->GetHP(),
+			CharacterStat->GetMaxHP(),
+			FPPlayerController->GetFPPlayerState()->GetExp(),
+			FPPlayerController->GetFPPlayerState()->GetNextExp()
+		);
 	}
 }
 
