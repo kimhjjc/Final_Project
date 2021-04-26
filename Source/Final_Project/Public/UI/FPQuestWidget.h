@@ -22,8 +22,8 @@ protected:
 
 private:
 	UPROPERTY()
-		class UTextBlock* NPCName;
+	class UTextBlock* NPCName;
 
 	UPROPERTY()
-		class UTextBlock* QuestInfo;
+	class UTextBlock* QuestInfo;
 };

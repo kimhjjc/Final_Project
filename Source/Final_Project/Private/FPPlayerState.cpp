@@ -4,6 +4,8 @@
 #include "FPPlayerState.h"
 #include "FPGameInstance.h"
 #include "FPSaveGame.h"
+#include "Effect/FPLevelUpEffect.h"
+#include "UI/FPSomethingGetTextUI.h"
 
 AFPPlayerState::AFPPlayerState()
 {
@@ -57,12 +59,19 @@ bool AFPPlayerState::AddExp(int32 IncomeExp)
 
 	bool DidLevelUp = false;
 	Exp = Exp + IncomeExp;
+
+	FString AddExpText = "Exp + ";
+	auto SpawnedExpGetTextUI = GetWorld()->SpawnActor<AFPSomethingGetTextUI>(AFPSomethingGetTextUI::StaticClass());
+	//SpawnedExpGetTextUI->BindText(AddExpText);
+
 	if (Exp >= CurrentStatData->NextExp)
 	{
 		Exp -= CurrentStatData->NextExp;
 		SetCharacterLevel(CharacterLevel + 1);
 		DidLevelUp = true;
 		OnLevelUpDelegate.Broadcast();
+
+		auto SpawnedLevelUpEffect = GetWorld()->SpawnActor<AFPLevelUpEffect>(AFPLevelUpEffect::StaticClass());
 	}
 
 	OnPlayerStateChanged.Broadcast();
