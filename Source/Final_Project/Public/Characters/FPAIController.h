@@ -27,6 +27,7 @@ public:
 	void RUNAI(class AFPCharacter* FPCharacter);
 	void RUNAI(class AFPMonster* FPMonster);
 	void RUNAI(class AFPSpaiderBoss* FPSpaiderBoss);
+	void RUNAI(class AFPLastBoss* FPLastBoss);
 	void StopAI();
 
 private:

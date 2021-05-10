@@ -98,6 +98,17 @@ void AFPAIController::RUNAI(AFPSpaiderBoss* FPSpaiderBoss)
 	}
 }
 
+void AFPAIController::RUNAI(class AFPLastBoss* FPLastBoss)
+{
+	if (UseBlackboard(BBMonsterAsset, Blackboard))
+	{
+		Blackboard->SetValueAsVector(HomePosKey, GetPawn()->GetActorLocation());
+		if (!RunBehaviorTree(BTMonsterAsset))
+		{
+			FPLOG(Error, TEXT("AIController couldn't run behavior tree!"));
+		}
+	}
+}
 void AFPAIController::StopAI()
 {
 	auto BehaviorTreeComponent = Cast<UBehaviorTreeComponent>(BrainComponent);

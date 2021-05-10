@@ -95,6 +95,11 @@ void AFPPlayerController::NPCKill(AFPSpaiderBoss * KilledNPC) const
 	FPPlayerState->AddExp(200);
 }
 
+void AFPPlayerController::NPCKill(AFPLastBoss * KilledNPC) const
+{
+	FPPlayerState->AddExp(400);
+}
+
 void AFPPlayerController::NPCKill(int32 Exp) const
 {
 	FPPlayerState->AddExp(Exp);

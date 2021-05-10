@@ -5,6 +5,8 @@
 #include "Characters/FPAIController.h"
 #include "Characters/Player/FPCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "Characters/Boss/FPSpaiderBoss.h"
+#include "Characters/Boss/FPLastBoss.h"
 
 
 UBTDecorator_IsInAttackRange::UBTDecorator_IsInAttackRange()
@@ -20,6 +22,21 @@ bool UBTDecorator_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeCompo
 	auto ControllingPawn = OwnerComp.GetAIOwner()->GetPawn();
 	if (nullptr == ControllingPawn)
 		return false;
+
+	auto FPSpaiderBoss = Cast<AFPSpaiderBoss>(ControllingPawn);
+	auto FPLastBoss = Cast<AFPLastBoss>(ControllingPawn);
+
+	if (FPSpaiderBoss)
+	{
+		if (FPSpaiderBoss->GetIsAttacking())
+			return true;
+	}
+	else if (FPLastBoss)
+	{
+		if (FPLastBoss->GetIsAttacking())
+			return true;
+	}
+
 	auto Target = Cast<AFPCharacter>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(AFPAIController::TargetKey));
 	if (nullptr == Target)
 		return false;

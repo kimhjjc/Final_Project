@@ -26,8 +26,9 @@ public:
 	class UFPConversationWidget* GetConversationWidget() const;
 	class UFPStatusWindowWidget* GetStatusWindowWidget() const;
 	void NPCKill(class AFPCharacter* KilledNPC) const;
-	void NPCKill(class AFPMonster* KilledNPC) const;
+	void NPCKill(class AFPMonster* KilledNPC) const; 
 	void NPCKill(class AFPSpaiderBoss* KilledNPC) const;
+	void NPCKill(class AFPLastBoss* KilledNPC) const;
 	void NPCKill(int32 Exp) const;
 	void AddGameScore() const;
 

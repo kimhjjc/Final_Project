@@ -17,6 +17,8 @@
  // 이것은 멀티캐스트 델리게이트로, 델리게이트에 등록된 모든 함수를 호출하는 시스템이다. 멀티캐스트 델리게이트 명령은 (Delegate이름).Broadcast이다.
  // 사용시 장점 : 델리게이트에 연결된 함수만 호출하면 되므로 다른 클래스와 연결되지 않는 의존성 없는 설계를 할 수 있다.
 DECLARE_MULTICAST_DELEGATE(FOnAttackHitCheckDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnMotionBasedMovementDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnMotionBasedMovementFinishDelegate);
 
 UCLASS()
 class FINAL_PROJECT_API UFPMonsterAnimInstance : public UAnimInstance
@@ -29,15 +31,24 @@ public:
 
 	void PlayAttackMontage();
 	void PlayBossAttackMontage();
+	void PlayLastBossAttackMontage();
 
 public:
 	FOnAttackHitCheckDelegate OnAttackHitCheck;
+	FOnMotionBasedMovementDelegate OnMotionBasedMovement;
+	FOnMotionBasedMovementFinishDelegate OnMotionBasedMovementFinish;
 	void SetDeadAnim() { IsDead = true; }
 
 private:
 	//UFUCTION()은 블루프린트의 함수를 C++에서 연동하여 사용할때 함수 앞에 선언해주어야 한다.
 	UFUNCTION()
 	void AnimNotify_AttackHitCheck();		// 몽타주에서 노티파이가 호출되려면 AnimNotify_노티파이명 으로 선언해야 이름의 멤버 함수를 찾아서 호출이 된다. 
+
+	UFUNCTION()
+	void AnimNotify_MotionBasedMovement();
+
+	UFUNCTION()
+	void AnimNotify_MotionBasedMovementFinish();
 
 private:
 	// BlueprintReadOnly를 하면 애님 그래프에서 변수를 Get은 가능하지만 Set은 불가능함.
@@ -49,6 +60,12 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	UAnimMontage* BossAttackMontage;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* LastBossAttackMontage;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* LastBossAttackMontage2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
 	bool IsDead;

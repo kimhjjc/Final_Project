@@ -38,6 +38,7 @@ public:
 		class UWidgetComponent* HPBarWidget;
 
 	void Attack();
+	bool GetIsAttacking() { return IsAttacking; };
 	FOnAttackEndDelegate OnAttackEnd;
 	FOnHPIsZero OnHPIsZero;
 
