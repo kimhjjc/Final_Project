@@ -41,6 +41,11 @@ void UFPHUDWidget::NativeConstruct()
 
 	HighScore = Cast<UTextBlock>(GetWidgetFromName(TEXT("txtHighScore")));
 	FPCHECK(nullptr != HighScore);
+
+	QuestInfo = Cast<UTextBlock>(GetWidgetFromName(TEXT("txtQuestInfo")));
+	FPCHECK(nullptr != QuestInfo);
+
+	QuestInfo->SetText(FText::FromString("Near to talk to people."));
 }
 
 void UFPHUDWidget::UpdateCharacterStat()
@@ -59,4 +64,9 @@ void UFPHUDWidget::UpdatePlayerState()
 	PlayerLevel->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetCharacterLevel())));
 	CurrentScore->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetGameScore())));
 	HighScore->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetGameHighScore())));
+}
+
+void UFPHUDWidget::UpdateQuest(FString QuestInfo_F)
+{
+	QuestInfo->SetText(FText::FromString(QuestInfo_F));
 }

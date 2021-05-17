@@ -17,6 +17,7 @@ class FINAL_PROJECT_API UFPHUDWidget : public UUserWidget
 public:
 	void BindCharacterStat(class UFPCharacterStatComponent* CharacterStat);
 	void BindPlayerState(class AFPPlayerState* PlayerState);
+	void UpdateQuest(FString QuestInfo_F);
 
 protected:
 	virtual void NativeConstruct() override;
@@ -44,5 +45,8 @@ private:
 
 	UPROPERTY()
 	class UTextBlock* HighScore;
+
+	UPROPERTY()
+	class UTextBlock* QuestInfo;
 
 };

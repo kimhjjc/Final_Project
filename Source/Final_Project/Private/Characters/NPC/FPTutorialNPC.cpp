@@ -2,7 +2,9 @@
 
 
 #include "Characters/NPC/FPTutorialNPC.h"
+#include "Characters/Player/FPAnimInstance.h"
 #include "Components/WidgetComponent.h"
+#include "UI/FPHUDWidget.h"
 #include "UI/FPNPCWidget.h"
 #include "UI/FPQuestWidget.h"
 #include "UI/FPConversationWidget.h"
@@ -17,19 +19,25 @@ AFPTutorialNPC::AFPTutorialNPC()
 	PrimaryActorTick.bCanEverTick = true;
 
 	Trigger = CreateDefaultSubobject<UBoxComponent>(TEXT("TRIGGER"));
+	QuestCheckWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("QUESTCHECKWIDGET"));
 	NPCNameWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("NPCNAMEWIDGET"));
-
 
 	GetMesh()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, -88.0f), FRotator(0.0f, -90.0f, 0.0f));
 
 
 	Trigger->SetupAttachment(GetMesh());
 	NPCNameWidget->SetupAttachment(GetMesh());
+	QuestCheckWidget->SetupAttachment(GetMesh());
 
 
 	Trigger->SetBoxExtent(FVector(200.0f, 200.0f, 200.0f));
+
+	QuestCheckWidget->SetRelativeLocation(FVector(0.0f, 0.0f, 200.0f));
+	QuestCheckWidget->SetWidgetSpace(EWidgetSpace::Screen);
+
 	NPCNameWidget->SetRelativeLocation(FVector(0.0f, 0.0f, 180.0f));
 	NPCNameWidget->SetWidgetSpace(EWidgetSpace::Screen);
+
 
 	Trigger->SetCollisionProfileName(TEXT("ItemBox"));
 
@@ -46,12 +54,29 @@ AFPTutorialNPC::AFPTutorialNPC()
 		GetMesh()->SetSkeletalMesh(SK_CARDBOARD.Object);
 	}
 
-	static ConstructorHelpers::FClassFinder<UUserWidget> UI_NPCNAME(TEXT("/Game/UI/UI_NPCName.UI_NPCName_C"));	// 블루 프린터로 제작하였으므로 경로 뒤에 _C를 붙여주어야 한다.
+	static ConstructorHelpers::FClassFinder<UUserWidget> UI_QUESTCHECK(TEXT("/Game/UI/UI_QuestIcon.UI_QuestIcon_C"));
+	if (UI_QUESTCHECK.Succeeded())
+	{
+		QuestCheckWidget->SetWidgetClass(UI_QUESTCHECK.Class);
+		QuestCheckWidget->SetDrawSize(FVector2D(150.0f, 150.0f));
+	}
+
+	static ConstructorHelpers::FClassFinder<UUserWidget> UI_NPCNAME(TEXT("/Game/UI/UI_NPCName.UI_NPCName_C"));
 	if (UI_NPCNAME.Succeeded())
 	{
 		NPCNameWidget->SetWidgetClass(UI_NPCNAME.Class);
 		NPCNameWidget->SetDrawSize(FVector2D(150.0f, 50.0f));
 	}
+
+	// 애니메이션 블루프린트 사용하기
+	GetMesh()->SetAnimationMode(EAnimationMode::AnimationBlueprint);
+
+	static ConstructorHelpers::FClassFinder<UAnimInstance> NPC_ANIM(TEXT("/Game/Animations/NPCAnimBlueprint.NPCAnimBlueprint_C"));
+	if (NPC_ANIM.Succeeded())
+	{
+		GetMesh()->SetAnimInstanceClass(NPC_ANIM.Class);
+	}
+
 }
 
 // Called when the game starts or when spawned
@@ -108,40 +133,50 @@ void AFPTutorialNPC::OnCharacterOverlap(UPrimitiveComponent * OverlappedComp, AA
 
 		if (IsQuestAccept == true && MonsterKill == TargetKill)
 		{
+			TArray<FString> ContentInfos;
+
 			static TArray<AActor*> NextPlace;
 			UGameplayStatics::GetAllActorsOfClass(GetWorld(), AFPTutorialNPC_NextQuestPosition::StaticClass(), NextPlace);
 			if (QuestNumber == 0)
 			{
 				PlayerController->NPCKill(100);
-				PlayerController->OnQuestUpdate.Clear();
+				PlayerController->OnQuestUpdate.Clear(); 
 				QuestNumber++;
 				IsQuestAccept = false;
 				QuestInfo = "go to the gate.";
-				ContentInfo = "I'll wait in front of the gate.";
+				ContentInfos.Add("Oh came faster than expected?");
+				ContentInfos.Add("Well done. Shall we move on next?");
+				ContentInfos.Add("I'll wait in front of the gate.");
 
 				PlayerController->GetQuestWidget()->BindNPCQuest("", QuestInfo);
+				PlayerController->GetHUDWidget()->UpdateQuest(QuestInfo);
 
-				for (auto Place : NextPlace)
-				{
-					auto TempPlace = Cast<AFPTutorialNPC_NextQuestPosition>(Place);
-					FPCHECK(nullptr != TempPlace);
-					if (TempPlace->GetQuestNumber() == QuestNumber)
+				FPCharacter->OnConversationEnd.AddLambda([this]() -> void {
+					for (auto Place : NextPlace)
 					{
-						SetActorRelativeLocation(TempPlace->GetActorLocation());
-						SetActorRelativeRotation(TempPlace->GetActorRotation());
+						auto TempPlace = Cast<AFPTutorialNPC_NextQuestPosition>(Place);
+						FPCHECK(nullptr != TempPlace);
+						if (TempPlace->GetQuestNumber() == QuestNumber)
+						{
+							SetActorRelativeLocation(TempPlace->GetActorLocation());
+							SetActorRelativeRotation(TempPlace->GetActorRotation());
+						}
+
 					}
 
-				}
-
-				CloseContentWidget();
+					});
+				
 			}
 			else if (QuestNumber == 1)
 			{
 
 			}
+
+			FPCharacter->NPCConversation(NPCName, ContentInfos);
 		}
 		else if (IsQuestAccept == false)
 		{
+			TArray<FString> ContentInfos;
 			if (QuestNumber == 0)
 			{
 				MonsterKill = -1;
@@ -159,30 +194,42 @@ void AFPTutorialNPC::OnCharacterOverlap(UPrimitiveComponent * OverlappedComp, AA
 
 					auto PlayerController = Cast<AFPPlayerController>(GetWorld()->GetFirstPlayerController());
 					PlayerController->GetQuestWidget()->BindNPCQuest(NPCName, QuestInfo);
+					PlayerController->GetHUDWidget()->UpdateQuest(QuestInfo);
 					IsQuestAccept = true;
 					});
-
-				ContentInfo = "The weather is good too.The Goblin has been hunting?";
 				PlayerController->OnQuestUpdate.Broadcast();
+
+				ContentInfos.Add("Hey, you look strong, bro.");
+				ContentInfos.Add("The weather is good too.The Goblin has been hunting?");
+				ContentInfos.Add("Then I'll show you the basics of manipulation.");
+				ContentInfos.Add("Attack is LMB or RMB.");
+				ContentInfos.Add("And you can combo attack via LMB or RMB.");
+				ContentInfos.Add("LMB is available in all combos, RMB is availble in the second and fourth combo.");
+				ContentInfos.Add("If you level up later, you'll be able to use other skills.");
+				ContentInfos.Add("If you level up later, you'll be able to use other skills.");
+				ContentInfos.Add("Now, try to get three goblins out there. Good luck.");
+
+
 			}
 			else if (QuestNumber == 1)
 			{
 				QuestInfo = "Next Quest";
-				ContentInfo = "Next Quest Content";
+				ContentInfos.Add("Next Quest Content");
 				IsQuestAccept = true;
 			}
 			else
 			{
-				ContentInfo = "There are more monsters these days.";
+				ContentInfos.Add("There are more monsters these days.");
 			}
-			FPLOG(Warning, TEXT("QuestAccept false"));
+
+			FPCharacter->NPCConversation(NPCName, ContentInfos);
 		}
 		else if (IsQuestAccept == true && MonsterKill != TargetKill)
 		{
 			ContentInfo = "You haven't hunted them yet?";
+			PlayerController->GetConversationWidget()->BindNPCContent(NPCName, ContentInfo);
 		}
 
-		PlayerController->GetConversationWidget()->BindNPCContent(NPCName, ContentInfo);
 
 		PlayerController->GetConversationWidget()->SetVisibility(ESlateVisibility::Visible);
 

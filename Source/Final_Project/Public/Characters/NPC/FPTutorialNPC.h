@@ -30,6 +30,9 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = UI)
 	class UWidgetComponent* NPCNameWidget;
 
+	UPROPERTY(VisibleAnywhere, Category = UI)
+	class UWidgetComponent* QuestCheckWidget;
+
 	UPROPERTY(VisibleAnywhere, Category = Box)
 	UBoxComponent* Trigger;
 

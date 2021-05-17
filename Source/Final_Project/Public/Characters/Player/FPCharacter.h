@@ -27,6 +27,7 @@
 */
 
 DECLARE_MULTICAST_DELEGATE(FOnAttackEndDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnConversationEndDelegate);
 
 UCLASS()
 class FINAL_PROJECT_API AFPCharacter : public ACharacter
@@ -79,6 +80,7 @@ public:
 	bool CanSetWeapon();
 	void Setweapon(class AFPWeapon* NewWeapon);
 	void SetNPCInteractive(bool active) { bIsNPCInteractive = active; }
+	void NPCConversation(FString NPCName, TArray<FString> NPCConversations);
 
 	class AFPPlayerController* GetFPPlayerController() { return FPPlayerController; }
 
@@ -104,6 +106,7 @@ public:
 	// Attack 함수는 원래 private에 선언하였으나, NPC의 공격을 구현하기 위해 public의 위치로 바꾸어 주었다.
 	void Attack();
 	FOnAttackEndDelegate OnAttackEnd;
+	FOnConversationEndDelegate OnConversationEnd;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Health")
 	float Health;
@@ -127,6 +130,7 @@ private:
 	void Quest_Open();
 	void NPCInteraction();
 	void Status_Open();
+	void ConversationProgress();
 
 	// 애니메이션 몽타주에 델리게이트를 사용해보기
 	UFUNCTION()
@@ -143,8 +147,10 @@ private:
 	void OnAssetLoadCompleted();
 
 	bool IsActing();
+	bool IsTalking();
 
 	void FinishResting();
+
 
 
 private:
@@ -196,6 +202,15 @@ private:
 
 	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
 	ECharacterState CurrentState;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
+	FString SayNPC;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
+	TArray<FString> Conversations;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
+	int32 ConversationNumber;
 
 	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
 	bool bIsPlayer;

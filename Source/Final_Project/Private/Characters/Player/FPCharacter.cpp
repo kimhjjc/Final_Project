@@ -13,6 +13,7 @@
 #include "UI/FPHUDWidget.h"
 #include "UI/FPQuestWidget.h"
 #include "UI/FPStatusWindowWidget.h"
+#include "UI/FPConversationWidget.h"
 #include "Characters/FPAIController.h"
 #include "Characters/Player/FPPlayerController.h"
 #include "FPCharacterSetting1.h"
@@ -120,6 +121,9 @@ AFPCharacter::AFPCharacter()
 
 
 	AssetIndex = 4;
+
+	SayNPC = "";
+	ConversationNumber = 0;
 
 	SetActorHiddenInGame(true);
 	HPBarWidget->SetHiddenInGame(true);
@@ -413,7 +417,7 @@ void AFPCharacter::SetControlMode(EControlMode NewControlMode)
 	case EControlMode::DIABLO:
 		//SpringArm->TargetArmLength = 800.0f;
 		//SpringArm->SetRelativeRotation(FRotator(-45.0f, 0.0f, 0.0f));
-		ArmLengthTo = 800.0f;
+		ArmLengthTo = 300.0f;
 		ArmRotationTo = FRotator(-45.0f, 0.0f, 0.0f);
 		SpringArm->bUsePawnControlRotation = false;
 		SpringArm->bInheritPitch = false;
@@ -597,7 +601,7 @@ void AFPCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction(TEXT("Quest_Open"), EInputEvent::IE_Pressed, this, &AFPCharacter::Quest_Open);
 	PlayerInputComponent->BindAction(TEXT("NPCInteraction"), EInputEvent::IE_Pressed, this, &AFPCharacter::NPCInteraction);
 	PlayerInputComponent->BindAction(TEXT("Status_Open"), EInputEvent::IE_Pressed, this, &AFPCharacter::Status_Open);
-
+	PlayerInputComponent->BindAction(TEXT("ConversationProgress"), EInputEvent::IE_Pressed, this, &AFPCharacter::ConversationProgress);
 	// Axis 매핑 활용하여 이동키 만들기
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &AFPCharacter::UpDown);
 	PlayerInputComponent->BindAxis(TEXT("LeftRight"), this, &AFPCharacter::LeftRight);
@@ -770,6 +774,47 @@ void AFPCharacter::Status_Open()
 	}
 }
 
+void AFPCharacter::ConversationProgress()
+{
+	if (!IsTalking())
+		return;
+
+	FPPlayerController->GetConversationWidget()->BindNPCContent(SayNPC, Conversations[ConversationNumber]);
+	ConversationNumber++;
+
+	if (!IsTalking())
+	{
+		ViewChange();
+		FPPlayerController->GetHUDWidget()->SetVisibility(ESlateVisibility::Visible);
+		OnConversationEnd.Broadcast();
+		OnConversationEnd.Clear();
+
+	}
+
+}
+
+void AFPCharacter::NPCConversation(FString NPCName, TArray<FString> NPCConversations)
+{
+	SayNPC = NPCName;
+	Conversations = NPCConversations;
+	ConversationNumber = 0;
+
+	FPPlayerController->GetConversationWidget()->BindNPCContent(SayNPC, Conversations[ConversationNumber]);
+	ConversationNumber++;
+
+	ViewChange();
+	FPPlayerController->GetHUDWidget()->SetVisibility(ESlateVisibility::Collapsed);
+}
+
+
+bool AFPCharacter::IsTalking()
+{
+	if (ConversationNumber < Conversations.Num())
+		return true;
+
+	return false;
+}
+
 void AFPCharacter::Attack()
 {
 	FPCHECK(!IsActing() || IsAttacking);
@@ -932,7 +977,7 @@ void AFPCharacter::OnAssetLoadCompleted()
 
 bool AFPCharacter::IsActing()
 {
-	if (IsAttacking || IsResting || IsRestEntered)
+	if (IsAttacking || IsResting || IsRestEntered || IsTalking())
 		return true;
 
 	return false;

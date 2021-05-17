@@ -21,6 +21,6 @@ void UFPQuestWidget::NativeConstruct()
 	QuestInfo = Cast<UTextBlock>(GetWidgetFromName(TEXT("txtQuestInfo")));
 	FPCHECK(nullptr != QuestInfo);
 
-	NPCName->SetText(FText::FromString("NPC"));
-	QuestInfo->SetText(FText::FromString("QuestInfo"));
+	NPCName->SetText(FText::FromString("Quest"));
+	QuestInfo->SetText(FText::FromString("Near to talk to people."));
 }
