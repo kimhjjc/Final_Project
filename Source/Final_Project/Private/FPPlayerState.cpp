@@ -13,6 +13,7 @@ AFPPlayerState::AFPPlayerState()
 	GameScore = 0;
 	GameHighScore = 0;
 	Exp = 0;
+	QuestNumber = 0;
 	SaveSlotName = TEXT("Player1");
 }
 
@@ -50,7 +51,15 @@ float AFPPlayerState::GetNextExp() const
 {
 	return CurrentStatData->NextExp;
 }
-
+int32 AFPPlayerState::GetQuestNumber() const
+{
+	return QuestNumber;
+}
+void AFPPlayerState::SetQuestNumber(int32 newQuestNumber)
+{
+	QuestNumber = newQuestNumber;
+	SavePlayerData();
+}
 
 bool AFPPlayerState::AddExp(int32 IncomeExp)
 {
@@ -92,7 +101,7 @@ void AFPPlayerState::AddGameScore()
 
 void AFPPlayerState::InitPlayerData()
 {
-	//SetPlayerName(TEXT("Destiny"));
+	SetPlayerName(TEXT("Destiny"));
 	//SetCharacterLevel(5);
 	//Exp = 0;
 	//GameScore = 0;
@@ -110,6 +119,7 @@ void AFPPlayerState::InitPlayerData()
 	GameScore = 0;
 	GameHighScore = FPSaveGame->HighScore;
 	Exp = FPSaveGame->Exp;
+	QuestNumber = FPSaveGame->QuestNumber;
 	SavePlayerData();
 }
 
@@ -120,6 +130,7 @@ void AFPPlayerState::SavePlayerData()
 	NewPlayerData->Level = CharacterLevel;
 	NewPlayerData->HighScore = GameHighScore;
 	NewPlayerData->Exp = Exp;
+	NewPlayerData->QuestNumber = QuestNumber;
 
 	// 만약 세이브 데이터가 없다면 생성한다. 있으면 그대로 저장.
 	if (!(UGameplayStatics::SaveGameToSlot(NewPlayerData, SaveSlotName, 0)))
@@ -127,6 +138,23 @@ void AFPPlayerState::SavePlayerData()
 		FPLOG(Error, TEXT("SaveGame Error!"));
 	}
 }
+
+void AFPPlayerState::ResetPlayerData()
+{
+	UFPSaveGame* NewPlayerData = NewObject<UFPSaveGame>();
+	NewPlayerData->PlayerName = TEXT("Destiny");
+	NewPlayerData->Level = 1;
+	NewPlayerData->HighScore = 0;
+	NewPlayerData->Exp = 0;
+	NewPlayerData->QuestNumber = 0;
+
+	// 만약 세이브 데이터가 없다면 생성한다. 있으면 그대로 저장.
+	if (!(UGameplayStatics::SaveGameToSlot(NewPlayerData, TEXT("Player1"), 0)))
+	{
+		FPLOG(Error, TEXT("SaveGame Error!"));
+	}
+}
+
 
 void AFPPlayerState::SetCharacterLevel(int32 NewCharacterLevel)
 {

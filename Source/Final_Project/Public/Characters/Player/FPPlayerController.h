@@ -25,6 +25,8 @@ public:
 	class UFPQuestWidget* GetQuestWidget() const;
 	class UFPConversationWidget* GetConversationWidget() const;
 	class UFPStatusWindowWidget* GetStatusWindowWidget() const;
+	class UUserWidget* GetTutorialWindowWidget() const;
+	void SetTutorialWindowWidget(TSubclassOf<class UUserWidget> NewWindowWidgetClass);
 	void NPCKill(class AFPCharacter* KilledNPC) const;
 	void NPCKill(class AFPMonster* KilledNPC) const; 
 	void NPCKill(class AFPSpaiderBoss* KilledNPC) const;
@@ -49,6 +51,9 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
 	TSubclassOf<class UFPStatusWindowWidget> StatusWindowWidgetClass;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
+	TSubclassOf<class UUserWidget> TutorialWindowWidgetClass;
+
 private:
 	UPROPERTY()
 	class UFPHUDWidget* HUDWidget;
@@ -61,6 +66,9 @@ private:
 
 	UPROPERTY()
 	class UFPStatusWindowWidget* StatusWindowWidget;
+
+	UPROPERTY()
+	class UUserWidget* TutorialWindowWidget;
 
 	UPROPERTY()
 	class AFPPlayerState* FPPlayerState;

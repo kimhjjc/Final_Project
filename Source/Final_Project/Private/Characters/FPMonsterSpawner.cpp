@@ -58,7 +58,7 @@ void AFPMonsterSpawner::SpawnMonster()
 
 	if (SpawnedMonster_1 == nullptr)
 	{
-		auto SpawnLocation = GetActorLocation() + FVector(rand() % 360, rand() % 360, 0.0f);
+		auto SpawnLocation = GetActorLocation() + FVector(-180.0f, 0, 0.0f);
 		auto SpawnedMonster = GetWorld()->SpawnActor<AFPMonster>(AFPMonster::StaticClass(), SpawnLocation, FRotator(0.0f, rand() % 360, 0.0f));
 		SpawnedMonster_1 = SpawnedMonster;
 
@@ -69,7 +69,7 @@ void AFPMonsterSpawner::SpawnMonster()
 	
 	if (SpawnedMonster_2 == nullptr)
 	{
-		auto SpawnLocation = GetActorLocation() + FVector(rand() % 360, rand() % 360, 0.0f);
+		auto SpawnLocation = GetActorLocation() + FVector(180.0f, 0, 0.0f);
 		auto SpawnedMonster = GetWorld()->SpawnActor<AFPMonster>(AFPMonster::StaticClass(), SpawnLocation, FRotator(0.0f, rand() % 360, 0.0f));
 		SpawnedMonster_2 = SpawnedMonster;
 
@@ -80,7 +80,7 @@ void AFPMonsterSpawner::SpawnMonster()
 
 	if (SpawnedMonster_3 == nullptr)
 	{
-		auto SpawnLocation = GetActorLocation() + FVector(rand() % 360, rand() % 360, 0.0f);
+		auto SpawnLocation = GetActorLocation() + FVector(0, 180.0f, 0.0f);
 		auto SpawnedMonster = GetWorld()->SpawnActor<AFPMonster>(AFPMonster::StaticClass(), SpawnLocation, FRotator(0.0f, rand() % 360, 0.0f));
 		SpawnedMonster_3 = SpawnedMonster;
 

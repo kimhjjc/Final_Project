@@ -24,9 +24,12 @@ public:
 	int32 Exp;
 
 	UPROPERTY()
-		FString PlayerName;
+	FString PlayerName;
 
 	UPROPERTY()
 	int32 HighScore;
+
+	UPROPERTY()
+	int32 QuestNumber;
 	
 };

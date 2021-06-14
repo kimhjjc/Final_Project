@@ -22,7 +22,7 @@ public:
 	int32 GetQuestNumber();
 
 
-	UPROPERTY(VisibleAnywhere, Category = Quest)
+	UPROPERTY(EditAnywhere, Category = Quest)
 	int32 QuestNumber;
 
 protected:

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Final_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{735CA05B-AD32-49A9-85EE-299CA28F2C7D}</UniqueIdentifier>
+      <UniqueIdentifier>{537C023B-93BA-4521-B135-BACBEDFA93AF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\PN_OpenWorldFoliage.png" />
     <None Include="..\..\프로젝트 빌드 다시하기 방법.txt" />
     <Filter Include="Config">
-      <UniqueIdentifier>{7521D6EA-3771-4415-8437-0A0E639C2874}</UniqueIdentifier>
+      <UniqueIdentifier>{A17727D6-2557-4AAC-8032-E57B1338D5B4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -37,13 +37,13 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Final_Project">
-      <UniqueIdentifier>{5A828637-B268-4471-8B7E-E3F9E13337EE}</UniqueIdentifier>
+      <UniqueIdentifier>{337B6CC4-39AC-4DC2-8ACA-5941042EBB24}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_Project\Final_Project.Build.cs">
       <Filter>Source\Final_Project</Filter>
     </None>
     <Filter Include="Source\Final_Project\Private">
-      <UniqueIdentifier>{0BF40CD2-5863-4285-9324-3ACE2C692C0B}</UniqueIdentifier>
+      <UniqueIdentifier>{2FF37F4B-511C-43EE-A3DF-14E5D583F03B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Final_Project.cpp">
       <Filter>Source\Final_Project\Private</Filter>
@@ -66,6 +66,9 @@
     <ClCompile Include="..\..\Source\Final_Project\Private\FPPlayerState.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Final_Project\Private\FPQuestProgressBox.cpp">
+      <Filter>Source\Final_Project\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Final_Project\Private\FPSaveGame.cpp">
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
@@ -73,7 +76,7 @@
       <Filter>Source\Final_Project\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Private\Characters">
-      <UniqueIdentifier>{B7924BA4-F352-4C58-B8FE-F10C0C2EEB15}</UniqueIdentifier>
+      <UniqueIdentifier>{764B67FA-1A59-4461-BC27-8B2CDB6DBC8F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Characters\FPAIController.cpp">
       <Filter>Source\Final_Project\Private\Characters</Filter>
@@ -82,7 +85,7 @@
       <Filter>Source\Final_Project\Private\Characters</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Private\Characters\AI">
-      <UniqueIdentifier>{C98F371E-BF73-492F-B1C0-249B3CE7FE67}</UniqueIdentifier>
+      <UniqueIdentifier>{B2DFA021-5601-4253-B18C-A15BC4AE1FB1}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Characters\AI\BTDecorator_IsInAttackRange.cpp">
       <Filter>Source\Final_Project\Private\Characters\AI</Filter>
@@ -100,7 +103,7 @@
       <Filter>Source\Final_Project\Private\Characters\AI</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Private\Characters\Boss">
-      <UniqueIdentifier>{515ED6C8-48F3-4777-9AEF-4CE26473F3BA}</UniqueIdentifier>
+      <UniqueIdentifier>{D7745E65-2185-4F24-BAB1-4BABECBA4541}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Boss\FPLastBoss.cpp">
       <Filter>Source\Final_Project\Private\Characters\Boss</Filter>
@@ -109,7 +112,7 @@
       <Filter>Source\Final_Project\Private\Characters\Boss</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Private\Characters\Enemy">
-      <UniqueIdentifier>{F76732D5-8E56-4E07-9931-8CE2447274B2}</UniqueIdentifier>
+      <UniqueIdentifier>{13393692-5D5B-4ECF-9D4F-257CE3BF55F0}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Enemy\FPMonster.cpp">
       <Filter>Source\Final_Project\Private\Characters\Enemy</Filter>
@@ -121,7 +124,7 @@
       <Filter>Source\Final_Project\Private\Characters\Enemy</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Private\Characters\NPC">
-      <UniqueIdentifier>{83B48312-B62F-467C-B93C-D5F4C756B76C}</UniqueIdentifier>
+      <UniqueIdentifier>{D93F1388-B183-4A1F-8EF0-B903AE6604B9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Characters\NPC\FPTutorialNPC.cpp">
       <Filter>Source\Final_Project\Private\Characters\NPC</Filter>
@@ -130,7 +133,7 @@
       <Filter>Source\Final_Project\Private\Characters\NPC</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Private\Characters\Player">
-      <UniqueIdentifier>{41A0A951-18F1-4BB3-A3F3-3C8289F42DAC}</UniqueIdentifier>
+      <UniqueIdentifier>{E5462835-3799-4342-AFF6-B46AD6359DF3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Characters\Player\FPAnimInstance.cpp">
       <Filter>Source\Final_Project\Private\Characters\Player</Filter>
@@ -145,7 +148,7 @@
       <Filter>Source\Final_Project\Private\Characters\Player</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Private\Effect">
-      <UniqueIdentifier>{C28CBCC5-0900-4FC7-879C-02C304155E56}</UniqueIdentifier>
+      <UniqueIdentifier>{38297339-3A0A-46D9-B76B-CCFDF86EBA9F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Effect\FPHitBossEffect.cpp">
       <Filter>Source\Final_Project\Private\Effect</Filter>
@@ -160,7 +163,7 @@
       <Filter>Source\Final_Project\Private\Effect</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Private\Inventory">
-      <UniqueIdentifier>{B7802395-9723-41E9-AB31-DA9E19D80CE0}</UniqueIdentifier>
+      <UniqueIdentifier>{C20FE617-2647-4A48-8839-0ADA07C951F5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Inventory\FoodItem.cpp">
       <Filter>Source\Final_Project\Private\Inventory</Filter>
@@ -172,7 +175,7 @@
       <Filter>Source\Final_Project\Private\Inventory</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Private\Item">
-      <UniqueIdentifier>{9E0C2462-8CBD-46D3-9280-70429BA2EED2}</UniqueIdentifier>
+      <UniqueIdentifier>{689518A3-AD1A-4D6F-B580-23EA10AEC480}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\Item\FPItemBox.cpp">
       <Filter>Source\Final_Project\Private\Item</Filter>
@@ -180,8 +183,14 @@
     <ClCompile Include="..\..\Source\Final_Project\Private\Item\FPWeapon.cpp">
       <Filter>Source\Final_Project\Private\Item</Filter>
     </ClCompile>
+    <Filter Include="Source\Final_Project\Private\Title">
+      <UniqueIdentifier>{CB057380-F3DE-4BB2-9DEC-86A9BDF0781D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Final_Project\Private\Title\FPUIPlayerController.cpp">
+      <Filter>Source\Final_Project\Private\Title</Filter>
+    </ClCompile>
     <Filter Include="Source\Final_Project\Private\UI">
-      <UniqueIdentifier>{F7161014-70BE-4D80-BA2E-E1843D31624B}</UniqueIdentifier>
+      <UniqueIdentifier>{5B065FA6-E0A5-4B20-A6CE-EC4C3D11E0EA}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_Project\Private\UI\FPCharacterWidget.cpp">
       <Filter>Source\Final_Project\Private\UI</Filter>
@@ -208,7 +217,7 @@
       <Filter>Source\Final_Project\Private\UI</Filter>
     </ClCompile>
     <Filter Include="Source\Final_Project\Public">
-      <UniqueIdentifier>{9BABB1AA-3957-426A-ACC6-3FF0C5E75F1A}</UniqueIdentifier>
+      <UniqueIdentifier>{EAA7EBB4-CBF4-4658-AB8A-2BFC32ED81C8}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Final_Project.h">
       <Filter>Source\Final_Project\Public</Filter>
@@ -231,6 +240,9 @@
     <ClInclude Include="..\..\Source\Final_Project\Public\FPPlayerState.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Final_Project\Public\FPQuestProgressBox.h">
+      <Filter>Source\Final_Project\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Final_Project\Public\FPSaveGame.h">
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
@@ -238,7 +250,7 @@
       <Filter>Source\Final_Project\Public</Filter>
     </ClInclude>
     <Filter Include="Source\Final_Project\Public\Characters">
-      <UniqueIdentifier>{C4CC14C4-DC9B-4C4E-9886-F2405A14D2B9}</UniqueIdentifier>
+      <UniqueIdentifier>{D95CE0A6-DCEC-4387-BCEE-C4FEA291A081}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Characters\FPAIController.h">
       <Filter>Source\Final_Project\Public\Characters</Filter>
@@ -247,7 +259,7 @@
       <Filter>Source\Final_Project\Public\Characters</Filter>
     </ClInclude>
     <Filter Include="Source\Final_Project\Public\Characters\AI">
-      <UniqueIdentifier>{51828A84-14B3-4D18-AB84-8D41A3044192}</UniqueIdentifier>
+      <UniqueIdentifier>{225EE77E-8076-41A7-8F2C-D914770FC0F6}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Characters\AI\BTDecorator_IsInAttackRange.h">
       <Filter>Source\Final_Project\Public\Characters\AI</Filter>
@@ -265,7 +277,7 @@
       <Filter>Source\Final_Project\Public\Characters\AI</Filter>
     </ClInclude>
     <Filter Include="Source\Final_Project\Public\Characters\Boss">
-      <UniqueIdentifier>{F73B38C4-09C8-4A7C-BA7B-32565E74346B}</UniqueIdentifier>
+      <UniqueIdentifier>{88EFBCB4-DA3D-4A51-9EBA-33181492BC25}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Boss\FPLastBoss.h">
       <Filter>Source\Final_Project\Public\Characters\Boss</Filter>
@@ -274,7 +286,7 @@
       <Filter>Source\Final_Project\Public\Characters\Boss</Filter>
     </ClInclude>
     <Filter Include="Source\Final_Project\Public\Characters\Enemy">
-      <UniqueIdentifier>{6FA9F490-43D2-4D48-9929-B031FF9C12E9}</UniqueIdentifier>
+      <UniqueIdentifier>{9210E9D1-BBAE-4F38-8C74-1881172D6BDF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Enemy\FPMonster.h">
       <Filter>Source\Final_Project\Public\Characters\Enemy</Filter>
@@ -286,7 +298,7 @@
       <Filter>Source\Final_Project\Public\Characters\Enemy</Filter>
     </ClInclude>
     <Filter Include="Source\Final_Project\Public\Characters\NPC">
-      <UniqueIdentifier>{C67E0D80-0921-4EA2-879C-6F2FE9D1E251}</UniqueIdentifier>
+      <UniqueIdentifier>{60760B18-9D9E-41C1-BEE0-3130465C5A0D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Characters\NPC\FPTutorialNPC.h">
       <Filter>Source\Final_Project\Public\Characters\NPC</Filter>
@@ -295,7 +307,7 @@
       <Filter>Source\Final_Project\Public\Characters\NPC</Filter>
     </ClInclude>
     <Filter Include="Source\Final_Project\Public\Characters\Player">
-      <UniqueIdentifier>{BAEC34B3-E017-4DBA-8023-7227AE244C97}</UniqueIdentifier>
+      <UniqueIdentifier>{7F00C3BE-E44F-4FC7-B09E-E9C2D0B0061B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Characters\Player\FPAnimInstance.h">
       <Filter>Source\Final_Project\Public\Characters\Player</Filter>
@@ -310,7 +322,7 @@
       <Filter>Source\Final_Project\Public\Characters\Player</Filter>
     </ClInclude>
     <Filter Include="Source\Final_Project\Public\Effect">
-      <UniqueIdentifier>{BC4FEAD6-4FB1-48BC-B104-8886036B5EEB}</UniqueIdentifier>
+      <UniqueIdentifier>{91B0A29D-FA59-4A5D-B671-316C59A88AF2}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Effect\FPHitBossEffect.h">
       <Filter>Source\Final_Project\Public\Effect</Filter>
@@ -325,7 +337,7 @@
       <Filter>Source\Final_Project\Public\Effect</Filter>
     </ClInclude>
     <Filter Include="Source\Final_Project\Public\Inventory">
-      <UniqueIdentifier>{D1A5559B-5924-4250-84FA-C8CD845CA743}</UniqueIdentifier>
+      <UniqueIdentifier>{567D0F32-97C9-4033-920D-77091EA25EB7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Inventory\FoodItem.h">
       <Filter>Source\Final_Project\Public\Inventory</Filter>
@@ -337,7 +349,7 @@
       <Filter>Source\Final_Project\Public\Inventory</Filter>
     </ClInclude>
     <Filter Include="Source\Final_Project\Public\Item">
-      <UniqueIdentifier>{8C6ABDB1-DB57-4C10-B199-1714E3B6A271}</UniqueIdentifier>
+      <UniqueIdentifier>{5CD1828D-514A-44BE-BC9C-1A1FD4689B3C}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\Item\FPItemBox.h">
       <Filter>Source\Final_Project\Public\Item</Filter>
@@ -345,8 +357,14 @@
     <ClInclude Include="..\..\Source\Final_Project\Public\Item\FPWeapon.h">
       <Filter>Source\Final_Project\Public\Item</Filter>
     </ClInclude>
+    <Filter Include="Source\Final_Project\Public\Title">
+      <UniqueIdentifier>{D899F3E6-12FD-41CD-BF3A-0B80CDD4B135}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Final_Project\Public\Title\FPUIPlayerController.h">
+      <Filter>Source\Final_Project\Public\Title</Filter>
+    </ClInclude>
     <Filter Include="Source\Final_Project\Public\UI">
-      <UniqueIdentifier>{8097042A-63B8-4EDF-A62D-9EA826144C9E}</UniqueIdentifier>
+      <UniqueIdentifier>{66474F28-FDC9-445B-B7B9-13F6966C902B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_Project\Public\UI\FPCharacterWidget.h">
       <Filter>Source\Final_Project\Public\UI</Filter>
@@ -373,13 +391,13 @@
       <Filter>Source\Final_Project\Public\UI</Filter>
     </ClInclude>
     <Filter Include="Source\Final_ProjectSetting">
-      <UniqueIdentifier>{B39AAAA0-CC98-4913-A81B-FE4AA8F7CBEC}</UniqueIdentifier>
+      <UniqueIdentifier>{5F0AF66B-F594-4E95-A903-DD5D605F0F69}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Final_ProjectSetting\Final_ProjectSetting.Build.cs">
       <Filter>Source\Final_ProjectSetting</Filter>
     </None>
     <Filter Include="Source\Final_ProjectSetting\Private">
-      <UniqueIdentifier>{34F05697-A9F3-481A-AE9E-AF306EC31BCA}</UniqueIdentifier>
+      <UniqueIdentifier>{72A0BDA4-FD74-4665-B44D-7EEFA8F66281}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Final_ProjectSetting\Private\Final_ProjectSetting.cpp">
       <Filter>Source\Final_ProjectSetting\Private</Filter>
@@ -388,7 +406,7 @@
       <Filter>Source\Final_ProjectSetting\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Final_ProjectSetting\Public">
-      <UniqueIdentifier>{41F53252-4154-4F9A-B1A8-770354BBEAED}</UniqueIdentifier>
+      <UniqueIdentifier>{3CFE9745-398B-436B-B1AA-EDE2A509F277}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Final_ProjectSetting\Public\Final_ProjectSetting.h">
       <Filter>Source\Final_ProjectSetting\Public</Filter>

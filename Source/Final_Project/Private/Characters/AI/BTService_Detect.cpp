@@ -35,25 +35,47 @@ void UBTService_Detect::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 * Nod
 		CollisionQueryParam
 	);
 
-	if (bResult)
+
+	int ChasingTimer = OwnerComp.GetBlackboardComponent()->GetValueAsInt(AFPAIController::ChasingTargetKey);
+
+	if (ChasingTimer > 0)
+	{
+		OwnerComp.GetBlackboardComponent()->SetValueAsInt(AFPAIController::ChasingTargetKey, ChasingTimer - 1);
+	}
+	else if (ChasingTimer == 0)
 	{
 		OwnerComp.GetBlackboardComponent()->SetValueAsObject(AFPAIController::TargetKey, nullptr);
+	}
+	
+
+	if (bResult)
+	{
 		for (auto OverlapResult : OverlapResults)
 		{
 			AFPCharacter* FPCharacter = Cast<AFPCharacter>(OverlapResult.GetActor());
 			if (FPCharacter && FPCharacter->GetController()->IsPlayerController())
 			{
+				OwnerComp.GetBlackboardComponent()->SetValueAsInt(AFPAIController::ChasingTargetKey, 10);
 				OwnerComp.GetBlackboardComponent()->SetValueAsObject(AFPAIController::TargetKey, FPCharacter);
-				DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Green, false, 0.3f);
 
-				DrawDebugPoint(World, FPCharacter->GetActorLocation(), 10.0f, FColor::Blue, false, 0.3f);
-				DrawDebugLine(World, ControllingPawn->GetActorLocation(), FPCharacter->GetActorLocation(), FColor::Blue, false, 0.3f);
+				if (FPCharacter->IsOnDrawDebug())
+				{
+					DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Green, false, 0.3f);
+
+					DrawDebugPoint(World, FPCharacter->GetActorLocation(), 10.0f, FColor::Blue, false, 0.3f);
+					DrawDebugLine(World, ControllingPawn->GetActorLocation(), FPCharacter->GetActorLocation(), FColor::Blue, false, 0.3f);
+				}
 				return;
 
 
 			}
 		}
 	}
+	auto FPCharacter = Cast<AFPCharacter>(GetWorld()->GetFirstPlayerController()->GetPawn());
+	FPCHECK(nullptr != FPCharacter);
 
-	DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Red, false, 0.3f);
+	if (FPCharacter->IsOnDrawDebug())
+	{
+		DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Red, false, 0.3f);
+	}
 }

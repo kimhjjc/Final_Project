@@ -24,6 +24,8 @@ DECLARE_MULTICAST_DELEGATE(FOnFinishMontageDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnRest_LoopingDelegate);
 DECLARE_MULTICAST_DELEGATE(FOnRest_FinishDelegate);
 
+DECLARE_MULTICAST_DELEGATE(FOnFire_ShootingDelegate);
+
 UCLASS()
 class FINAL_PROJECT_API UFPAnimInstance : public UAnimInstance
 {
@@ -41,6 +43,8 @@ public:
 	void PlayRest_Montage();
 	void JumpToRest_End_MontageSection();
 
+	void PlayRoll_Montage();
+	void PlayFireShot_Montage();
 public:
 	FOnNextAttackCheckDelegate OnNextAttackCheck;
 	FOnAttackHitCheckDelegate OnAttackHitCheck;
@@ -50,6 +54,8 @@ public:
 
 	FOnRest_LoopingDelegate OnRest_Looping;
 	FOnRest_FinishDelegate OnRest_Finish;
+
+	FOnFire_ShootingDelegate OnFire_Shooting;
 	void SetDeadAnim() { IsDead = true; }
 
 private:
@@ -75,6 +81,9 @@ private:
 	UFUNCTION()
 	void AnimNotify_Rest_Finish();
 
+	UFUNCTION()
+	void AnimNotify_Fire_Shooting();
+
 	FName GetAttackMontageSectionName(int32 Section);
 
 private:
@@ -91,8 +100,14 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	UAnimMontage* Attack_RMBMontage;
 
-	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Skill, Meta = (AllowPrivateAccess = true))
 	UAnimMontage* Rest_Montage;
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Skill, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* Roll_Montage;
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Skill, Meta = (AllowPrivateAccess = true))
+	UAnimMontage* FireShot_Montage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Pawn, Meta = (AllowPrivateAccess = true))
 	bool IsDead;

@@ -22,12 +22,10 @@ public:
 	static const FName HomePosKey;
 	static const FName PatrolPosKey;
 	static const FName TargetKey;
+	static const FName ChasingTargetKey;
 
 	
-	void RUNAI(class AFPCharacter* FPCharacter);
-	void RUNAI(class AFPMonster* FPMonster);
-	void RUNAI(class AFPSpaiderBoss* FPSpaiderBoss);
-	void RUNAI(class AFPLastBoss* FPLastBoss);
+	void RUNAI();
 	void StopAI();
 
 private:

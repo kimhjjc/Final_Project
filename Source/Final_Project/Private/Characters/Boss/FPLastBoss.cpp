@@ -12,6 +12,7 @@
 #include "FPCharacterSetting1.h"
 #include "FPGameInstance.h"
 #include "Characters/Player/FPPlayerController.h"
+#include "Characters/Player/FPCharacter.h"
 #include "UI/FPHUDWidget.h"
 #include "FPGameMode.h"
 #include "Effect/FPHitBossEffect.h"
@@ -65,8 +66,8 @@ AFPLastBoss::AFPLastBoss()
 	IsAttacking = false;
 	IsAnimMotionMoveing = false;
 
-	AttackRange = 80.0f;
-	AttackRadius = 50.0f;
+	AttackRange = 120.0f;
+	AttackRadius = 80.0f;
 
 	IsDead = false;
 	DeadTimer = 1.25f;
@@ -96,7 +97,7 @@ void AFPLastBoss::BeginPlay()
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 720.0f, 0.0f);
 
 	GetCharacterMovement()->MaxWalkSpeed = 300.0f;
-	FPAIController->RUNAI(this);
+	FPAIController->RUNAI();
 
 	CharacterStat->OnHPIsZero.AddLambda([this]() -> void {
 		IsDead = true;
@@ -113,6 +114,13 @@ void AFPLastBoss::BeginPlay()
 			Destroy();
 			}), DeadTimer, false);
 		});
+
+	FName WeaponSocket(TEXT("hand_rSocket"));
+	auto CurWeapon = GetWorld()->SpawnActor<AFPWeapon>(FVector::ZeroVector, FRotator::ZeroRotator);
+	if (nullptr != CurWeapon)
+	{
+		CurWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, WeaponSocket);
+	}
 }
 
 // Called every frame
@@ -218,27 +226,31 @@ void AFPLastBoss::AttackCheck()
 		ECollisionChannel::ECC_GameTraceChannel2,	// 이것은 Attack 트레이스 채널을 의미한다. 콜리전 채널을 따로 추가하면 프로젝트명/Config/DefaultEngine.ini에서 등록된 채널 개수만큼 ECC_GameTraceChannel이 생겨 그 파일을 열어봐야 알 수 있다.
 		FCollisionShape::MakeSphere(AttackRadius),
 		Params);
+	auto FPCharacter = Cast<AFPCharacter>(GetWorld()->GetFirstPlayerController()->GetPawn());
+	FPCHECK(nullptr != FPCharacter);
 
-	// 이 부분은 디버그 드로잉으로 디버깅 환경에서 공격 범위를 눈으로 보이게 해준다.
+	if (FPCharacter->IsOnDrawDebug())
+	{
+		// 이 부분은 디버그 드로잉으로 디버깅 환경에서 공격 범위를 눈으로 보이게 해준다.
 #if ENABLE_DRAW_DEBUG
-	FVector TraceVec = GetActorForwardVector() * FinalAttackRange;
-	FVector Center = GetActorLocation() + TraceVec * 0.5f;
-	float HalfHeight = FinalAttackRange * 0.5f + AttackRadius;
-	FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
-	FColor DrawColor = bResult ? FColor::Green : FColor::Red;
-	float DebugLifeTime = 5.0f;
+		FVector TraceVec = GetActorForwardVector() * FinalAttackRange;
+		FVector Center = GetActorLocation() + TraceVec * 0.5f;
+		float HalfHeight = FinalAttackRange * 0.5f + AttackRadius;
+		FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
+		FColor DrawColor = bResult ? FColor::Green : FColor::Red;
+		float DebugLifeTime = 5.0f;
 
-	DrawDebugCapsule(GetWorld(),
-		Center,
-		HalfHeight,
-		AttackRadius,
-		CapsuleRot,
-		DrawColor,
-		false,
-		DebugLifeTime);
+		DrawDebugCapsule(GetWorld(),
+			Center,
+			HalfHeight,
+			AttackRadius,
+			CapsuleRot,
+			DrawColor,
+			false,
+			DebugLifeTime);
 
 #endif
-
+	}
 	// 실제로 맞았는지 체크하는 부분
 	if (bResult)
 	{

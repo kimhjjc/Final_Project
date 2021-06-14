@@ -30,11 +30,16 @@ public:
 	float GetExpRatio() const;
 	float GetExp() const;
 	float GetNextExp() const;
+	int32 GetQuestNumber() const;
+	void SetQuestNumber(int32 newQuestNumber);
 	bool AddExp(int32 IncomeExp);
 	void AddGameScore();
 	
 	void InitPlayerData();
 	void SavePlayerData();
+
+	UFUNCTION(BlueprintCallable, Category = "Restart")
+	static void ResetPlayerData();
 
 	FOnPlayerStateChangedDelegate OnPlayerStateChanged;
 	FOnLevelUpDelegate OnLevelUpDelegate;
@@ -51,6 +56,9 @@ protected:
 
 	UPROPERTY(Transient)
 	int32 Exp;
+
+	UPROPERTY(Transient)
+	int32 QuestNumber;
 
 private:
 	void SetCharacterLevel(int32 NewCharacterLevel);

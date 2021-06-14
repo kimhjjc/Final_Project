@@ -35,6 +35,12 @@ AFPPlayerController::AFPPlayerController()
 	{
 		StatusWindowWidgetClass = UI_STATUS_C.Class;
 	}
+
+	static ConstructorHelpers::FClassFinder<UUserWidget> UI_TUTORIAL_C(TEXT("/Game/UI/TutorialUI/UI_HowToMove.UI_HowToMove_C"));
+	if (UI_TUTORIAL_C.Succeeded())
+	{
+		TutorialWindowWidgetClass = UI_TUTORIAL_C.Class;
+	}
 }
 
 void AFPPlayerController::OnPossess(APawn * InPawn)
@@ -56,6 +62,9 @@ void AFPPlayerController::OnPossess(APawn * InPawn)
 	StatusWindowWidget->AddToViewport();
 	StatusWindowWidget->SetVisibility(ESlateVisibility::Collapsed);
 
+	TutorialWindowWidget = CreateWidget<UUserWidget>(this, TutorialWindowWidgetClass);
+	TutorialWindowWidget->AddToViewport();
+	TutorialWindowWidget->SetVisibility(ESlateVisibility::Collapsed);
 }
 
 UFPHUDWidget * AFPPlayerController::GetHUDWidget() const
@@ -78,26 +87,52 @@ UFPStatusWindowWidget * AFPPlayerController::GetStatusWindowWidget() const
 	return StatusWindowWidget;
 }
 
+UUserWidget * AFPPlayerController::GetTutorialWindowWidget() const
+{
+	return TutorialWindowWidget;
+}
+
+void AFPPlayerController::SetTutorialWindowWidget(TSubclassOf<class UUserWidget> NewWindowWidgetClass)
+{
+	TutorialWindowWidget = CreateWidget<UUserWidget>(this, NewWindowWidgetClass);
+	TutorialWindowWidget->AddToViewport();
+	TutorialWindowWidget->SetVisibility(ESlateVisibility::Collapsed);
+}
 
 void AFPPlayerController::NPCKill(AFPCharacter * KilledNPC) const
 {
 	FPPlayerState->AddExp(KilledNPC->GetExp());
+	if (FPPlayerState->GetQuestNumber() == 4)
+	{
+		OnQuestUpdate.Broadcast();
+	}
 }
 
 void AFPPlayerController::NPCKill(AFPMonster * KilledNPC) const
 {
 	FPPlayerState->AddExp(10);
-	OnQuestUpdate.Broadcast();
+	if (FPPlayerState->GetQuestNumber() == 2)
+	{
+		OnQuestUpdate.Broadcast();
+	}
 }
 
 void AFPPlayerController::NPCKill(AFPSpaiderBoss * KilledNPC) const
 {
 	FPPlayerState->AddExp(200);
+	if (FPPlayerState->GetQuestNumber() == 5)
+	{
+		OnQuestUpdate.Broadcast();
+	}
 }
 
 void AFPPlayerController::NPCKill(AFPLastBoss * KilledNPC) const
 {
 	FPPlayerState->AddExp(400);
+	if (FPPlayerState->GetQuestNumber() == 6)
+	{
+		OnQuestUpdate.Broadcast();
+	}
 }
 
 void AFPPlayerController::NPCKill(int32 Exp) const

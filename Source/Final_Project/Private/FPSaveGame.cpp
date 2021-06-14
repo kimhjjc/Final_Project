@@ -7,6 +7,7 @@ UFPSaveGame::UFPSaveGame()
 {
 	Level = 1;
 	Exp = 0;
-	PlayerName = TEXT("Guest");
+	PlayerName = TEXT("Destiny");
 	HighScore = 0;
+	QuestNumber = 0;
 }

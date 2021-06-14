@@ -80,6 +80,8 @@ AFPCharacter::AFPCharacter()
 
 	IsRestEntered = false;
 	IsResting = false;
+	IsRolling = false;
+	IsFireShot = false;
 	IsAttacking = false;
 	IsAnimFinish = true;
 
@@ -91,6 +93,8 @@ AFPCharacter::AFPCharacter()
 
 	IsAnimMotionMoveing = false;
 	bIsNPCInteractive = false;
+	bIsTalking = false;
+	bIsOnTutorialUI = false;
 
 	// 프로젝트 세팅 -> 콜리전에서 프리셋에 FPCharacter이라는 이름을 찾아 그 프리셋으로 콜리전을 변경한다.
 	GetCapsuleComponent()->SetCollisionProfileName(TEXT("FPCharacter"));
@@ -131,6 +135,8 @@ AFPCharacter::AFPCharacter()
 	// bCanBeDamaged = false;	 // 언리얼 버전의 진화에 따라 private으로 바뀌어 SetCanBeDamged를 이용해야함 (Actor Class).
 
 	DeadTimer = 5.0f;
+	bIsOnDrawDebug = false;
+	bisClear = false;
 }
 
 void AFPCharacter::UseItem(UItem * Item)
@@ -232,14 +238,14 @@ void AFPCharacter::SetCharacterState(ECharacterState NewState)
 					CharacterStat->GetMaxHP(),
 					FPPlayerController->GetFPPlayerState()->GetExp(),
 					FPPlayerController->GetFPPlayerState()->GetNextExp()
-					);
+				);
 				});
 		}
 		else
 		{
 			SetControlMode(EControlMode::NPC);
 			GetCharacterMovement()->MaxWalkSpeed = 300.0f;
-			FPAIController->RUNAI(this);
+			FPAIController->RUNAI();
 		}
 
 		break;
@@ -460,6 +466,8 @@ void AFPCharacter::Tick(float DeltaTime)
 		if (IsResting)
 		{
 			CharacterStat->SetHeal(0.1f);
+			if(FPPlayerController->GetFPPlayerState()->GetQuestNumber() == 0)
+				FPPlayerController->OnQuestUpdate.Broadcast();
 		}
 
 	// 공격 애니메이션에서 움직이는 부분
@@ -529,6 +537,9 @@ void AFPCharacter::PostInitializeComponents()
 	FPAnim->OnFinishMontage.AddLambda([this]() -> void {
 		FPLOG(Warning, TEXT("OnAnimFinish"));
 		IsAnimFinish = true;
+
+		IsRolling = false;
+		IsFireShot = false;
 		});
 
 	FPAnim->OnRest_Looping.AddLambda([this]() -> void {
@@ -541,30 +552,25 @@ void AFPCharacter::PostInitializeComponents()
 		IsRestEntered = false;
 		});
 
+	FPAnim->OnFire_Shooting.AddLambda([this]() -> void {
+		FPLOG(Warning, TEXT("OnFire_Shooting"));
+
+		});
 
 	CharacterStat->OnDamagedHP.AddLambda([this]() -> void {
 		if (bIsPlayer)
 			ActFinish();
 		});
 
-
-	//auto FPPlayerState = Cast<AFPPlayerState>(GetPlayerState());
-	//FPCHECK(nullptr != FPPlayerState);
-	//FPPlayerController->GetFPPlayerState()->OnLevelUpDelegate.AddLambda([this]() -> void {
-	//	CharacterStat->SetNewLevel(FPPlayerController->GetFPPlayerState()->GetCharacterLevel());
-	//	});
-	// 이 부분은 SetCharacterState의 DEAD에서 대신 처리하게 된다.
-	//CharacterStat->OnHPIsZero.AddLambda([this]() -> void {
-	//	FPLOG(Warning, TEXT("OnHPIsZero"));
-	//	FPAnim->SetDeadAnim();
-	//	SetActorEnableCollision(false);
-	//	});
 }
 
 float AFPCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
 	float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	FPLOG(Warning, TEXT("Actor : %s took Damage : %f"), *GetName(), FinalDamage);
+
+	if (IsRolling == true)
+		return FinalDamage;
 
 	CharacterStat->SetDamage(FinalDamage);
 	if (CurrentState == ECharacterState::DEAD)
@@ -594,14 +600,20 @@ void AFPCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	// Action 매핑
 	PlayerInputComponent->BindAction(TEXT("ActFinish"), EInputEvent::IE_Pressed, this, &AFPCharacter::ActFinish);
 	PlayerInputComponent->BindAction(TEXT("ViewChange"), EInputEvent::IE_Pressed, this, &AFPCharacter::ViewChange);
-	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &AFPCharacter::Jump);
+	//PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &AFPCharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Attack"), EInputEvent::IE_Pressed, this, &AFPCharacter::Attack);
 	PlayerInputComponent->BindAction(TEXT("Attack_RMB"), EInputEvent::IE_Pressed, this, &AFPCharacter::Attack_RMB);
-	PlayerInputComponent->BindAction(TEXT("Rest"), EInputEvent::IE_Pressed, this, &AFPCharacter::Skill_Rest);
+	PlayerInputComponent->BindAction(TEXT("Skill_Rest"), EInputEvent::IE_Pressed, this, &AFPCharacter::Skill_Rest);
+	PlayerInputComponent->BindAction(TEXT("Skill_Roll"), EInputEvent::IE_Pressed, this, &AFPCharacter::Skill_Roll);
+	PlayerInputComponent->BindAction(TEXT("Skill_FireShot"), EInputEvent::IE_Pressed, this, &AFPCharacter::Skill_FireShot);
 	PlayerInputComponent->BindAction(TEXT("Quest_Open"), EInputEvent::IE_Pressed, this, &AFPCharacter::Quest_Open);
 	PlayerInputComponent->BindAction(TEXT("NPCInteraction"), EInputEvent::IE_Pressed, this, &AFPCharacter::NPCInteraction);
 	PlayerInputComponent->BindAction(TEXT("Status_Open"), EInputEvent::IE_Pressed, this, &AFPCharacter::Status_Open);
 	PlayerInputComponent->BindAction(TEXT("ConversationProgress"), EInputEvent::IE_Pressed, this, &AFPCharacter::ConversationProgress);
+	PlayerInputComponent->BindAction(TEXT("OnDrawDebug"), EInputEvent::IE_Pressed, this, &AFPCharacter::OnDrawDebug);
+	PlayerInputComponent->BindAction(TEXT("QuestShortKey"), EInputEvent::IE_Pressed, this, &AFPCharacter::QuestShortKey);
+	PlayerInputComponent->BindAction(TEXT("LevelUpShortKey"), EInputEvent::IE_Pressed, this, &AFPCharacter::LevelUpShortKey);
+
 	// Axis 매핑 활용하여 이동키 만들기
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &AFPCharacter::UpDown);
 	PlayerInputComponent->BindAxis(TEXT("LeftRight"), this, &AFPCharacter::LeftRight);
@@ -621,6 +633,9 @@ void AFPCharacter::Setweapon(AFPWeapon * NewWeapon)
 {
 	//FPCHECK(nullptr != NewWeapon && nullptr == CurrentWeapon);
 	FPCHECK(nullptr != NewWeapon);
+
+	if (FPPlayerController->GetFPPlayerState()->GetQuestNumber() == 3)
+		FPPlayerController->OnQuestUpdate.Broadcast();
 
 	if (nullptr != CurrentWeapon)
 	{
@@ -703,6 +718,22 @@ void AFPCharacter::Skill_Rest()
 	FPAnim->PlayRest_Montage();
 }
 
+void AFPCharacter::Skill_Roll()
+{
+	FPCHECK(!IsTalking() || !bIsOnTutorialUI || IsResting);
+	
+	IsRolling = true;
+	FPAnim->PlayRoll_Montage();
+}
+
+void AFPCharacter::Skill_FireShot()
+{
+	FPCHECK(!IsActing());
+
+	IsFireShot = true;
+	FPAnim->PlayFireShot_Montage();
+}
+
 void AFPCharacter::ActFinish()
 {
 	// 나중에 Rest같이 행동을 중단해야 하는 것이 나오면 사용.
@@ -776,21 +807,32 @@ void AFPCharacter::Status_Open()
 
 void AFPCharacter::ConversationProgress()
 {
+	if (bIsOnTutorialUI == true)
+	{
+		if (bisClear == true)
+		{
+			UGameplayStatics::OpenLevel(this, TEXT("Title"));
+		}
+		bIsOnTutorialUI = false;
+		FPPlayerController->GetTutorialWindowWidget()->SetVisibility(ESlateVisibility::Collapsed);
+		return;
+	}
+
 	if (!IsTalking())
 		return;
 
-	FPPlayerController->GetConversationWidget()->BindNPCContent(SayNPC, Conversations[ConversationNumber]);
-	ConversationNumber++;
-
-	if (!IsTalking())
+	if (Conversations.Num() <= ConversationNumber)
 	{
+		bIsTalking = false;
 		ViewChange();
 		FPPlayerController->GetHUDWidget()->SetVisibility(ESlateVisibility::Visible);
 		OnConversationEnd.Broadcast();
 		OnConversationEnd.Clear();
-
+		return;
 	}
 
+	FPPlayerController->GetConversationWidget()->BindNPCContent(SayNPC, Conversations[ConversationNumber]);
+	ConversationNumber++;
 }
 
 void AFPCharacter::NPCConversation(FString NPCName, TArray<FString> NPCConversations)
@@ -798,22 +840,49 @@ void AFPCharacter::NPCConversation(FString NPCName, TArray<FString> NPCConversat
 	SayNPC = NPCName;
 	Conversations = NPCConversations;
 	ConversationNumber = 0;
-
-	FPPlayerController->GetConversationWidget()->BindNPCContent(SayNPC, Conversations[ConversationNumber]);
-	ConversationNumber++;
+	bIsTalking = true;
 
 	ViewChange();
 	FPPlayerController->GetHUDWidget()->SetVisibility(ESlateVisibility::Collapsed);
+
+	ConversationProgress();
 }
 
 
 bool AFPCharacter::IsTalking()
 {
-	if (ConversationNumber < Conversations.Num())
-		return true;
-
-	return false;
+	return bIsTalking;
 }
+
+void AFPCharacter::SetandOnTutorialUI(TSubclassOf<class UUserWidget> NewWindowWidgetClass)
+{
+	bIsOnTutorialUI = true;
+	FPPlayerController->SetTutorialWindowWidget(NewWindowWidgetClass);
+	FPPlayerController->GetTutorialWindowWidget()->SetVisibility(ESlateVisibility::Visible);
+
+}
+
+void AFPCharacter::OnDrawDebug()
+{
+	bIsOnDrawDebug = !bIsOnDrawDebug;
+}
+
+
+bool AFPCharacter::IsOnDrawDebug()
+{
+	return bIsOnDrawDebug;
+}
+
+void AFPCharacter::QuestShortKey()
+{
+	FPPlayerController->OnQuestUpdate.Broadcast();
+}
+
+void AFPCharacter::LevelUpShortKey()
+{
+	FPPlayerController->NPCKill(30);
+}
+
 
 void AFPCharacter::Attack()
 {
@@ -822,6 +891,8 @@ void AFPCharacter::Attack()
 	if (IsAttacking)
 	{
 		FPCHECK(FMath::IsWithinInclusive<int32>(CurrentCombo, 1, MaxCombo));
+		if (CurrentWeapon == nullptr && CurrentCombo > 1)	// 무기가 없을 땐 2타까지만 적용.
+			return;
 		if (CanNextCombo)
 		{
 			IsComboInputOn = true;
@@ -840,8 +911,10 @@ void AFPCharacter::Attack()
 
 void AFPCharacter::Attack_RMB()
 {
-
 	FPCHECK(!IsActing() || IsAttacking);
+
+	if (CurrentWeapon == nullptr)
+		return;
 
 	// 기본 공격 콤보 중 RMB는 총 4회 콤보 중 CurrentCombo가 0과 2일때만 들어갈 수 있다.
 	if (!(CurrentCombo == 0 || CurrentCombo == 2))
@@ -872,6 +945,11 @@ void AFPCharacter::OnAttackMontageEnded(UAnimMontage * Montage, bool bInterrupte
 	if (!IsAnimFinish)	return;
 
 	IsAnimFinish = false;
+	
+	IsRolling = false; 
+	IsFireShot = false;
+	IsRestEntered = false;
+	IsResting = false;
 
 	FPCHECK(IsAttacking);
 	FPCHECK(CurrentCombo > 0);
@@ -887,6 +965,9 @@ void AFPCharacter::AttackStartComboState()
 	IsRMBComboInputOn = false;
 	FPCHECK(FMath::IsWithinInclusive<int32>(CurrentCombo, 0, MaxCombo - 1));
 	CurrentCombo = FMath::Clamp<int32>(CurrentCombo + 1, 1, MaxCombo);
+
+	if (bIsPlayer && FPPlayerController->GetFPPlayerState()->GetQuestNumber() == 1)
+		FPPlayerController->OnQuestUpdate.Broadcast();
 }
 
 void AFPCharacter::AttackEndComboState()
@@ -914,24 +995,27 @@ void AFPCharacter::AttackCheck()
 		Params);
 
 	// 이 부분은 디버그 드로잉으로 디버깅 환경에서 공격 범위를 눈으로 보이게 해준다.
+	if (IsOnDrawDebug())
+	{
 #if ENABLE_DRAW_DEBUG
-	FVector TraceVec = GetActorForwardVector() * FinalAttackRange;
-	FVector Center = GetActorLocation() + TraceVec * 0.5f;
-	float HalfHeight = FinalAttackRange * 0.5f + AttackRadius;
-	FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
-	FColor DrawColor = bResult ? FColor::Green : FColor::Red;
-	float DebugLifeTime = 5.0f;
+		FVector TraceVec = GetActorForwardVector() * FinalAttackRange;
+		FVector Center = GetActorLocation() + TraceVec * 0.5f;
+		float HalfHeight = FinalAttackRange * 0.5f + AttackRadius;
+		FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
+		FColor DrawColor = bResult ? FColor::Green : FColor::Red;
+		float DebugLifeTime = 5.0f;
 
-	DrawDebugCapsule(GetWorld(),
-		Center,
-		HalfHeight,
-		AttackRadius,
-		CapsuleRot,
-		DrawColor,
-		false,
-		DebugLifeTime);
+		DrawDebugCapsule(GetWorld(),
+			Center,
+			HalfHeight,
+			AttackRadius,
+			CapsuleRot,
+			DrawColor,
+			false,
+			DebugLifeTime);
 
 #endif
+	}
 
 	// 실제로 맞았는지 체크하는 부분
 	if (bResult)
@@ -977,7 +1061,7 @@ void AFPCharacter::OnAssetLoadCompleted()
 
 bool AFPCharacter::IsActing()
 {
-	if (IsAttacking || IsResting || IsRestEntered || IsTalking())
+	if (IsAttacking || IsResting || IsRestEntered || IsTalking() || bIsOnTutorialUI || IsRolling || IsFireShot)
 		return true;
 
 	return false;

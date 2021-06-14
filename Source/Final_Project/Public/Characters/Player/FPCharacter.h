@@ -81,6 +81,9 @@ public:
 	void Setweapon(class AFPWeapon* NewWeapon);
 	void SetNPCInteractive(bool active) { bIsNPCInteractive = active; }
 	void NPCConversation(FString NPCName, TArray<FString> NPCConversations);
+	void SetandOnTutorialUI(TSubclassOf<class UUserWidget> NewWindowWidgetClass);
+	bool IsOnDrawDebug();
+	int32 GetCurrentCombo() { return CurrentCombo; }
 
 	class AFPPlayerController* GetFPPlayerController() { return FPPlayerController; }
 
@@ -114,6 +117,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Items")
 	void UseItem(class UItem* Item);
 
+	UFUNCTION(BlueprintCallable, Category = "Items")
+	bool IsClear() { return bisClear; }
+
+	void SetGameClear(bool clear) { bisClear = clear; }
 private:
 	// Axis 매핑 활용해서 이동키 만들기
 	void UpDown(float NewAxisValue);
@@ -123,6 +130,8 @@ private:
 
 	// Action 매핑
 	void Skill_Rest();
+	void Skill_Roll();
+	void Skill_FireShot();
 	void Attack_RMB();
 	
 	void ActFinish();
@@ -131,6 +140,9 @@ private:
 	void NPCInteraction();
 	void Status_Open();
 	void ConversationProgress();
+	void OnDrawDebug();
+	void QuestShortKey(); 
+	void LevelUpShortKey(); 
 
 	// 애니메이션 몽타주에 델리게이트를 사용해보기
 	UFUNCTION()
@@ -162,6 +174,12 @@ private:
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	bool IsResting;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool IsRolling;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	bool IsFireShot;
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 	bool CanNextCombo;
@@ -217,6 +235,18 @@ private:
 
 	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
 	bool bIsNPCInteractive;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
+	bool bIsTalking;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
+	bool bIsOnTutorialUI;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
+	bool bIsOnDrawDebug;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, BlueprintReadOnly, Category = State, Meta = (AllowPrivateAccess = true))
+	bool bisClear;
 
 	UPROPERTY()
 	class AFPAIController* FPAIController;

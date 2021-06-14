@@ -25,6 +25,18 @@ UFPAnimInstance::UFPAnimInstance()
 	{
 		Rest_Montage = REST_MONTAGE.Object;
 	}
+
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> ROLL_MONTAGE(TEXT("/Game/Animations/Roll_Montage.Roll_Montage"));
+	if (ROLL_MONTAGE.Succeeded())
+	{
+		Roll_Montage = ROLL_MONTAGE.Object;
+	}
+
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> FIRESHOT_MONTAGE(TEXT("/Game/Animations/FireShot_Montage.FireShot_Montage"));
+	if (FIRESHOT_MONTAGE.Succeeded())
+	{
+		FireShot_Montage = FIRESHOT_MONTAGE.Object;
+	}
 }
 
 // 폰의 속력 값을 구하기 위해 사용
@@ -84,6 +96,18 @@ void UFPAnimInstance::JumpToRest_End_MontageSection()
 	Montage_JumpToSection(FName(TEXT("Rest_End")), Rest_Montage);
 }
 
+void UFPAnimInstance::PlayRoll_Montage()
+{
+	FPCHECK(!IsDead);
+	Montage_Play(Roll_Montage, 1.0f);
+}
+
+void UFPAnimInstance::PlayFireShot_Montage()
+{
+	FPCHECK(!IsDead);
+	Montage_Play(FireShot_Montage, 1.0f);
+}
+
 void UFPAnimInstance::AnimNotify_AttackHitCheck()
 {
 	FPLOG_S(Warning);
@@ -118,6 +142,11 @@ void UFPAnimInstance::AnimNotify_Rest_Looping()
 void UFPAnimInstance::AnimNotify_Rest_Finish()
 {
 	OnRest_Finish.Broadcast();
+}
+
+void UFPAnimInstance::AnimNotify_Fire_Shooting()
+{
+	OnFire_Shooting.Broadcast();
 }
 
 FName UFPAnimInstance::GetAttackMontageSectionName(int32 Section)
